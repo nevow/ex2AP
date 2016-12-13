@@ -21,7 +21,8 @@ void MainFlow::initialize() {
     int rows, columns, obstacleNum;
     char trash;
 
-    list <Node> *obstacles;
+    list < Node * > *obstacles;
+    Point obs;
 
     // get the map's size and create it
     cin >> rows >> trash >> columns;
@@ -29,7 +30,8 @@ void MainFlow::initialize() {
 
     cin >> obstacleNum;
     while (obstacleNum > 0) {
-
+        cin >> obs;
+        obstacles->push_front(new Node(&obs));
     }
 }
 
@@ -49,7 +51,7 @@ void MainFlow::input() {
 
         switch (choice) {
 
-            case 1:
+            case 1: {
 //********* להוסיף getCab
                 cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash
                     >> vehicleId;
@@ -60,8 +62,10 @@ void MainFlow::input() {
                 so->addDriver(&driver);
 
                 break;
+            }
+            case 2: {
 
-            case 2:
+
                 cin >> id >> trash >> x_start >> trash >> y_start >> trash >> x_end >> trash
                     >> y_end >> trash >> num_passengers >> trash >> tariff;
 
@@ -72,11 +76,11 @@ void MainFlow::input() {
 
                 so->addTI(&tripInfo);
                 break;
-
+            }
 
                 //************************* לדאוג שמישהו יהיה אחראי לשנות את התעריף ***************
 
-            case 3:
+            case 3: {
 
                 cin >> id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
                 if (taxi_type == 1) {
@@ -92,18 +96,20 @@ void MainFlow::input() {
                     so->addTaxi(&taxi);
                 }
                 break;
-
-            case 4:
+            }
+            case 4: {
                 cin >> id;
                 Point *location = so->getDriverLocation(id);
                 cout << location;
                 break;
-
-            case 6:
+            }
+            case 6: {
                 so->moveAll();
-
-            default:
                 break;
+            }
+            default: {
+                break;
+            }
         }
 
     } while (choice != 7);
