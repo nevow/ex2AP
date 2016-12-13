@@ -59,7 +59,7 @@ public:
 
     void addTI(TripInfo *ti);
 
-    Node *getDriverLocation(int id);
+    Point *getDriverLocation(int id);
 };
 
 

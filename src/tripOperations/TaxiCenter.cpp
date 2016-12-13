@@ -44,8 +44,13 @@ void TaxiCenter::sendTaxi(Driver *d) {
  * iterate over all the drivers and tell them to move.
  */
 void TaxiCenter::moveAll() {
+    while (!locations->empty()) {
+        delete (locations->front());
+        locations->pop_front();
+    }
     for (Driver *d : *employees) {
         d->moveOneStep();
+        locations->push_front(d->getCab()->getLocation());
     }
 }
 
@@ -86,10 +91,10 @@ void TaxiCenter::addTI(TripInfo *ti) {
  * @param id od the driver
  * @return the location of the driver with the id
  */
-Node *TaxiCenter::getDriverLocation(int id) {
+Point *TaxiCenter::getDriverLocation(int id) {
     for (Driver *d : *employees) {
         if (d->getId() == id) {
-            return d->getCab()->getLocation();
+            return d->getCab()->getLocation()->getP();
         }
     }
     return NULL;

@@ -23,9 +23,11 @@ bool TripInfo::checkEnd(Point *location) {
  * @param passengers of the trip
  * @param tariff of the trip
  */
-TripInfo::TripInfo(int rideId, Point *start, Point *destination, int amountOfPassengers, Passenger **passengers,
+TripInfo::TripInfo(int rideId, Point *start, Point *destination, int amountOfPassengers,
+                   Passenger **passengers,
                    int tariff) : rideId(rideId), start(start), destination(destination),
-                                 amountOfPassengers(amountOfPassengers), passengers(passengers), tariff(tariff) {
+                                 amountOfPassengers(amountOfPassengers), passengers(passengers),
+                                 tariff(tariff) {
     currentDistance = 0;
 }
 
@@ -35,6 +37,14 @@ TripInfo::TripInfo(int rideId, Point *start, Point *destination, int amountOfPas
  */
 stack<CoordinatedItem *> *TripInfo::getRoad() {
     return road;
+}
+
+/**
+ *
+ * @return the amount of passengers
+ */
+int TripInfo::getAmountOfPassengers() const {
+    return amountOfPassengers;
 }
 
 /**

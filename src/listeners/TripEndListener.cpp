@@ -4,8 +4,18 @@
 
 #include "TripEndListener.h"
 
-void TripEndListener::notify() {
+/*
+ * constructor
+ */
+TripEndListener::TripEndListener(Driver *driver, TripInfo *ti) : driver(driver), ti(ti) {}
 
+/**
+ * notify all
+ */
+void TripEndListener::notify() {
+    if (ti->checkEnd(driver->getCab()->getLocation()->getP())) {
+        ti.
+        driver
+    }
 }
 
-TripEndListener::TripEndListener(Driver *driver, TripInfo *ti) : driver(driver), ti(ti) {}

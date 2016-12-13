@@ -27,9 +27,13 @@ public:
 
     stack<CoordinatedItem *> * getRoad();
 
+
+
     bool operator==(const TripInfo &ti) const;
 
     bool operator!=(const TripInfo &ti) const;
+
+    int getAmountOfPassengers() const;
 };
 
 
