@@ -24,8 +24,7 @@ void MainFlow::input() {
 //********* להוסיף getCab
                 cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash >> vehicle_id;
 
-                Driver driver(id, age, MartialStatuesFactory::getMartialStatus(status), experience);
-                //MainFlow::so.
+                Driver driver(id, age, MartialStatuesFactory::getMartialStatus(status), experience, vehicle_id);
 
                 break;
 

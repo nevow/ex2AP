@@ -20,8 +20,10 @@ private:
     TripInfo *ti;
     Satisfaction *satisfaction;
     Taxi *cab;
+    int vehicle_id;
+
 public:
-    Driver(int id, int age, const MartialStatues &status, int experience);
+    Driver(int id, int age, const MartialStatues &status, int experience, int vehicle_id);
 
     int getId() const;
 
