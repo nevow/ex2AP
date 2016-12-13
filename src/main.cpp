@@ -1,11 +1,9 @@
-//
-// Created by nevo on 01/12/16.
-//
+#include "managment/MainFlow.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
-int main(int argc, char *argv[]) {
-    ::testing::InitGoogleTest(&argc,argv);
-    return RUN_ALL_TESTS();
+int main() {
+    MainFlow *mf = new MainFlow();
+    mf->initialize();
+    mf->input();
+    delete (mf);
+    return 0;
 }
