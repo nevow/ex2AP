@@ -56,6 +56,8 @@ public:
     bool operator==(const Driver &otherDriver) const;
 
     bool operator!=(const Driver &otherDriver) const;
+
+    int getVehicle_id() const;
 };
 
 

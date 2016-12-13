@@ -74,6 +74,10 @@ void Driver::setExperience(int experience) {
     Driver::experience = experience;
 }
 
+int Driver::getVehicle_id() const {
+    return vehicle_id;
+}
+
 /**
  *
  * @return the trip info of the driver

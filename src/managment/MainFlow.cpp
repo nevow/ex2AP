@@ -4,13 +4,14 @@
 
 #include "MainFlow.h"
 #include "../enum/MartialStatuesFactory.h"
+#include "../taxi/Cab.h"
 
 using namespace std;
 
 void MainFlow::input() {
 
-    int rows, columns, id, age, experience, vehicle_id;
-    char trash, status;
+    int rows, columns, id, age, experience, vehicle_id, taxi_id, taxi_type;
+    char trash, status, manufacturer, color;
     cin >> rows >> trash >> columns;
     Map map(rows, columns);
 
@@ -30,8 +31,10 @@ void MainFlow::input() {
 
             case 3:
 //********* להוסיף getCab
-                cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash >> vehicle_id;
-
+                cin >> taxi_id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
+                if (taxi_type == 1) {
+                    Cab cab(50,)
+                }
                 //*MainFlow::so
 
                 break;
