@@ -15,7 +15,7 @@ protected:
     DriverAvailableListener *dal;
 
     virtual void SetUp() {
-        d = new Driver(100, 40, MartialStatues::SINGLE, 10);
+        d = new Driver(100, 40, MartialStatues::SINGLE, 10,0);
         tc = new TaxiCenter();
         dal = new DriverAvailableListener(d, tc);
     }

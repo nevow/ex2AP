@@ -22,13 +22,14 @@ protected:
     Taxi *luxuryCab;
 
     virtual void SetUp() {
-        so = new SystemOperations(10, 10);
+        Map* map = new Map(10,10);
+        so = new SystemOperations(map,NULL);
         obstacle = new Node(new Point(2, 4));
         start = new Node(new Point(2, 3));
         end = new Node(new Point(3, 4));
-        d = new Driver(305, 40, MartialStatues::WIDOWED, 7);
-        cab = new Cab(300, Color::GREEN, CarManufacture::TESLA, 50, 4453523, start);
-        luxuryCab = new Cab(300, Color::GREEN, CarManufacture::TESLA, 50, 4453523, start);
+        d = new Driver(305, 40, MartialStatues::WIDOWED, 7,0);
+        cab = new Cab( Color::GREEN, CarManufacture::TESLA, 4453523);
+        luxuryCab = new Cab( Color::GREEN, CarManufacture::TESLA, 4453523);
         pass = new Passenger(start->getP(), end->getP());
     }
 

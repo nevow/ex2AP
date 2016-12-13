@@ -24,8 +24,8 @@ protected:
         p1 = new Point(3, 3);
         p2 = new Point(2, 3);
         n = new Node(p1);
-        d = new Driver(100, 40, MartialStatues::SINGLE, 10);
-        cab = new Cab(60, Color::RED, CarManufacture::HONDA, 0, 1306410, n);
+        d = new Driver(100, 40, MartialStatues::SINGLE, 10,0);
+        cab = new Cab( Color::RED, CarManufacture::HONDA, 1306410);
         pa = new Passenger(p1, p2);
         tc = new TaxiCenter();
         ti = tc->answerCall(pa);

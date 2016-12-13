@@ -21,7 +21,7 @@ protected:
         location = new Node(start);
         endLocation = new Node(destination);
         pass = new Passenger(start, destination);
-        d = new Driver(305,40,MartialStatues::WIDOWED,7);
+        d = new Driver(305,40,MartialStatues::WIDOWED,7,0);
     }
 
     virtual void TearDown() {
@@ -40,27 +40,12 @@ TEST_F(DriverTest, getId) {
 }
 
 /**
- * check setId method.
- */
-TEST_F(DriverTest, setId ) {
-    d->setId(200);
-    ASSERT_TRUE(d->getId() == 200);
-}
-
-/**
  * check getAge method.
  */
 TEST_F(DriverTest, getAge) {
     ASSERT_TRUE(d->getAge() == 40);
 }
 
-/**
- * check setAge method.
- */
-TEST_F(DriverTest, setAge) {
-    d->setId(35);
-    ASSERT_TRUE(d->getId() == 35);
-}
 
 /**
  * check getStatus method.
@@ -101,8 +86,8 @@ TEST_F(DriverTest, getAndSetTi) {
     Passenger* pass2 = &p2;
     Passenger* pass3 = &p3;
     Passenger* p[3] = {pass1,pass2,pass3};
-    TripInfo ti1(300,start,destination,3,p,100);
-    TripInfo ti2(300,start,destination,3,p,100);
+    TripInfo ti1(300,start,destination,3,NULL,100);
+    TripInfo ti2(300,start,destination,3,NULL,100);
     ASSERT_TRUE(ti1 == ti2);
     d->setTi(&ti1);
     EXPECT_TRUE(*d->getTi() == ti2);
@@ -113,8 +98,8 @@ TEST_F(DriverTest, getAndSetTi) {
  * check getAndSetCab method.
  */
 TEST_F(DriverTest, getAndSetCab) {
-    Cab cab1(300,Color::GREEN,CarManufacture::TESLA,50 ,4453523 ,location);
-    Cab cab2(300,Color::GREEN,CarManufacture::TESLA,50 ,4453523 ,location);
+    Cab cab1(Color::GREEN,CarManufacture::TESLA,4453523 );
+    Cab cab2(Color::GREEN,CarManufacture::TESLA,4453523);
     ASSERT_TRUE(cab1 == cab2);
     d->setCab(&cab1);
     EXPECT_TRUE(*d->getCab() == cab2);
@@ -150,8 +135,8 @@ TEST_F(DriverTest, update) {
  */
 TEST_F(DriverTest, moveOneStep) {
     Passenger* p[1] = {pass};
-    TripInfo ti(300,start,destination,3,p,100);
-    Cab cab(300,Color::GREEN,CarManufacture::TESLA,50 ,4453523 ,location);
+    TripInfo ti(300,start,destination,3,NULL,100);
+    Cab cab(Color::GREEN,CarManufacture::TESLA ,4453523);
     d->setCab(&cab);
     d->moveOneStep();
     ASSERT_TRUE(*(cab.getLocation()) == *endLocation);
@@ -162,8 +147,8 @@ TEST_F(DriverTest, moveOneStep) {
  * compares 2 identical drivers.
  */
 TEST_F(DriverTest, equality) {
-    Driver d1(305,40,MartialStatues::WIDOWED,7);
-    Driver d2(305,40,MartialStatues::WIDOWED,7);
+    Driver d1(305,40,MartialStatues::WIDOWED,7,0);
+    Driver d2(305,40,MartialStatues::WIDOWED,7,0);
     ASSERT_TRUE(d1 == d2);
 }
 
@@ -172,7 +157,7 @@ TEST_F(DriverTest, equality) {
  * compares 2 not identical drivers.
  */
 TEST_F(DriverTest, notEquality) {
-    Driver d1(305,40,MartialStatues::WIDOWED,7);
-    Driver d2(302,40,MartialStatues::WIDOWED,7);
+    Driver d1(305,40,MartialStatues::WIDOWED,7,0);
+    Driver d2(302,40,MartialStatues::WIDOWED,7,0);
     ASSERT_TRUE(d1 != d2);
 }

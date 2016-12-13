@@ -67,7 +67,7 @@ TEST_F(BFSTest, BFSAlgo) {
 TEST_F(BFSTest, getTrip) {
 
     BFS::BFSAlgo(map, end);
-    ASSERT_TRUE(*BFS::getTrip(map, end) == *road);
+    ASSERT_TRUE(*BFS::getTrip(end) == *road);
 
 }
 

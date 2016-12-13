@@ -10,14 +10,15 @@ protected:
     Point *start;
     Point *destination;
     Passenger *pass;
-    Passenger **passengers;
+    list<Passenger *> *passengers;
     TripInfo *ti;
 
     virtual void SetUp() {
         start = new Point(3, 3);
         destination = new Point(4, 3);
         pass = new Passenger(start, destination);
-        passengers = &pass;
+        passengers = new list<Passenger *>;
+        passengers->push_front(pass);
         ti = new TripInfo(100, start, destination, 1, passengers, 100);
     }
 

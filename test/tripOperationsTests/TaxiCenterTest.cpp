@@ -14,7 +14,7 @@ protected:
     Node *location;
     Node *endLocation;
     Passenger *pass;
-    Passenger **passengers;
+    list<Passenger *> *passengers;
     Driver *d;
     TripInfo *ti;
     Cab *cab;
@@ -26,10 +26,11 @@ protected:
         location = new Node(start);
         endLocation = new Node(destination);
         pass = new Passenger(start, destination);
-        passengers = &pass;
-        d = new Driver(305, 40, MartialStatues::WIDOWED, 7);
+        passengers = new list<Passenger *>;
+        passengers->push_front(pass);
+        d = new Driver(305, 40, MartialStatues::WIDOWED, 7,0);
         ti = new TripInfo(100, start, destination, 1, passengers, 100);          // standard first trip info
-        cab = new Cab(300, Color::GREEN, CarManufacture::TESLA, 50, 4453523, location);
+        cab = new Cab(Color::GREEN, CarManufacture::TESLA, 4453523);
         tc = new TaxiCenter();
     }
 
@@ -92,7 +93,7 @@ TEST_F(TaxiCenterTest, moveAll) {
  * checks if the drivers list is being properly managed.
  */
 TEST_F(TaxiCenterTest, getAvailableDrivers) {
-    Driver *d1 = new Driver(304, 21, MartialStatues::SINGLE, 2);
+    Driver *d1 = new Driver(304, 21, MartialStatues::SINGLE, 2, 0);
     tc->addDriver(d);
     tc->addDriver(d1);
     std::list<Driver *> *drivers = tc->getAvailableDrivers();
