@@ -8,6 +8,7 @@
 #include "../enum/ColorFactory.h"
 #include "../enum/CarManufatureFactory.h"
 #include "../taxi/LuxuryCab.h"
+#include "../enum/CarManufactureFactory.h"
 
 using namespace std;
 
@@ -60,22 +61,48 @@ void MainFlow::input() {
                 cin >> taxi_id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
                 if (taxi_type == 1) {
                     Cab taxi(ColorFactory::colorFromCharFactory(color),
-                             CarManufatureFactory::carManufactureFromCharFactory(manufacturer), id);
+                             CarManufactureFactory::carManufactureFromCharFactory(manufacturer),
+                             id);
                     so.addTaxi(&taxi);
-
 
                 } else if (taxi_type == 2) {
                     LuxuryCab taxi(ColorFactory::colorFromCharFactory(color),
-                                   CarManufatureFactory::carManufactureFromCharFactory(
+                                   CarManufactureFactory::carManufactureFromCharFactory(
                                            manufacturer), id);
                     so.addTaxi(&taxi);
                 }
                 break;
 
+            case 4:
+
+
+                break;
 
         }
     } while ();
 }
+
+
+/*
+
+
+4 - request for a driver location:
+        (driver_id)
+out: driver location in the format: '(x,y)'
+
+• 6 - start driving (no input afterwards. Meaning getting all drivers to their end point)
+• 7 - exit (cleaning up the program and exiting)
+
+ */
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -89,12 +116,4 @@ void MainFlow::input() {
 
 3 - insert a vehicle:
         (id,taxi_type,manufacturer,color) - (int,{1: Normal Cab,2: Luxury Cab},char:{H,S,T,F},char:{R,B,G,P,W})
-
-4 - request for a driver location:
-        (driver_id)
-out: driver location in the format: '(x,y)'
-
-• 6 - start driving (no input afterwards. Meaning getting all drivers to their end point)
-• 7 - exit (cleaning up the program and exiting)
-
  */
