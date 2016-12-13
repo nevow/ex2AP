@@ -28,7 +28,7 @@ void MainFlow::initialize() {
     Map map(rows, columns);
 
     cin >> obstacleNum;
-    if (obstacleNum > 0) {
+    while (obstacleNum > 0) {
 
     }
 }
@@ -57,7 +57,7 @@ void MainFlow::input() {
                 Driver driver(id, age, MartialStatuesFactory::getMartialStatus(status), experience,
                               vehicleId);
 
-                so.addDriver(&driver);
+                so->addDriver(&driver);
 
                 break;
 
@@ -70,7 +70,7 @@ void MainFlow::input() {
 
                 TripInfo tripInfo(id, &start, &end, num_passengers, NULL, tariff);
 
-                so.addTI(&tripInfo);
+                so->addTI(&tripInfo);
                 break;
 
 
@@ -83,24 +83,24 @@ void MainFlow::input() {
                     Cab taxi(ColorFactory::colorFromCharFactory(color),
                              CarManufactureFactory::carManufactureFromCharFactory(manufacturer),
                              id);
-                    so.addTaxi(&taxi);
+                    so->addTaxi(&taxi);
 
                 } else if (taxi_type == 2) {
                     LuxuryCab taxi(ColorFactory::colorFromCharFactory(color),
                                    CarManufactureFactory::carManufactureFromCharFactory(
                                            manufacturer), id);
-                    so.addTaxi(&taxi);
+                    so->addTaxi(&taxi);
                 }
                 break;
 
             case 4:
                 cin >> id;
-                Point *location = so.getDriverLocation(id);
+                Point *location = so->getDriverLocation(id);
                 cout << location;
                 break;
 
             case 6:
-                so.moveAll();
+                so->moveAll();
 
             default:
                 break;
