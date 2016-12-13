@@ -30,7 +30,6 @@ void MainFlow::input() {
                 break;
 
             case 3:
-//********************** לשנות את staus
 //********* להוסיף getCab
                 cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash >> vehicle_id;
 
