@@ -6,25 +6,36 @@
 #include "../enum/MartialStatuesFactory.h"
 #include "../taxi/Cab.h"
 #include "../enum/ColorFactory.h"
-#include "../enum/CarManufatureFactory.h"
-#include "../taxi/LuxuryCab.h"
 #include "../enum/CarManufactureFactory.h"
+#include "../taxi/LuxuryCab.h"
 
 using namespace std;
 
-void MainFlow::input() {
+void MainFlow::initialize() {
 
-    int rows, columns, id, age, experience, vehicleId, taxi_id, taxi_type;
-    int id_ride, x_start, y_start, x_end, y_end, num_passengers;
-    double tariff;
-    char trash, status, manufacturer, color;
+    int rows, columns;
+    char trash;
 
+    // get the map's size and create it
     cin >> rows >> trash >> columns;
     Map map(rows, columns);
 
+
+}
+
+
+void MainFlow::input() {
+
+    int choice;
+    int id, age, experience, vehicleId, taxi_type;
+    int x_start, y_start, x_end, y_end, num_passengers;
+    double tariff;
+    char trash, status, manufacturer, color;
+
+
     do {
 
-        int choice;
+        cin >> choice;
 
         switch (choice) {
 
@@ -41,24 +52,23 @@ void MainFlow::input() {
                 break;
 
             case 2:
-                cin >> id_ride >> trash >> x_start >> trash >> y_start >> trash >> x_end >> trash
+                cin >> id >> trash >> x_start >> trash >> y_start >> trash >> x_end >> trash
                     >> y_end >> trash >> num_passengers >> trash >> tariff;
 
                 Point start(x_start, y_start);
                 Point end(x_end, y_end);
 
-                TripInfo tripInfo(id_ride, &start, &end, num_passengers, NULL, tariff);
+                TripInfo tripInfo(id, &start, &end, num_passengers, NULL, tariff);
 
                 so.addTI(&tripInfo);
                 break;
-
 
 
                 //************************* לדאוג שמישהו יהיה אחראי לשנות את התעריף ***************
 
             case 3:
 
-                cin >> taxi_id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
+                cin >> id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
                 if (taxi_type == 1) {
                     Cab taxi(ColorFactory::colorFromCharFactory(color),
                              CarManufactureFactory::carManufactureFromCharFactory(manufacturer),
@@ -74,38 +84,28 @@ void MainFlow::input() {
                 break;
 
             case 4:
-
-
+                cin >> id;
+                Point *location = so.getDriverLocation(id);
+                cout << location;
                 break;
 
+            case 6:
+                so.moveAll();
+
+            default:
+                break;
         }
-    } while ();
+
+    } while (choice != 7);
+
+    //**************************לחזור למחוק הכל ****************
+
+
 }
 
 
 /*
 
-
-4 - request for a driver location:
-        (driver_id)
-out: driver location in the format: '(x,y)'
-
-• 6 - start driving (no input afterwards. Meaning getting all drivers to their end point)
-• 7 - exit (cleaning up the program and exiting)
-
- */
-
-
-
-
-
-
-
-
-
-
-
-/*
 
 1 - insert a driver in the following format:
         (id,age,status,experience,vehicleId) - (int,int,char:{S,M,D,W},int,int)
@@ -116,4 +116,13 @@ out: driver location in the format: '(x,y)'
 
 3 - insert a vehicle:
         (id,taxi_type,manufacturer,color) - (int,{1: Normal Cab,2: Luxury Cab},char:{H,S,T,F},char:{R,B,G,P,W})
+
+4 - request for a driver location:
+        (driver_id)
+out: driver location in the format: '(x,y)'
+
+• 6 - start driving (no input afterwards. Meaning getting all drivers to their end point)
+• 7 - exit (cleaning up the program and exiting)
+
  */
+

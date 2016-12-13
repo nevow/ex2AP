@@ -13,6 +13,8 @@ private:
     SystemOperations so;
 
 public:
+    void initialize();
+
     void input();
 };
 

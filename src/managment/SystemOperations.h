@@ -21,8 +21,9 @@ private:
     TaxiCenter *tc;
     Map *map;
 public:
-    SystemOperations(int x, int y) {
-        map = new Map(x, y);
+    SystemOperations(Map *map1, list<Node *> *obs) {
+        map = map1;
+        obstacles = obs;
         tc = new TaxiCenter();
     }
 
@@ -35,6 +36,8 @@ public:
     void addTI(TripInfo *tripInfo);
 
     Map *getMap() const;
+
+    Point *getDriverLocation(int id);
 
     void moveAll();
 
