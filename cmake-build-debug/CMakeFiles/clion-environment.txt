@@ -1,0 +1,1 @@
+CMake: 3.6.2@/home/nevo/prog/clion/bin/cmake/bin/cmake
