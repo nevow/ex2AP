@@ -134,6 +134,9 @@ void Map::setAll(int dist) {
 void Map::setItem(CoordinatedItem *item, int dist) {
     int **coords = item->getCoordinates();
     matrix[*(coords[0])][*(coords[1])]->setDistance(dist);
+    delete (coords[0]);
+    delete (coords[1]);
+    delete[] (coords);
 }
 
 

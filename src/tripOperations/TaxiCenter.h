@@ -22,7 +22,8 @@ private:
     list<TripInfo *> *trips;
     list<Driver *> *availableDrivers;
 public:
-    TaxiCenter(list<Driver *> *employees, list<Node *> *locations, list<Taxi *> *cabs, list<TripInfo *> *trips)
+    TaxiCenter(list<Driver *> *employees, list<Node *> *locations, list<Taxi *> *cabs,
+               list<TripInfo *> *trips)
             : employees(employees), locations(locations), cabs(cabs), trips(trips),
               availableDrivers(employees) {}
 
@@ -55,6 +56,8 @@ public:
     void addDriver(Driver *d);
 
     void addTaxi(Taxi *cab);
+
+    Node *getDriverLocation(int id);
 };
 
 

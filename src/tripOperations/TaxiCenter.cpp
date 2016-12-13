@@ -73,4 +73,18 @@ void TaxiCenter::addTaxi(Taxi *cab) {
     cabs->push_back(cab);
 }
 
+/**
+ *
+ * @param id od the driver
+ * @return the location of the driver with the id
+ */
+Node *TaxiCenter::getDriverLocation(int id) {
+    for (Driver *d : *employees) {
+        if (d->getId() == id) {
+            return d->getCab()->getLocation();
+        }
+    }
+    return NULL;
+}
+
 
