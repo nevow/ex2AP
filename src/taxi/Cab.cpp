@@ -4,9 +4,8 @@
 
 #include "Cab.h"
 
-Cab::Cab(int tariff, const Color &color, const CarManufacture &firm, int kmPassed, int id, Node *location) : Taxi(
-        tariff, color, firm, kmPassed, id, location) {
-
+Cab::Cab(int tariff, const Color &color, const CarManufacture &firm, int id) : Taxi(
+        tariff, color, firm, id) {
 }
 
 void Cab::move(stack<CoordinatedItem *> *road) {

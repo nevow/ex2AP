@@ -29,11 +29,13 @@ void MainFlow::input() {
 
                 break;
 
+            case 2:
+
             case 3:
-//********* להוסיף getCab
                 cin >> taxi_id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
                 if (taxi_type == 1) {
-                    Cab cab(50,)
+                    Cab cab(1, ColorFactory::getColor(color), manufacturerFactory::getFirm(manufacturer), id);
+
                 }
                 //*MainFlow::so
 

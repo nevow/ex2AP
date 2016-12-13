@@ -10,9 +10,9 @@
 
 class Cab : public Taxi {
 public:
-    Cab(int tariff, const Color &color, const CarManufacture &firm, int kmPassed, int id, Node *location);
+    Cab(int tariff, const Color &color, const CarManufacture &firm, int id);
 
-    void move(stack<CoordinatedItem *> * road);
+    void move(stack<CoordinatedItem *> *road);
 
 };
 
