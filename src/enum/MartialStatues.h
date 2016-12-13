@@ -1,5 +1,5 @@
 //
-// Created by nevo on 01/12/16.
+// MartialStatues.
 //
 
 #ifndef EX1_MARTIALSTATUES_H

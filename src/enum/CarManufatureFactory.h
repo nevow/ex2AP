@@ -9,6 +9,7 @@
 #include "CarManufacture.h"
 
 class CarManufatureFactory {
+public:
     /**
      *
      * @param letter to create CarManufacture from

@@ -9,6 +9,7 @@
 #include "Color.h"
 
 class ColorFactory {
+public:
     /**
      *
      * @param letter to create Color from
