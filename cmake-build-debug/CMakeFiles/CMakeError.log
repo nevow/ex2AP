@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_77d14/fast"
-/usr/bin/make -f CMakeFiles/cmTC_77d14.dir/build.make CMakeFiles/cmTC_77d14.dir/build
-make[1]: Entering directory '/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_77d14.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_77d14.dir/CheckSymbolExists.c.o   -c /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_77d14
-/home/nevo/prog/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77d14.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_77d14.dir/CheckSymbolExists.c.o  -o cmTC_77d14 -rdynamic 
-CMakeFiles/cmTC_77d14.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_a343d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a343d.dir/build.make CMakeFiles/cmTC_a343d.dir/build
+make[1]: Entering directory '/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a343d.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_a343d.dir/CheckSymbolExists.c.o   -c /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a343d
+/home/maayan/Downloads/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a343d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_a343d.dir/CheckSymbolExists.c.o  -o cmTC_a343d -rdynamic 
+CMakeFiles/cmTC_a343d.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_77d14.dir/build.make:97: recipe for target 'cmTC_77d14' failed
-make[1]: *** [cmTC_77d14] Error 1
-make[1]: Leaving directory '/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_77d14/fast' failed
-make: *** [cmTC_77d14/fast] Error 2
+CMakeFiles/cmTC_a343d.dir/build.make:97: recipe for target 'cmTC_a343d' failed
+make[1]: *** [cmTC_a343d] Error 1
+make[1]: Leaving directory '/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a343d/fast' failed
+make: *** [cmTC_a343d/fast] Error 2
 
-File /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c9715/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c9715.dir/build.make CMakeFiles/cmTC_c9715.dir/build
-make[1]: Entering directory '/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c9715.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c9715.dir/CheckFunctionExists.c.o   -c /home/nevo/prog/clion/bin/cmake/share/cmake-3.6/Modules/CheckFunctionExists.c
-Linking C executable cmTC_c9715
-/home/nevo/prog/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9715.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_c9715.dir/CheckFunctionExists.c.o  -o cmTC_c9715 -rdynamic -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_80b79/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80b79.dir/build.make CMakeFiles/cmTC_80b79.dir/build
+make[1]: Entering directory '/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80b79.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_80b79.dir/CheckFunctionExists.c.o   -c /home/maayan/Downloads/clion/bin/cmake/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_80b79
+/home/maayan/Downloads/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80b79.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_80b79.dir/CheckFunctionExists.c.o  -o cmTC_80b79 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_c9715.dir/build.make:97: recipe for target 'cmTC_c9715' failed
-make[1]: *** [cmTC_c9715] Error 1
-make[1]: Leaving directory '/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_c9715/fast' failed
-make: *** [cmTC_c9715/fast] Error 2
+CMakeFiles/cmTC_80b79.dir/build.make:97: recipe for target 'cmTC_80b79' failed
+make[1]: *** [cmTC_80b79] Error 1
+make[1]: Leaving directory '/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_80b79/fast' failed
+make: *** [cmTC_80b79/fast] Error 2
 
 

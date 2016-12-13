@@ -14,7 +14,7 @@
 Driver::Driver(int id, int age, const MartialStatues &status, int experience, int vehicle_id) : id(id), age(age),
                                                                                                 status(status),
                                                                                                 experience(experience),
-                                                                                                vehicle_id(vehicle_id) {
+                                                                                                vehicleId(vehicle_id) {
     satisfaction = new Satisfaction();
 }
 
@@ -75,7 +75,7 @@ void Driver::setExperience(int experience) {
 }
 
 int Driver::getVehicle_id() const {
-    return vehicle_id;
+    return vehicleId;
 }
 
 /**

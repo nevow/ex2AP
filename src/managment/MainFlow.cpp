@@ -5,12 +5,16 @@
 #include "MainFlow.h"
 #include "../enum/MartialStatuesFactory.h"
 #include "../taxi/Cab.h"
+#include "../enum/ColorFactory.h"
+#include "../enum/CarManufatureFactory.h"
 
 using namespace std;
 
 void MainFlow::input() {
 
-    int rows, columns, id, age, experience, vehicle_id, taxi_id, taxi_type;
+    int rows, columns, id, age, experience, vehicleId, taxi_id, taxi_type;
+    int id_ride, x_start, y_start, x_end, y_end, num_passengers;
+    double tariff;
     char trash, status, manufacturer, color;
     cin >> rows >> trash >> columns;
     Map map(rows, columns);
@@ -23,20 +27,30 @@ void MainFlow::input() {
 
             case 1:
 //********* להוסיף getCab
-                cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash >> vehicle_id;
+                cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash >> vehicleId;
 
-                Driver driver(id, age, MartialStatuesFactory::getMartialStatus(status), experience, vehicle_id);
+                Driver driver(id, age, MartialStatuesFactory::getMartialStatus(status), experience, vehicleId);
+
+                so.addDriver(&driver);
 
                 break;
 
             case 2:
+                cin >> id_ride >> trash >> x_start >> trash >> y_start >> trash >> x_end >> trash >> y_end >> trash
+                    >> num_passengers >> trash >> tariff;
+
+                TripInfo
+
+                //TripInfo(int rideId, Point *start, Point *destination, int amountOfPassengers, Passenger **passengers, int tariff);
 
             case 3:
                 cin >> taxi_id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
                 if (taxi_type == 1) {
-                    Cab cab(1, ColorFactory::getColor(color), manufacturerFactory::getFirm(manufacturer), id);
+                    Cab cab(1, ColorFactory::colorFromCharFactory(color),
+                            CarManufatureFactory::carManufactureFromCharFactory(manufacturer), id);
 
                 }
+                so.addTaxi()
                 //*MainFlow::so
 
                 break;
@@ -50,7 +64,7 @@ void MainFlow::input() {
 /*
 
 1 - insert a driver in the following format:
-        (id,age,status,experience,vehicle_id) - (int,int,char:{S,M,D,W},int,int)
+        (id,age,status,experience,vehicleId) - (int,int,char:{S,M,D,W},int,int)
 
 
 2 - insert a new ride:
