@@ -21,7 +21,6 @@ void MainFlow::input() {
         switch (choice) {
 
             case 1:
-//********************** לשנות את staus
 //********* להוסיף getCab
                 cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash >> vehicle_id;
 
