@@ -9,18 +9,28 @@
 #include "../enum/CarManufactureFactory.h"
 #include "../taxi/LuxuryCab.h"
 
+
 using namespace std;
+
+MainFlow::MainFlow() {
+}
+
 
 void MainFlow::initialize() {
 
-    int rows, columns;
+    int rows, columns, obstacleNum;
     char trash;
+
+    list <Node> *obstacles;
 
     // get the map's size and create it
     cin >> rows >> trash >> columns;
     Map map(rows, columns);
 
+    cin >> obstacleNum;
+    if (obstacleNum > 0) {
 
+    }
 }
 
 
@@ -102,6 +112,7 @@ void MainFlow::input() {
 
 
 }
+
 
 
 /*

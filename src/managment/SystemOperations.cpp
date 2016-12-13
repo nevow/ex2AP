@@ -4,6 +4,7 @@
 
 #include "SystemOperations.h"
 
+
 void SystemOperations::addObstacle(Node *obstacle) {
 
 }

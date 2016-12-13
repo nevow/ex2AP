@@ -10,9 +10,11 @@
 
 class MainFlow {
 private:
-    SystemOperations so;
+    SystemOperations *so;
 
 public:
+    MainFlow();
+
     void initialize();
 
     void input();

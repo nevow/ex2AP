@@ -20,6 +20,7 @@ private:
     list<Node *> *obstacles;
     TaxiCenter *tc;
     Map *map;
+
 public:
     SystemOperations(Map *map1, list<Node *> *obs) {
         map = map1;
