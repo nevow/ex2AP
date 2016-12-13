@@ -1,5 +1,5 @@
 //
-// Created by nevo on 01/12/16.
+// Cab.
 //
 
 #ifndef EX1_CAB_H
