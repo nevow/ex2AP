@@ -57,6 +57,8 @@ public:
 
     void addTaxi(Taxi *cab);
 
+    void addTI(TripInfo *ti);
+
     Node *getDriverLocation(int id);
 };
 

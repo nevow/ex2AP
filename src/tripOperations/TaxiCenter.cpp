@@ -75,6 +75,14 @@ void TaxiCenter::addTaxi(Taxi *cab) {
 
 /**
  *
+ * @param ti to add to the trips list.
+ */
+void TaxiCenter::addTI(TripInfo *ti) {
+    trips->push_back(ti);
+}
+
+/**
+ *
  * @param id od the driver
  * @return the location of the driver with the id
  */
