@@ -2,7 +2,9 @@
 // Created by nevo on 01/12/16.
 //
 
+
 #include "MainFlow.h"
+
 #include "../enum/MartialStatuesFactory.h"
 #include "../taxi/Cab.h"
 #include "../enum/ColorFactory.h"
@@ -12,27 +14,26 @@
 
 using namespace std;
 
-MainFlow::MainFlow() {
-}
-
 
 void MainFlow::initialize() {
 
     int rows, columns, obstacleNum;
     char trash;
 
-    list < Node * > *obstacles;
+    std::list<Node *> *obstacles = new list<Node *>;
     Point obs;
 
     // get the map's size and create it
     cin >> rows >> trash >> columns;
-    Map map(rows, columns);
+    Map *map = new Map(rows, columns);
 
     cin >> obstacleNum;
-    while (obstacleNum > 0) {
+    for (; obstacleNum > 0; obstacleNum--) {
         cin >> obs;
         obstacles->push_front(new Node(&obs));
     }
+
+    so = new SystemOperations(map, obstacles);
 }
 
 
@@ -52,7 +53,7 @@ void MainFlow::input() {
         switch (choice) {
 
             case 1: {
-//********* להוסיף getCab
+//********************** להוסיף getCab
                 cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash
                     >> vehicleId;
 

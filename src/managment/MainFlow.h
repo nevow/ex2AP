@@ -5,6 +5,7 @@
 #ifndef EX1_MAINFLOW_H
 #define EX1_MAINFLOW_H
 
+#include <list>
 
 #include "SystemOperations.h"
 
@@ -13,7 +14,7 @@ private:
     SystemOperations *so;
 
 public:
-    MainFlow();
+    MainFlow() {};
 
     void initialize();
 
