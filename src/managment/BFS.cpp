@@ -16,7 +16,7 @@
 stack<CoordinatedItem *> *BFS::use(Grid *Graph, CoordinatedItem *root, CoordinatedItem *dest) {
     // spread the distances using the BFS algorithm
     BFS::BFSAlgo(Graph, root);
-    return (getTrip(Graph, dest));
+    return (getTrip(dest));
 }
 
 

@@ -13,9 +13,13 @@ TripEndListener::TripEndListener(Driver *driver, TripInfo *ti) : driver(driver),
  * notify all
  */
 void TripEndListener::notify() {
+    list <Passenger> *qwe;
+    //pass = ti->getPassengers();
     if (ti->checkEnd(driver->getCab()->getLocation()->getP())) {
-        ti.
-        driver
+        int passengerAmount = ti->getAmountOfPassengers();
+        for (int i = 0; i < passengerAmount; i++) {
+            driver->getSatisfaction()->update(3);
+        }
     }
 }
 

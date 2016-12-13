@@ -8,8 +8,12 @@
 
 #include "EventListener.h"
 #include "../tripOperations/Driver.h"
+#include "../tripOperations/TripInfo.h"
+#include <list>
 
-class TripEndListener : EventListener{
+using namespace std;
+
+class TripEndListener : EventListener {
 private:
     Driver *driver;
     TripInfo *ti;

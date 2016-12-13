@@ -7,6 +7,7 @@
 
 
 #include <stack>
+#include <list>
 #include "../coordinates/Point.h"
 #include "Passenger.h"
 
@@ -14,28 +15,29 @@ class TripInfo {
 private:
     int rideId;
     int currentDistance;
-    Point* start;
-    Point* destination;
+    Point *start;
+    Point *destination;
     int amountOfPassengers;
-    Passenger** passengers;
+    list<Passenger *> *passengers;
     stack<CoordinatedItem *> *road;
-    int tariff;
+    double tariff;
 public:
-    TripInfo(int rideId, Point *start, Point *destination, int amountOfPassengers, Passenger **passengers, int tariff);
+    TripInfo(int rideId, Point *start, Point *destination, int amountOfPassengers,
+             list<Passenger *> *passengers, double tariff);
 
-    bool checkEnd(Point* location);
+    bool checkEnd(Point *location);
 
-    stack<CoordinatedItem *> * getRoad();
+    stack<CoordinatedItem *> *getRoad();
 
+    int getAmountOfPassengers() const;
 
+    list<Passenger *> *getPassengers() const;
 
     bool operator==(const TripInfo &ti) const;
 
     bool operator!=(const TripInfo &ti) const;
 
-    int getAmountOfPassengers() const;
 };
-
 
 #endif //EX1_TRIPINFO_H
 
