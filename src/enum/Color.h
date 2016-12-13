@@ -6,7 +6,9 @@
 #define EX1_COLOR_H
 
 
-enum class Color {RED,BLUE,GREEN,PINK,WHITE};
+enum class Color {
+    RED, BLUE, GREEN, PINK, WHITE, UNDEFINED
+};
 
 
 #endif //EX1_COLOR_H

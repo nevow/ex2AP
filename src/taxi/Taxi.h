@@ -20,23 +20,45 @@ private:
     int id;
     Node *location;
 public:
-    bool operator==(const Taxi &rhs) const {
-        return id == rhs.id;
-    }
-
-    bool operator!=(const Taxi &rhs) const {
-        return !(rhs == *this);
-    }
-
-public:
-    Taxi(int tariff, const Color &color, const CarManufacture &firm, int kmPassed, int id, Node *location) : tariff(
-            tariff), color(color), firm(firm), kmPassed(kmPassed), id(id), location(location) {}
+    /**
+     *
+     * @param tariff of the taxi
+     * @param color of the taxi
+     * @param firm of the taxi
+     * @param id of the taxi
+     * @param location of the taxi
+     */
+    Taxi(int tariff, const Color &color, const CarManufacture &firm, int id) : tariff(
+            tariff), color(color), firm(firm), kmPassed(0), id(id), location(new Node(new Point(0, 0))) {}
 
     virtual void move(stack<CoordinatedItem *> *road) = 0;
 
     Node *getLocation() const {
         return location;
     }
+
+    void applyToPoint(Point *p) {
+        location->setP(p);
+    }
+
+    /**
+     *
+     * @param otherTaxi to compare this taxi to
+     * @return true if the taxi are the same
+     */
+    bool operator==(const Taxi &otherTaxi) const {
+        return id == otherTaxi.id;
+    }
+
+    /**
+     *
+     * @param otherTaxi to compare this taxi to
+     * @return false if the taxi are the same
+     */
+    bool operator!=(const Taxi &otherTaxi) const {
+        return !(otherTaxi == *this);
+    }
+
 };
 
 

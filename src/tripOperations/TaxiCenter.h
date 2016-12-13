@@ -52,7 +52,7 @@ public:
 
     list<Driver *> *getAvailableDrivers() const;
 
-    void addDriver(Driver *);
+    void addDriver(Driver *d);
 
     void addTaxi(Taxi *cab);
 };

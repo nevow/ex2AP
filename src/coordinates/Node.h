@@ -29,9 +29,11 @@ public:
 
     Point *getP();
 
-    bool operator==(const Node &rhs) const;
+    bool operator==(const Node &otherNode) const;
 
     bool operator!=(const Node &rhs) const;
+
+    void setP(Point *p);
 };
 
 

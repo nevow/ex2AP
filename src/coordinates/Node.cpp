@@ -30,10 +30,28 @@ Point *Node::getP() {
     return p;
 }
 
-bool Node::operator==(const Node &rhs) const {
-    return *p == *rhs.p;
+/**
+ *
+ * @param p to set the point.
+ */
+void Node::setP(Point *p) {
+    Node::p = p;
 }
 
+/**
+ *
+ * @param otherNode
+ * @return
+ */
+bool Node::operator==(const Node &otherNode) const {
+    return *p == *otherNode.p;
+}
+
+/**
+ *
+ * @param rhs
+ * @return
+ */
 bool Node::operator!=(const Node &rhs) const {
     return !(rhs == *this);
 }
