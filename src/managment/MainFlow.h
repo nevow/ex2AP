@@ -6,8 +6,14 @@
 #define EX1_MAINFLOW_H
 
 
-class MainFlow {
+#include "SystemOperations.h"
 
+class MainFlow {
+private:
+    SystemOperations so;
+
+public:
+    void input();
 };
 
 
