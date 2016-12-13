@@ -1,5 +1,5 @@
 //
-// Created by nevo on 01/12/16.
+// LuxuryCab.
 //
 
 #ifndef EX1_LUXURYCAB_H
