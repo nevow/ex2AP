@@ -28,16 +28,31 @@ public:
      * @param id of the taxi
      * @param location of the taxi
      */
-    Taxi(int tariff, const Color &color, const CarManufacture &firm, int id) : tariff(
-            tariff), color(color), firm(firm), kmPassed(0), id(id), location(new Node(new Point(0, 0))) {}
+    Taxi(const Color &color, const CarManufacture &firm, int id) : color(color), firm(firm),
+                                                                   kmPassed(0), id(id),
+                                                                   location(new Node(
+                                                                           new Point(0, 0))) {}
 
     virtual void move(stack<CoordinatedItem *> *road) = 0;
 
+    /**
+     *
+     * @return the location of the taxi
+     */
     Node *getLocation() const {
         return location;
     }
 
+    /**
+     *
+     * @return the id of the Taxi.
+     */
+    int getId() const {
+        return id;
+    }
+
     void applyToPoint(Point *p) {
+        delete (location->getP());
         location->setP(p);
     }
 

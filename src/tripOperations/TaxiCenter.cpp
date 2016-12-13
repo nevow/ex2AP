@@ -25,11 +25,24 @@ Driver *TaxiCenter::getAvailableDriver(TripInfo *ti) {
     return d;
 }
 
+/**
+ *
+ * @param d is the driver to assign the taxi too and to send on his way.
+ */
 void TaxiCenter::sendTaxi(Driver *d) {
-    int cab_id = d->getVehicle_id();
-    d->setCab(cabs->front());
+    int cabId = d->getVehicle_id();
+    // iterate over all the cabs, search for the right id.
+    for (Taxi *t : *cabs) {
+        if (t->getId() == cabId) {
+            d->setCab(t);
+            return;
+        }
+    }
 }
 
+/**
+ * iterate over all the drivers and tell them to move.
+ */
 void TaxiCenter::moveAll() {
     for (Driver *d : *employees) {
         d->moveOneStep();

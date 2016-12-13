@@ -1,5 +1,5 @@
 //
-// CarManufatureFactory.
+// CarManufactureFactory.
 // factory of carManufacture.
 //
 
@@ -8,7 +8,7 @@
 
 #include "CarManufacture.h"
 
-class CarManufatureFactory {
+class CarManufactureFactory {
 public:
     /**
      *
