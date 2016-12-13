@@ -32,6 +32,8 @@ public:
 
     void addTaxi(Taxi *cab);
 
+    void addTI(TripInfo *tripInfo);
+
     Map *getMap() const;
 
     void moveAll();

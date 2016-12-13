@@ -16,6 +16,10 @@ void SystemOperations::addTaxi(Taxi *cab) {
 
 }
 
+void SystemOperations::addTI(TripInfo *tripInfo) {
+
+}
+
 Map *SystemOperations::getMap() const {
     return map;
 }

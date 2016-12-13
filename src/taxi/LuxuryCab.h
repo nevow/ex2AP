@@ -10,7 +10,7 @@
 
 class LuxuryCab : public Taxi {
 public:
-    LuxuryCab(const Color &color, const CarManufacture &firm, int id);
+    LuxuryCab(int tariff, const Color &color, const CarManufacture &firm, int kmPassed, int id, Node *location);
 
     void move(stack<CoordinatedItem *> *road);
 
