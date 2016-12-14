@@ -21,3 +21,11 @@ void Cab::move(stack<CoordinatedItem *> *road) {
         applyToPoint(p);
     }
 }
+
+/**
+ *
+ * @param t is the tariff of the taxi
+ */
+void Cab::setTariff(int t) {
+    Taxi::setTariff(t);
+}

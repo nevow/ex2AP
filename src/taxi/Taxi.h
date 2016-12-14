@@ -51,6 +51,11 @@ public:
         return id;
     }
 
+    virtual void setTariff(int t) {
+        tariff = t;
+    };
+
+
     void applyToPoint(Point *p) {
         delete (location->getP());
         location->setP(p);

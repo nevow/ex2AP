@@ -25,3 +25,11 @@ void LuxuryCab::move(stack<CoordinatedItem *> *road) {
         applyToPoint(p);
     }
 }
+
+/**
+ *
+ * @param t is the tariff of the taxi
+ */
+void LuxuryCab::setTariff(int t) {
+    Taxi::setTariff(t * 2);
+}

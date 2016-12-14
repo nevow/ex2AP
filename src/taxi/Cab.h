@@ -14,6 +14,8 @@ public:
 
     void move(stack<CoordinatedItem *> *road);
 
+    void setTariff(int t);
+
 };
 
 
