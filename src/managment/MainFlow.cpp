@@ -19,9 +19,9 @@ void MainFlow::initialize() {
 
     int rows, columns, obstacleNum;
     char trash;
+    Point *obs;
 
     std::list<Node *> *obstacles = new list<Node *>;
-    Point obs;
 
     // get the map's size and create it
     cin >> rows >> trash >> columns;
@@ -32,9 +32,9 @@ void MainFlow::initialize() {
     cin.ignore();
 
     for (; obstacleNum > 0; obstacleNum--) {
-        cin >> obs;
+        cin >> *obs;
         cin.ignore();
-        obstacles->push_front(new Node(&obs));
+        obstacles->push_front(new Node(obs));
     }
 
     so = new SystemOperations(map, obstacles);
@@ -62,10 +62,12 @@ void MainFlow::input() {
                     >> vehicleId;
                 cin.ignore();
 
-                Driver driver(id, age, MartialStatuesFactory::getMartialStatus(status), experience,
-                              vehicleId);
+                Driver *driver = new Driver(id, age,
+                                            MartialStatuesFactory::getMartialStatus(status),
+                                            experience,
+                                            vehicleId);
 
-                so->addDriver(&driver);
+                so->addDriver(driver);
 
                 break;
             }
@@ -80,9 +82,9 @@ void MainFlow::input() {
                 Point start(x_start, y_start);
                 Point end(x_end, y_end);
 
-                TripInfo tripInfo(id, &start, &end, num_passengers, NULL, tariff);
+                TripInfo *tripInfo = new TripInfo(id, &start, &end, num_passengers, NULL, tariff);
 
-                so->addTI(&tripInfo);
+                so->addTI(tripInfo);
                 break;
             }
 
@@ -94,16 +96,17 @@ void MainFlow::input() {
                 cin.ignore();
 
                 if (taxi_type == 1) {
-                    Cab taxi(ColorFactory::colorFromCharFactory(color),
-                             CarManufactureFactory::carManufactureFromCharFactory(manufacturer),
-                             id);
-                    so->addTaxi(&taxi);
+                    Cab *taxi = new Cab(ColorFactory::colorFromCharFactory(color),
+                                        CarManufactureFactory::carManufactureFromCharFactory(
+                                                manufacturer),
+                                        id);
+                    so->addTaxi(taxi);
 
                 } else if (taxi_type == 2) {
-                    LuxuryCab taxi(ColorFactory::colorFromCharFactory(color),
-                                   CarManufactureFactory::carManufactureFromCharFactory(
-                                           manufacturer), id);
-                    so->addTaxi(&taxi);
+                    LuxuryCab *taxi = new LuxuryCab(ColorFactory::colorFromCharFactory(color),
+                                                    CarManufactureFactory::carManufactureFromCharFactory(
+                                                            manufacturer), id);
+                    so->addTaxi(taxi);
                 }
                 break;
             }
