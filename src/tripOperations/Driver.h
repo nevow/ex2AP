@@ -29,27 +29,27 @@ public:
 
     int getAge() const;
 
-    void setAge(int age);
+    int getExperience() const;
+
+    TripInfo *getTi() const;
+
+    int getVehicle_id() const;
+
+    Taxi *getCab() const;
+
+    Satisfaction *getSatisfaction() const;
 
     const MartialStatues &getStatus() const;
 
     void setStatus(const MartialStatues &status);
 
-    int getExperience() const;
-
     void setExperience(int experience);
-
-    TripInfo *getTi() const;
 
     void setTi(TripInfo *ti);
 
-    Satisfaction *getSatisfaction() const;
+    void setCab(Taxi *cab);
 
     void updateSatisfaction(int grade);
-
-    Taxi *getCab() const;
-
-    void setCab(Taxi *cab);
 
     void moveOneStep();
 
@@ -57,7 +57,6 @@ public:
 
     bool operator!=(const Driver &otherDriver) const;
 
-    int getVehicle_id() const;
 };
 
 

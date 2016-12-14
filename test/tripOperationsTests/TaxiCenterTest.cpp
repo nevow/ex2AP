@@ -60,7 +60,7 @@ TEST_F(TaxiCenterTest, answerCall) {
 TEST_F(TaxiCenterTest, getAvailableDriver) {
     tc->addDriver(d);
     d->setTi(ti);
-    ASSERT_TRUE(d == tc->getAvailableDriver(ti)) << "available Driver is not the driver in the TaxiCenter";
+    ASSERT_TRUE(d == tc->setDriverToTi(ti)) << "available Driver is not the driver in the TaxiCenter";
 }
 
 /**

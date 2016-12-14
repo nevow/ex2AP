@@ -34,14 +34,6 @@ int Driver::getAge() const {
 
 /**
  *
- * @param age of the driver to set
- */
-void Driver::setAge(int age) {
-    Driver::age = age;
-}
-
-/**
- *
  * @return the martial status of the driver
  */
 const MartialStatues &Driver::getStatus() const {

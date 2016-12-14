@@ -45,9 +45,9 @@ public:
 
     TripInfo *answerCall(Passenger *p);
 
-    Driver *getAvailableDriver(TripInfo *ti);
+    void setDriverToTi(TripInfo *ti);
 
-    void sendTaxi(Driver *d);
+//    void sendTaxi(Driver *d);
 
     void moveAll();
 
@@ -60,6 +60,8 @@ public:
     void addTI(TripInfo *ti);
 
     Point *getDriverLocation(int id);
+
+    Taxi *getTaxiByID(int id);
 };
 
 

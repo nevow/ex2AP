@@ -73,7 +73,6 @@ void MainFlow::input() {
             }
             case 2: {
 
-
                 cin >> id >> trash >> x_start >> trash >> y_start >> trash >> x_end >> trash
                     >> y_end >> trash >> num_passengers >> trash >> tariff;
                 cin.ignore();
