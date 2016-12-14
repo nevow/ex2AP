@@ -96,14 +96,14 @@ void MainFlow::input() {
 
                 if (taxi_type == 1) {
                     Cab *taxi = new Cab(ColorFactory::colorFromCharFactory(color),
-                                        CarManufactureFactory::carManufactureFromCharFactory(
+                                        CarManufactureFactory::carManufactureFactory(
                                                 manufacturer),
                                         id);
                     so->addTaxi(taxi);
 
                 } else if (taxi_type == 2) {
                     LuxuryCab *taxi = new LuxuryCab(ColorFactory::colorFromCharFactory(color),
-                                                    CarManufactureFactory::carManufactureFromCharFactory(
+                                                    CarManufactureFactory::carManufactureFactory(
                                                             manufacturer), id);
                     so->addTaxi(taxi);
                 }
