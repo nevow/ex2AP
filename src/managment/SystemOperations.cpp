@@ -6,8 +6,9 @@
 
 
 void SystemOperations::addObstacle(Node *obstacle) {
-
+    obstacles->push_back(obstacle);
 }
+
 
 void SystemOperations::addDriver(Driver *d) {
     tc->addDriver(d);

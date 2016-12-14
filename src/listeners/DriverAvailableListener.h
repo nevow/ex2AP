@@ -10,7 +10,7 @@
 #include "../tripOperations/Driver.h"
 #include "../tripOperations/TaxiCenter.h"
 
-class DriverAvailableListener : EventListener{
+class DriverAvailableListener : public EventListener {
 private:
     Driver *driver;
     TaxiCenter *tc;

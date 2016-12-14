@@ -1,4 +1,4 @@
-# Install script for directory: /home/nevo/ClionProjects/ex2AP/lib/googletest-master
+# Install script for directory: /home/maayan/ClionProjects/ex3AP/lib/googletest-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+  include("/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
 
 endif()
 

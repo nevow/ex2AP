@@ -13,7 +13,7 @@
 
 using namespace std;
 
-class TripEndListener : EventListener {
+class TripEndListener : public EventListener {
 private:
     Driver *driver;
     TripInfo *ti;

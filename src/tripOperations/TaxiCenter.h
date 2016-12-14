@@ -21,6 +21,7 @@ private:
     list<Taxi *> *cabs;
     list<TripInfo *> *trips;
     list<Driver *> *availableDrivers;
+    list<EventListener *> *listeners;
 public:
     TaxiCenter(list<Driver *> *employees, list<Node *> *locations, list<Taxi *> *cabs,
                list<TripInfo *> *trips)
@@ -33,6 +34,7 @@ public:
         cabs = new list<Taxi *>;
         trips = new list<TripInfo *>;
         availableDrivers = new list<Driver *>;
+        listeners = new list<EventListener *>;
     }
 
     ~TaxiCenter() {
@@ -42,6 +44,8 @@ public:
         delete (trips);
         delete (availableDrivers);
     }
+
+    void addListener(EventListener *l);
 
     TripInfo *answerCall(Passenger *p);
 

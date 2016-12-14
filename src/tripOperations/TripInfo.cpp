@@ -3,6 +3,7 @@
 //
 
 #include "TripInfo.h"
+#include "../coordinates/Node.h"
 
 /**
  *
@@ -28,6 +29,8 @@ TripInfo::TripInfo(int rideId, Point *start, Point *destination, int amountOfPas
         rideId(rideId), start(start), destination(destination),
         amountOfPassengers(amountOfPassengers), passengers(passengers), tariff(tariff) {
     currentDistance = 0;
+    road = new stack<CoordinatedItem *>();
+    road->push(new Node(destination));
 }
 
 /**

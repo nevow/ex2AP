@@ -49,7 +49,7 @@ void Point::deleteCoords(int **coords) {
  * @return the output after the insertion of p
  */
 ostream &operator<<(ostream &output, const Point &p) {
-    output << "(" << p.x << " ," << p.y << ")" << endl;
+    output << "(" << p.x << "," << p.y << ")" << endl;
     return output;
 }
 

@@ -40,18 +40,17 @@ void MainFlow::initialize() {
     so = new SystemOperations(map, obstacles);
 }
 
-
+/**
+ * get inputs from user
+ */
 void MainFlow::input() {
-
     int choice;
     int id, age, experience, vehicleId, taxi_type;
     int x_start, y_start, x_end, y_end, num_passengers;
     double tariff;
     char trash, status, manufacturer, color;
 
-
     do {
-
         cin >> choice;
         cin.ignore();
         switch (choice) {
@@ -64,9 +63,7 @@ void MainFlow::input() {
 
                 Driver *driver = new Driver(id, age,
                                             MartialStatuesFactory::getMartialStatus(status),
-                                            experience,
-                                            vehicleId);
-
+                                            experience, vehicleId);
                 so->addDriver(driver);
 
                 break;
@@ -96,9 +93,7 @@ void MainFlow::input() {
 
                 if (taxi_type == 1) {
                     Cab *taxi = new Cab(ColorFactory::charToColor(color),
-                                        CarManufactureFactory::charToFirm(
-                                                manufacturer),
-                                        id);
+                                        CarManufactureFactory::charToFirm(manufacturer), id);
                     so->addTaxi(taxi);
 
                 } else if (taxi_type == 2) {
@@ -114,7 +109,8 @@ void MainFlow::input() {
                 cin.ignore();
 
                 Point *location = so->getDriverLocation(id);
-                cout << location;
+
+                cout << *location;
                 break;
             }
             case 6: {
@@ -133,7 +129,23 @@ void MainFlow::input() {
 
 }
 
-
+/*
+3,3
+0
+3
+0,1,H,G
+1
+0,30,M,1,0
+2
+0,0,0,0,2,1,20
+6
+4
+0
+6
+4
+0
+6
+ */
 
 /*
 1 - insert a driver in the following format:

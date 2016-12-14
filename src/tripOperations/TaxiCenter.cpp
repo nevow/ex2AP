@@ -3,10 +3,17 @@
 //
 
 #include "TaxiCenter.h"
+#include "../listeners/DriverAvailableListener.h"
 
 TripInfo *TaxiCenter::answerCall(Passenger *p) {
     return NULL;
 }
+
+
+void TaxiCenter::addListener(EventListener *l) {
+    listeners->push_back(l);
+}
+
 
 /**
  * @param ti trip info to assign to the driver.
@@ -40,13 +47,16 @@ void TaxiCenter::sendTaxi(Driver *d) {
  * iterate over all the drivers and tell them to move.
  */
 void TaxiCenter::moveAll() {
-    while (!locations->empty()) {
+    /*while (!locations->empty()) {
         delete (locations->front());
         locations->pop_front();
-    }
+    }*/
     for (Driver *d : *employees) {
         d->moveOneStep();
-        locations->push_front(d->getCab()->getLocation());
+        //locations->push_back(d->getCab()->getLocation());
+    }
+    for (EventListener *e : *listeners) {
+        e->notify();
     }
 }
 
@@ -63,7 +73,8 @@ list<Driver *> *TaxiCenter::getAvailableDrivers() const {
 void TaxiCenter::addDriver(Driver *d) {
     d->setCab(getTaxiByID(d->getId()));
     employees->push_back(d);
-
+    availableDrivers->push_back(d);
+    listeners->push_back(new DriverAvailableListener(d, this));
 }
 
 /**
