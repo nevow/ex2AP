@@ -49,7 +49,7 @@ protected:
  * checks if set the driver satisfaction correctly.
  */
 TEST_F(tripEndListenerTest, notify) {
-    tc->sendTaxi(d);
+//    tc->sendTaxi(d);
     d->moveOneStep();
     ASSERT_TRUE(d->getSatisfaction()->getAverage() == 0);
     tel->notify();
