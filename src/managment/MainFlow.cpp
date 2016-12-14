@@ -79,10 +79,10 @@ void MainFlow::input() {
                 cin.ignore();
 
 
-                Point start(x_start, y_start);
-                Point end(x_end, y_end);
+                Point *start = new Point(x_start, y_start);
+                Point *end = new Point(x_end, y_end);
 
-                TripInfo *tripInfo = new TripInfo(id, &start, &end, num_passengers, NULL, tariff);
+                TripInfo *tripInfo = new TripInfo(id, start, end, num_passengers, NULL, tariff);
 
                 so->addTI(tripInfo);
                 break;

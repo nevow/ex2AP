@@ -9,7 +9,6 @@ TripInfo *TaxiCenter::answerCall(Passenger *p) {
 }
 
 /**
- *
  * @param ti trip info to assign to the driver.
  * @return the driver after the set of the trip info.
  */
@@ -26,7 +25,6 @@ Driver *TaxiCenter::getAvailableDriver(TripInfo *ti) {
 }
 
 /**
- *
  * @param d is the driver to assign the taxi too and to send on his way.
  */
 void TaxiCenter::sendTaxi(Driver *d) {
@@ -55,7 +53,6 @@ void TaxiCenter::moveAll() {
 }
 
 /**
- *
  * @return get the available drivers list.
  */
 list<Driver *> *TaxiCenter::getAvailableDrivers() const {
@@ -63,7 +60,6 @@ list<Driver *> *TaxiCenter::getAvailableDrivers() const {
 }
 
 /**
- *
  * @param d driver to add to the employees list.
  */
 void TaxiCenter::addDriver(Driver *d) {
@@ -71,7 +67,6 @@ void TaxiCenter::addDriver(Driver *d) {
 }
 
 /**
- *
  * @param cab to add to the cabs list.
  */
 void TaxiCenter::addTaxi(Taxi *cab) {
