@@ -15,7 +15,7 @@ public:
      * @param letter to create CarManufacture from
      * @return the CarManufacture of the letter
      */
-    static CarManufacture carManufactureFactory(char letter) {
+    static CarManufacture charToFirm(char letter) {
         switch (letter) {
             case 'H':
                 return CarManufacture::HONDA;

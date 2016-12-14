@@ -15,7 +15,7 @@ public:
      * @param letter to create Color from
      * @return the Color of the letter
      */
-    static Color colorFromCharFactory(char letter) {
+    static Color charToColor(char letter) {
         switch (letter) {
             case 'R':
                 return Color::RED;

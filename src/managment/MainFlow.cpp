@@ -95,15 +95,15 @@ void MainFlow::input() {
                 cin.ignore();
 
                 if (taxi_type == 1) {
-                    Cab *taxi = new Cab(ColorFactory::colorFromCharFactory(color),
-                                        CarManufactureFactory::carManufactureFactory(
+                    Cab *taxi = new Cab(ColorFactory::charToColor(color),
+                                        CarManufactureFactory::charToFirm(
                                                 manufacturer),
                                         id);
                     so->addTaxi(taxi);
 
                 } else if (taxi_type == 2) {
-                    LuxuryCab *taxi = new LuxuryCab(ColorFactory::colorFromCharFactory(color),
-                                                    CarManufactureFactory::carManufactureFactory(
+                    LuxuryCab *taxi = new LuxuryCab(ColorFactory::charToColor(color),
+                                                    CarManufactureFactory::charToFirm(
                                                             manufacturer), id);
                     so->addTaxi(taxi);
                 }
