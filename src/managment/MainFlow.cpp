@@ -26,10 +26,14 @@ void MainFlow::initialize() {
     // get the map's size and create it
     cin >> rows >> trash >> columns;
     Map *map = new Map(rows, columns);
+    cin.ignore();
 
     cin >> obstacleNum;
+    cin.ignore();
+
     for (; obstacleNum > 0; obstacleNum--) {
         cin >> obs;
+        cin.ignore();
         obstacles->push_front(new Node(&obs));
     }
 
@@ -49,13 +53,14 @@ void MainFlow::input() {
     do {
 
         cin >> choice;
-
+        cin.ignore();
         switch (choice) {
 
             case 1: {
 //********************** להוסיף getCab
                 cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash
                     >> vehicleId;
+                cin.ignore();
 
                 Driver driver(id, age, MartialStatuesFactory::getMartialStatus(status), experience,
                               vehicleId);
@@ -69,6 +74,8 @@ void MainFlow::input() {
 
                 cin >> id >> trash >> x_start >> trash >> y_start >> trash >> x_end >> trash
                     >> y_end >> trash >> num_passengers >> trash >> tariff;
+                cin.ignore();
+
 
                 Point start(x_start, y_start);
                 Point end(x_end, y_end);
@@ -84,6 +91,8 @@ void MainFlow::input() {
             case 3: {
 
                 cin >> id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
+                cin.ignore();
+
                 if (taxi_type == 1) {
                     Cab taxi(ColorFactory::colorFromCharFactory(color),
                              CarManufactureFactory::carManufactureFromCharFactory(manufacturer),
@@ -100,6 +109,8 @@ void MainFlow::input() {
             }
             case 4: {
                 cin >> id;
+                cin.ignore();
+
                 Point *location = so->getDriverLocation(id);
                 cout << location;
                 break;
