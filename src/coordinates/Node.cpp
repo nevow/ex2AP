@@ -33,7 +33,7 @@ Point *Node::getP() {
  * @param p to set the point.
  */
 void Node::setP(Point *p) {
-    Node::p = p;
+    Node::p = new Point(p->getX(), p->getY());
 }
 
 /**

@@ -72,7 +72,7 @@ int Driver::getVehicle_id() const {
  *
  * @return the trip info of the driver
  */
-TripInfo *Driver::getTi() const {
+TripInfo *Driver::getTi() {
     return ti;
 }
 

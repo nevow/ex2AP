@@ -29,12 +29,12 @@ public:
      * @param location of the taxi
      */
     Taxi(const Color &color, const CarManufacture &firm, int id) : color(color), firm(firm),
-                                                                   kmPassed(0), id(id),
-                                                                   location(new Node(
-                                                                           new Point(0, 0))) {}
+                                                                   kmPassed(0), id(id) {
+        Point p(0, 0);
+        location = new Node(&p);
+    }
 
-    virtual ~Taxi() {
-        cout << "deleteing taxi";
+    ~Taxi() {
         delete (location);
     };
 

@@ -25,6 +25,23 @@ public:
     TripInfo(int rideId, Point *start, Point *destination, int amountOfPassengers,
              list<Passenger *> *passengers, double tariff);
 
+    ~TripInfo() {
+        if (passengers) {
+            while (!passengers->empty()) {
+                delete (passengers->front());
+                passengers->pop_front();
+            }
+            delete (passengers);
+        }
+        while (!road->empty()) {
+            delete (road->top());
+            road->pop();
+        }
+        delete road;
+        delete start;
+        delete destination;
+    }
+
     bool checkEnd(Point *location);
 
     stack<CoordinatedItem *> *getRoad();

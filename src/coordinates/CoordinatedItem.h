@@ -13,7 +13,9 @@ private:
     CoordinatedItem *parent;
 
 public:
-    virtual ~CoordinatedItem() {};
+    virtual ~CoordinatedItem() {
+        //delete (parent);
+    };
 
     virtual int **getCoordinates() = 0;
 

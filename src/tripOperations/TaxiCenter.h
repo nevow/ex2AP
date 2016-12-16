@@ -38,15 +38,35 @@ public:
     }
 
     ~TaxiCenter() {
+        while (!employees->empty()) {
+            delete (cabs->front());
+            employees->pop_front();
+        }
         delete (employees);
+        while (!locations->empty()) {
+            delete (locations->front());
+            locations->pop_front();
+        }
         delete (locations);
         while (!cabs->empty()) {
             delete (cabs->front());
             cabs->pop_front();
         }
         delete (cabs);
+        while (!trips->empty()) {
+            delete (trips->front());
+            trips->pop_front();
+        }
         delete (trips);
+        while (!availableDrivers->empty()) {
+            delete (availableDrivers->front());
+            availableDrivers->pop_front();
+        }
         delete (availableDrivers);
+        while (!listeners->empty()) {
+            delete (listeners->front());
+            listeners->pop_front();
+        }
         delete (listeners);
     }
 

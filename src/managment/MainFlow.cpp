@@ -93,6 +93,8 @@ void MainFlow::input() {
                     taxi = new LuxuryCab(ColorFactory::charToColor(color),
                                          CarManufactureFactory::charToFirm(
                                                  manufacturer), id);
+                } else {
+                    break;
                 }
                 so->addTaxi(taxi);
                 break;

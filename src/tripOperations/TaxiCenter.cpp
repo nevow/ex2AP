@@ -21,14 +21,12 @@ void TaxiCenter::addListener(EventListener *l) {
  * @return the driver after the set of the trip info.
  */
 void TaxiCenter::setDriverToTi(TripInfo *ti) {
-    // if there is available driver match them
-    if (!availableDrivers->empty()) {
-        // get available driver, assign him with the trip info.
-        Driver *d = availableDrivers->front();
-        availableDrivers->pop_front();
-        d->setTi(ti);
-        //addListener(new TripEndListener(d, ti));
-    }
+    // get available driver, assign him with the trip info.
+    Driver *d = availableDrivers->front();
+    availableDrivers->pop_front();
+    d->setTi(ti);
+    //addListener(new TripEndListener(d, ti));
+
 }
 
 /**
@@ -92,8 +90,12 @@ void TaxiCenter::addTaxi(Taxi *cab) {
  * @param ti to add to the trips list.
  */
 void TaxiCenter::addTI(TripInfo *ti) {
-    setDriverToTi(ti);     // get available driver, assign him with the trip info.
-    trips->push_back(ti);
+    // if there is available driver match them
+    if (!availableDrivers->empty()) {
+        setDriverToTi(ti);     // get available driver, assign him with the trip info.
+    } else {
+        trips->push_back(ti);
+    }
 }
 
 /**

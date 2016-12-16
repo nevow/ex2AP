@@ -25,13 +25,17 @@ private:
 public:
     Driver(int id, int age, const MartialStatues &status, int experience, int vehicle_id);
 
+    ~Driver() {
+        delete (satisfaction);
+    }
+
     int getId() const;
 
     int getAge() const;
 
     int getExperience() const;
 
-    TripInfo *getTi() const;
+    TripInfo *getTi();
 
     int getVehicle_id() const;
 

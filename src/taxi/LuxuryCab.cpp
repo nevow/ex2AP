@@ -16,13 +16,15 @@ void LuxuryCab::move(stack<CoordinatedItem *> *road) {
         CoordinatedItem *item = road->top();
         road->pop();
         if (!road->empty()) {
+            delete (item);
             item = road->top();
             road->pop();
         }
         int **coords = item->getCoordinates();
-        Point *p = new Point(*(coords[0]), *(coords[1]));
-        p->deleteCoords(coords);
-        applyToPoint(p);
+        delete (item);
+        Point p(*(coords[0]), *(coords[1]));
+        applyToPoint(&p);
+        p.deleteCoords(coords);
     }
 }
 

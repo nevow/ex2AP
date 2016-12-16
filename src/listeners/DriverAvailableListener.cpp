@@ -19,5 +19,6 @@ DriverAvailableListener::DriverAvailableListener(Driver *driver, TaxiCenter *tc)
 void DriverAvailableListener::notify() {
     if (driver->getTi()->checkEnd(driver->getCab()->getLocation()->getP())) {
         tc->getAvailableDrivers()->push_back(driver);
+        delete (driver->getTi());
     }
 }

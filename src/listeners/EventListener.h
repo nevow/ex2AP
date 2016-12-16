@@ -9,6 +9,8 @@
 
 class EventListener {
 public:
+    ~EventListener() {};
+
     virtual void notify() = 0;
 };
 

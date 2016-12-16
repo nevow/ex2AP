@@ -17,7 +17,7 @@ public:
     MainFlow();
 
     ~MainFlow() {
-        delete (so);
+        delete so;
     }
 
     void initialize();
