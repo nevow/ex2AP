@@ -55,7 +55,7 @@ void MainFlow::input() {
         cin >> choice;
         cin.ignore();
         switch (choice) {
-            // create new driver
+            // create new drive
             case 1: {
                 cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash
                     >> vehicleId;
