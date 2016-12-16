@@ -112,7 +112,9 @@ void Driver::setCab(Taxi *cab) {
  * make the driver move one step towards his destination.
  */
 void Driver::moveOneStep() {
-    cab->move(ti->getRoad());
+    if (ti) {
+        cab->move(ti->getRoad());
+    }
 }
 
 /**

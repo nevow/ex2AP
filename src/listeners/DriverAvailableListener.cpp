@@ -17,7 +17,11 @@ DriverAvailableListener::DriverAvailableListener(Driver *driver, TaxiCenter *tc)
  * if the driver arrived to his end point, add him to the available drivers list.
  */
 void DriverAvailableListener::notify() {
-    if (driver->getTi()->checkEnd(driver->getCab()->getLocation()->getP())) {
+    TripInfo *ti = driver->getTi();
+    if (!ti) {
+        return;
+    }
+    if (ti->checkEnd(driver->getCab()->getLocation()->getP())) {
         std::list<Driver *> *drivers = tc->getEmployees();
         for (std::list<Driver *>::const_iterator iterator = drivers->begin(), end = drivers->end();
              iterator != end; ++iterator) {
@@ -27,6 +31,7 @@ void DriverAvailableListener::notify() {
             }
         }
         tc->getAvailableDrivers()->push_back(driver);
-        delete (driver->getTi());
+        delete (ti);
+        driver->setTi(NULL);
     }
 }

@@ -27,6 +27,9 @@ public:
 
     ~Driver() {
         delete (satisfaction);
+        if (ti) {
+            delete (ti);
+        }
     }
 
     int getId() const;
