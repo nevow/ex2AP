@@ -1,6 +1,6 @@
 //
 // BFS.
-// has a static method that run the algorithm.
+// has three static methods that use the algorithm and can print the road.
 //
 
 #ifndef EX1_BFS_H

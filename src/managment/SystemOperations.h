@@ -22,18 +22,19 @@ private:
     Map *map;
 
 public:
-    SystemOperations(Map *map1, list<Node *> *obs) {
-        map = map1;
-        obstacles = obs;
-        tc = new TaxiCenter();
-    }
+    SystemOperations(Map *map1, list<Node *> *obs);
 
     ~SystemOperations() {
         delete (map);
         delete (tc);
-        //obstacles->clear();
+        while (!obstacles->empty()) {
+            delete (obstacles->front());
+            obstacles->pop_front();
+        }
         delete (obstacles);
     }
+
+    Map *getMap() const;
 
     void addObstacle(Node *obstacle);
 
@@ -42,8 +43,6 @@ public:
     void addTaxi(Taxi *cab);
 
     void addTI(TripInfo *tripInfo);
-
-    Map *getMap() const;
 
     Point *getDriverLocation(int id);
 
