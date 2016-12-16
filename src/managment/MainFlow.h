@@ -1,5 +1,5 @@
 //
-// Created by nevo on 01/12/16.
+// MainFlow.
 //
 
 #ifndef EX1_MAINFLOW_H
@@ -19,8 +19,6 @@ public:
     ~MainFlow() {
         delete so;
     }
-
-    void initialize();
 
     void input();
 };

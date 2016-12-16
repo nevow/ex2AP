@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/nevo/prog/clion/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/maayan/Downloads/clion/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/nevo/prog/clion/bin/cmake/bin/cmake -E remove -f
+RM = /home/maayan/Downloads/clion/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nevo/ClionProjects/ex2AP
+CMAKE_SOURCE_DIR = /home/maayan/ClionProjects/ex3AP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nevo/ClionProjects/ex2AP/cmake-build-debug
+CMAKE_BINARY_DIR = /home/maayan/ClionProjects/ex3AP/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/nevo/ClionProjects/ex2AP/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -91,19 +91,19 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
@@ -114,7 +114,7 @@ install/local/fast: install/local
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
@@ -124,9 +124,9 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -840,6 +840,33 @@ test/managmentTests/BFSTest.cpp.s:
 	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.s
 .PHONY : test/managmentTests/BFSTest.cpp.s
 
+test/managmentTests/MainFlowTest.o: test/managmentTests/MainFlowTest.cpp.o
+
+.PHONY : test/managmentTests/MainFlowTest.o
+
+# target to build an object file
+test/managmentTests/MainFlowTest.cpp.o:
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.o
+.PHONY : test/managmentTests/MainFlowTest.cpp.o
+
+test/managmentTests/MainFlowTest.i: test/managmentTests/MainFlowTest.cpp.i
+
+.PHONY : test/managmentTests/MainFlowTest.i
+
+# target to preprocess a source file
+test/managmentTests/MainFlowTest.cpp.i:
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.i
+.PHONY : test/managmentTests/MainFlowTest.cpp.i
+
+test/managmentTests/MainFlowTest.s: test/managmentTests/MainFlowTest.cpp.s
+
+.PHONY : test/managmentTests/MainFlowTest.s
+
+# target to generate assembly for a file
+test/managmentTests/MainFlowTest.cpp.s:
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.s
+.PHONY : test/managmentTests/MainFlowTest.cpp.s
+
 test/managmentTests/SystemOperationsTest.o: test/managmentTests/SystemOperationsTest.cpp.o
 
 .PHONY : test/managmentTests/SystemOperationsTest.o
@@ -1142,6 +1169,9 @@ help:
 	@echo "... test/managmentTests/BFSTest.o"
 	@echo "... test/managmentTests/BFSTest.i"
 	@echo "... test/managmentTests/BFSTest.s"
+	@echo "... test/managmentTests/MainFlowTest.o"
+	@echo "... test/managmentTests/MainFlowTest.i"
+	@echo "... test/managmentTests/MainFlowTest.s"
 	@echo "... test/managmentTests/SystemOperationsTest.o"
 	@echo "... test/managmentTests/SystemOperationsTest.i"
 	@echo "... test/managmentTests/SystemOperationsTest.s"

@@ -1,7 +1,6 @@
 //
-// Created by nevo on 01/12/16.
+// MainFlow.
 //
-
 
 #include "MainFlow.h"
 
@@ -11,17 +10,15 @@
 #include "../enum/CarManufactureFactory.h"
 #include "../taxi/LuxuryCab.h"
 
-
 using namespace std;
 
-MainFlow::MainFlow() {
-
-}
-
-void MainFlow::initialize() {
+/**
+ * constructor.
+ * initialize the environment, get map, obstacles and create a SystemOperations.
+ */
+void MainFlow::MainFlow() {
 
     int rows, columns, obstacleNum;
-
     std::list<Node *> *obstacles = new list<Node *>;
 
     // get the map's size and create it
@@ -32,6 +29,7 @@ void MainFlow::initialize() {
     cin >> obstacleNum;
     cin.ignore();
 
+    // make the obstacles List from the input
     for (; obstacleNum > 0; obstacleNum--) {
         Point obs(0, 0);
         cin >> obs;
@@ -44,7 +42,7 @@ void MainFlow::initialize() {
 }
 
 /**
- * get inputs from user
+ * get inputs from user and follow the commands.
  */
 void MainFlow::input() {
     int choice;
@@ -57,8 +55,8 @@ void MainFlow::input() {
         cin >> choice;
         cin.ignore();
         switch (choice) {
+            // create new driver
             case 1: {
-//********************** להוסיף getCab
                 cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash
                     >> vehicleId;
                 cin.ignore();
@@ -69,6 +67,7 @@ void MainFlow::input() {
                 so->addDriver(driver);
                 break;
             }
+                // create new TripInfo
             case 2: {
                 cin >> id >> trash >> x_start >> trash >> y_start >> trash >> x_end >> trash
                     >> y_end >> trash >> num_passengers >> trash >> tariff;
@@ -79,17 +78,19 @@ void MainFlow::input() {
                 so->addTI(tripInfo);
                 break;
             }
-
-                //************************* לדאוג שמישהו יהיה אחראי לשנות את התעריף ***************
-
+                // create new Taxi
             case 3: {
                 cin >> id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
                 cin.ignore();
                 Taxi *taxi;
-                if (taxi_type == 1) {
+
+                if (taxi_type == 1)                      // create regular cab
+                {
                     taxi = new Cab(ColorFactory::charToColor(color),
                                    CarManufactureFactory::charToFirm(manufacturer), id);
-                } else if (taxi_type == 2) {
+
+                } else if (taxi_type == 2)               // create LuxuryCab cab
+                {
                     taxi = new LuxuryCab(ColorFactory::charToColor(color),
                                          CarManufactureFactory::charToFirm(
                                                  manufacturer), id);
@@ -99,6 +100,7 @@ void MainFlow::input() {
                 so->addTaxi(taxi);
                 break;
             }
+                // request for a driver location by his id
             case 4: {
                 cin >> id;
                 cin.ignore();
@@ -108,20 +110,18 @@ void MainFlow::input() {
                 cout << *location;
                 break;
             }
+                // start driving - getting all drivers to their end point
             case 6: {
                 so->moveAll();
                 break;
             }
+                // every other case - don't do anything.
             default: {
                 break;
             }
         }
 
-    } while (choice != 7);
-
-    //**************************לחזור למחוק הכל ****************
-
-
+    } while (choice != 7);     // exit condition
 }
 
 /*
@@ -140,18 +140,4 @@ void MainFlow::input() {
 4
 0
 6
- */
-
-/*
-1 - insert a driver in the following format:
-        (id,age,status,experience,vehicleId) - (int,int,char:{S,M,D,W},int,int)
-2 - insert a new ride:
-        (id,x_start,y_start,x_end,y_end,num_passengers,tari ) - (int,int,int,int,int,int,double)
-3 - insert a vehicle:
-        (id,taxi_type,manufacturer,color) - (int,{1: Normal Cab,2: Luxury Cab},char:{H,S,T,F},char:{R,B,G,P,W})
-4 - request for a driver location:
-        (driver_id)
-out: driver location in the format: '(x,y)'
-• 6 - start driving (no input afterwards. Meaning getting all drivers to their end point)
-• 7 - exit (cleaning up the program and exiting)
  */

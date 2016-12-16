@@ -24,7 +24,7 @@ set(SOURCE_FILES src/main.cpp test/coordinatesTests/MapTest.cpp test/coordinates
         test/tripOperationsTests/TaxiCenterTest.cpp test/tripOperationsTests/TripInfoTest.cpp
         test/taxiTests/CabTest.cpp test/taxiTests/LuxuryCabTest.cpp
         test/managmentTests/SystemOperationsTest.cpp test/managmentTests/BFSTest.cpp
-        src/enum/MartialStatuesFactory.h src/enum/ColorFactory.h src/enum/CarManufactureFactory.h)
+        src/enum/MartialStatuesFactory.h src/enum/ColorFactory.h src/enum/CarManufactureFactory.h test/managmentTests/MainFlowTest.cpp)
 add_executable(ex2AP ${SOURCE_FILES} src/coordinates/Map.cpp src/coordinates/Map.h src/coordinates/Node.cpp src/coordinates/Node.h)
 
 add_subdirectory(lib/googletest-master)
