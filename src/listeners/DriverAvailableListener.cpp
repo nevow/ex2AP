@@ -18,6 +18,14 @@ DriverAvailableListener::DriverAvailableListener(Driver *driver, TaxiCenter *tc)
  */
 void DriverAvailableListener::notify() {
     if (driver->getTi()->checkEnd(driver->getCab()->getLocation()->getP())) {
+        std::list<Driver *> *drivers = tc->getEmployees();
+        for (std::list<Driver *>::const_iterator iterator = drivers->begin(), end = drivers->end();
+             iterator != end; ++iterator) {
+            if ((*iterator)->getId() == driver->getId()) {
+                drivers->erase(iterator);
+                break;
+            }
+        }
         tc->getAvailableDrivers()->push_back(driver);
         delete (driver->getTi());
     }

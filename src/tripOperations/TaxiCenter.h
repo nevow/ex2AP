@@ -80,6 +80,8 @@ public:
 
     void moveAll();
 
+    list<Driver *> *getEmployees() const;
+
     list<Driver *> *getAvailableDrivers() const;
 
     void addDriver(Driver *d);
@@ -91,6 +93,7 @@ public:
     Point *getDriverLocation(int id);
 
     Taxi *getTaxiByID(int id);
+
 };
 
 

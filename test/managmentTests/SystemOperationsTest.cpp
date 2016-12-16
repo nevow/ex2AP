@@ -88,7 +88,7 @@ TEST_F(SystemOperationsTest, getDriverLocation) {
     tc->addDriver(d);
     tc->addDriver(d1);
 
-    ASSERT_EQ (so->getDriverLocation(305), cab->getLocation());
+    ASSERT_EQ (*(so->getDriverLocation(305)), *(cab->getLocation()->getP()));
 }
 
 /**

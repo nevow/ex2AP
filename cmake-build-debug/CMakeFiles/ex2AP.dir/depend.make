@@ -416,7 +416,6 @@ CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o: ../src/enum
 CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o: ../src/enum/Color.h
 CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o: ../src/enum/MartialStatues.h
 CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o: ../src/listeners/EventListener.h
-CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o: ../src/managment/BFS.h
 CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o: ../src/managment/SystemOperations.h
 CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o: ../src/taxi/Cab.h
 CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o: ../src/taxi/Taxi.h

@@ -25,6 +25,7 @@ void TaxiCenter::setDriverToTi(TripInfo *ti) {
     Driver *d = availableDrivers->front();
     availableDrivers->pop_front();
     d->setTi(ti);
+    employees->push_back(d);
     //addListener(new TripEndListener(d, ti));
 
 }
@@ -70,11 +71,19 @@ list<Driver *> *TaxiCenter::getAvailableDrivers() const {
 }
 
 /**
+ *
+ * @return the working drivers list.
+ */
+list<Driver *> *TaxiCenter::getEmployees() const {
+    return employees;
+}
+
+/**
  * @param d driver to add to the employees list.
  */
 void TaxiCenter::addDriver(Driver *d) {
     d->setCab(getTaxiByID(d->getId()));
-    employees->push_back(d);
+    //employees->push_back(d);
     availableDrivers->push_back(d);
     addListener(new DriverAvailableListener(d, this));
 }
@@ -104,11 +113,20 @@ void TaxiCenter::addTI(TripInfo *ti) {
  * @return the location of the driver with the id
  */
 Point *TaxiCenter::getDriverLocation(int id) {
-
-    for (std::list<Driver *>::const_iterator iterator = employees->begin(), end = employees->end();
-         iterator != end; ++iterator) {
-        if ((*iterator)->getId() == id) {
-            return (*iterator)->getCab()->getLocation()->getP();
+    if (!employees->empty()) {
+        for (std::list<Driver *>::const_iterator iterator = employees->begin(), end = employees->end();
+             iterator != end; ++iterator) {
+            if ((*iterator)->getId() == id) {
+                return (*iterator)->getCab()->getLocation()->getP();
+            }
+        }
+    }
+    if (!availableDrivers->empty()) {
+        for (std::list<Driver *>::const_iterator iterator = availableDrivers->begin(),
+                     end = availableDrivers->end(); iterator != end; ++iterator) {
+            if ((*iterator)->getId() == id) {
+                return (*iterator)->getCab()->getLocation()->getP();
+            }
         }
     }
     return NULL;
@@ -127,5 +145,7 @@ Taxi *TaxiCenter::getTaxiByID(int id) {
     }
     return NULL;
 }
+
+
 
 
