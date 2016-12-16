@@ -1,5 +1,5 @@
 //
-// Created by nevo on 03/12/16.
+// check DriverAvailableListener.
 //
 
 #include <gtest/gtest.h>
@@ -8,33 +8,47 @@
 #include "../../src/tripOperations/TaxiCenter.h"
 #include "../../src/listeners/DriverAvailableListener.h"
 
+/**
+ * setup.
+ */
 class driverAvailableTest : public ::testing::Test {
 protected:
-    Driver *d;
-    TaxiCenter *tc;
+    Driver *driver;
+    TaxiCenter *taxiCenter;
     DriverAvailableListener *dal;
+    TripInfo *tripInfo;
+    Cab *cab;
 
     virtual void SetUp() {
-        d = new Driver(100, 40, MartialStatues::SINGLE, 10,0);
-        tc = new TaxiCenter();
-        dal = new DriverAvailableListener(d, tc);
+        driver = new Driver(100, 40, MartialStatues::SINGLE, 10, 3);
+        taxiCenter = new TaxiCenter();
+        dal = new DriverAvailableListener(driver, taxiCenter);
+        tripInfo = new TripInfo(10, new Point(0, 0), new Point(1, 1), 1, NULL, 2);
+        cab = new Cab(Color::BLUE, CarManufacture::HONDA, 3);
+
+        driver->setTi(tripInfo);
+        driver->setCab(cab);
     }
 
     virtual void TearDown() {
-        delete (d);
-        delete (tc);
+        delete (driver);
+        delete (taxiCenter);
         delete (dal);
+        delete (tripInfo);
+        delete (cab);
     }
 };
 
 /**
  * checks the notify method of the listener.
- * checks if set the driver as available.
+ * checks if set the driver as available, at the and of the driver ride.
  */
 TEST_F(driverAvailableTest, notify) {
+    std::list<Driver *> *drivers = taxiCenter->getAvailableDrivers();
+    cab->applyToPoint(new Point(1, 1));
+
     dal->notify();
-    std::list<Driver *> *drivers = tc->getAvailableDrivers();
-    ASSERT_TRUE(drivers != NULL);
-    Driver *driver = drivers->front();
-    ASSERT_TRUE(*driver == *d);
+
+    Driver *driver1 = drivers->front();
+    ASSERT_TRUE(*driver1 == *driver);
 }

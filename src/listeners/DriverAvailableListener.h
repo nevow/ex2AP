@@ -1,6 +1,6 @@
-//
-// Created by nevo on 01/12/16.
-//
+// DriverAvailableListener.
+// has taxi center and driver.
+// in charge to update the available drivers list when driver finish his ride.
 
 #ifndef EX1_DRIVERAVAILABLELISTENER_H
 #define EX1_DRIVERAVAILABLELISTENER_H

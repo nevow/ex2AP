@@ -1,5 +1,5 @@
 //
-// Created by nevo on 01/12/16.
+// TripEndListener.
 //
 
 #ifndef EX1_TRIPENDLISTENER_H

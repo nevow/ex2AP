@@ -1,5 +1,7 @@
 //
-// Created by nevo on 03/12/16.
+// tripEndListenerTest.
+// in charge to update the Passenger's Satisfaction on the Driver at the end of the trip.
+// not relevant yet. at this part of the program there is no usage at passengers.
 //
 
 #include <gtest/gtest.h>
@@ -24,8 +26,8 @@ protected:
         p1 = new Point(3, 3);
         p2 = new Point(2, 3);
         n = new Node(p1);
-        d = new Driver(100, 40, MartialStatues::SINGLE, 10,0);
-        cab = new Cab( Color::RED, CarManufacture::HONDA, 1306410);
+        d = new Driver(100, 40, MartialStatues::SINGLE, 10, 0);
+        cab = new Cab(Color::RED, CarManufacture::HONDA, 1306410);
         pa = new Passenger(p1, p2);
         tc = new TaxiCenter();
         ti = tc->answerCall(pa);
@@ -49,7 +51,6 @@ protected:
  * checks if set the driver satisfaction correctly.
  */
 TEST_F(tripEndListenerTest, notify) {
-//    tc->sendTaxi(d);
     d->moveOneStep();
     ASSERT_TRUE(d->getSatisfaction()->getAverage() == 0);
     tel->notify();

@@ -1,5 +1,5 @@
 //
-// Created by nevo on 05/12/16.
+// CBFSTest.
 //
 
 
@@ -9,6 +9,9 @@
 #include "../../src/coordinates/Map.h"
 #include "../../src/managment/BFS.h"
 
+/*
+ * setup
+ */
 class BFSTest : public ::testing::Test {
 protected:
     Map *map;

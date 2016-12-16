@@ -1,5 +1,6 @@
 //
-// Created by nevo on 01/12/16.
+// EventListener.
+// abstract Class that has notify function.
 //
 
 #ifndef EX1_EVENTLISTENER_H
