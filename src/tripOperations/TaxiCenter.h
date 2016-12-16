@@ -43,6 +43,7 @@ public:
         delete (cabs);
         delete (trips);
         delete (availableDrivers);
+        delete (listeners);
     }
 
     void addListener(EventListener *l);

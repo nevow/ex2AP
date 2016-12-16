@@ -18,13 +18,11 @@ using namespace std;
 void MainFlow::initialize() {
 
     int rows, columns, obstacleNum;
-    char trash;
-    Point *obs;
 
     std::list<Node *> *obstacles = new list<Node *>;
 
     // get the map's size and create it
-    cin >> rows >> trash >> columns;
+    cin >> rows >> columns;
     Map *map = new Map(rows, columns);
     cin.ignore();
 
@@ -32,6 +30,7 @@ void MainFlow::initialize() {
     cin.ignore();
 
     for (; obstacleNum > 0; obstacleNum--) {
+        Point *obs = new Point(0, 0);
         cin >> *obs;
         cin.ignore();
         obstacles->push_front(new Node(obs));
@@ -54,7 +53,6 @@ void MainFlow::input() {
         cin >> choice;
         cin.ignore();
         switch (choice) {
-
             case 1: {
 //********************** להוסיף getCab
                 cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash
@@ -65,21 +63,15 @@ void MainFlow::input() {
                                             MartialStatuesFactory::getMartialStatus(status),
                                             experience, vehicleId);
                 so->addDriver(driver);
-
                 break;
             }
             case 2: {
-
                 cin >> id >> trash >> x_start >> trash >> y_start >> trash >> x_end >> trash
                     >> y_end >> trash >> num_passengers >> trash >> tariff;
                 cin.ignore();
-
-
                 Point *start = new Point(x_start, y_start);
                 Point *end = new Point(x_end, y_end);
-
                 TripInfo *tripInfo = new TripInfo(id, start, end, num_passengers, NULL, tariff);
-
                 so->addTI(tripInfo);
                 break;
             }
@@ -87,15 +79,12 @@ void MainFlow::input() {
                 //************************* לדאוג שמישהו יהיה אחראי לשנות את התעריף ***************
 
             case 3: {
-
                 cin >> id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
                 cin.ignore();
-
                 if (taxi_type == 1) {
                     Cab *taxi = new Cab(ColorFactory::charToColor(color),
                                         CarManufactureFactory::charToFirm(manufacturer), id);
                     so->addTaxi(taxi);
-
                 } else if (taxi_type == 2) {
                     LuxuryCab *taxi = new LuxuryCab(ColorFactory::charToColor(color),
                                                     CarManufactureFactory::charToFirm(

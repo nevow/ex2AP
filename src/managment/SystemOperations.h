@@ -28,6 +28,12 @@ public:
         tc = new TaxiCenter();
     }
 
+    ~SystemOperations() {
+        delete (map);
+        delete (tc);
+        delete (obstacles);
+    }
+
     void addObstacle(Node *obstacle);
 
     void addDriver(Driver *d);

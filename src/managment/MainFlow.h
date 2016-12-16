@@ -16,6 +16,10 @@ private:
 public:
     MainFlow() {};
 
+    ~MainFlow() {
+        delete (so);
+    }
+
     void initialize();
 
     void input();

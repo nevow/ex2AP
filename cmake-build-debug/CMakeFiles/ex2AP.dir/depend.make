@@ -169,6 +169,7 @@ CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/enum/Color.h
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/enum/MartialStatues.h
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/listeners/DriverAvailableListener.h
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/listeners/EventListener.h
+CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/listeners/TripEndListener.h
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/taxi/Taxi.h
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/tripOperations/Driver.h
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/tripOperations/Passenger.h

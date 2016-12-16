@@ -52,4 +52,6 @@ TaxiCenter.o: src/tripOperations/TaxiCenter.cpp src/tripOperations/TaxiCenter.h 
 TripInfo.o: src/tripOperations/TripInfo.cpp src/tripOperations/TripInfo.h
 	g++ -std=c++0x -c src/tripOperations/TripInfo.cpp
 
+clean:
+	rm -f *.o a.out
 

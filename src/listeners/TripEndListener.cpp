@@ -1,5 +1,5 @@
 //
-// Created by nevo on 01/12/16.
+// TripEndListener.
 //
 
 #include "TripEndListener.h"
@@ -13,11 +13,11 @@ TripEndListener::TripEndListener(Driver *driver, TripInfo *ti) : driver(driver),
  * notify all
  */
 void TripEndListener::notify() {
-    std::list<Passenger *> *passenger;
-    passenger = ti->getPassengers();
+    std::list<Passenger *> *passengers = ti->getPassengers();
     if (ti->checkEnd(driver->getCab()->getLocation()->getP())) {
-        for (Passenger *p : *passenger) {
-            driver->getSatisfaction()->update(p->generateSatisfaction());
+        for (std::list<Passenger *>::const_iterator iterator = passengers->begin(),
+                     end = passengers->end(); iterator != end; ++iterator) {
+            driver->getSatisfaction()->update((*iterator)->generateSatisfaction());
         }
     }
 }

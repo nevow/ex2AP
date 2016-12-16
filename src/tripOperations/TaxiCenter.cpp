@@ -4,6 +4,7 @@
 
 #include "TaxiCenter.h"
 #include "../listeners/DriverAvailableListener.h"
+#include "../listeners/TripEndListener.h"
 
 TripInfo *TaxiCenter::answerCall(Passenger *p) {
     return NULL;
@@ -26,6 +27,7 @@ void TaxiCenter::setDriverToTi(TripInfo *ti) {
         Driver *d = availableDrivers->front();
         availableDrivers->pop_front();
         d->setTi(ti);
+        addListener(new TripEndListener(d, ti));
     }
 }
 
@@ -51,12 +53,14 @@ void TaxiCenter::moveAll() {
         delete (locations->front());
         locations->pop_front();
     }*/
-    for (Driver *d : *employees) {
-        d->moveOneStep();
+    for (std::list<Driver *>::const_iterator iterator = employees->begin(),
+                 end = employees->end(); iterator != end; ++iterator) {
+        (*iterator)->moveOneStep();
         //locations->push_back(d->getCab()->getLocation());
     }
-    for (EventListener *e : *listeners) {
-        e->notify();
+    for (std::list<EventListener *>::const_iterator iterator = listeners->begin(),
+                 end = listeners->end(); iterator != end; ++iterator) {
+        (*iterator)->notify();
     }
 }
 
@@ -74,7 +78,7 @@ void TaxiCenter::addDriver(Driver *d) {
     d->setCab(getTaxiByID(d->getId()));
     employees->push_back(d);
     availableDrivers->push_back(d);
-    listeners->push_back(new DriverAvailableListener(d, this));
+    addListener(new DriverAvailableListener(d, this));
 }
 
 /**
@@ -98,9 +102,11 @@ void TaxiCenter::addTI(TripInfo *ti) {
  * @return the location of the driver with the id
  */
 Point *TaxiCenter::getDriverLocation(int id) {
-    for (Driver *d : *employees) {
-        if (d->getId() == id) {
-            return d->getCab()->getLocation()->getP();
+
+    for (std::list<Driver *>::const_iterator iterator = employees->begin(), end = employees->end();
+         iterator != end; ++iterator) {
+        if ((*iterator)->getId() == id) {
+            return (*iterator)->getCab()->getLocation()->getP();
         }
     }
     return NULL;
@@ -111,9 +117,10 @@ Point *TaxiCenter::getDriverLocation(int id) {
  * @return the location of the driver with the id
  */
 Taxi *TaxiCenter::getTaxiByID(int id) {
-    for (Taxi *cab : *cabs) {
-        if (cab->getId() == id) {
-            return cab;
+    for (std::list<Taxi *>::const_iterator iterator = cabs->begin(),
+                 end = cabs->end(); iterator != end; ++iterator) {
+        if ((*iterator)->getId() == id) {
+            return *iterator;
         }
     }
     return NULL;
