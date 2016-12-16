@@ -14,6 +14,9 @@
 
 using namespace std;
 
+MainFlow::MainFlow() {
+
+}
 
 void MainFlow::initialize() {
 
@@ -23,17 +26,18 @@ void MainFlow::initialize() {
 
     // get the map's size and create it
     cin >> rows >> columns;
-    Map *map = new Map(rows, columns);
+    Map *map = new Map(columns, rows);
     cin.ignore();
 
     cin >> obstacleNum;
     cin.ignore();
 
     for (; obstacleNum > 0; obstacleNum--) {
-        Point *obs = new Point(0, 0);
-        cin >> *obs;
+        Point obs(0, 0);
+        cin >> obs;
         cin.ignore();
-        obstacles->push_front(new Node(obs));
+        Node n(&obs);
+        obstacles->push_front(&n);
     }
 
     so = new SystemOperations(map, obstacles);
@@ -81,16 +85,16 @@ void MainFlow::input() {
             case 3: {
                 cin >> id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
                 cin.ignore();
+                Taxi *taxi;
                 if (taxi_type == 1) {
-                    Cab *taxi = new Cab(ColorFactory::charToColor(color),
-                                        CarManufactureFactory::charToFirm(manufacturer), id);
-                    so->addTaxi(taxi);
+                    taxi = new Cab(ColorFactory::charToColor(color),
+                                   CarManufactureFactory::charToFirm(manufacturer), id);
                 } else if (taxi_type == 2) {
-                    LuxuryCab *taxi = new LuxuryCab(ColorFactory::charToColor(color),
-                                                    CarManufactureFactory::charToFirm(
-                                                            manufacturer), id);
-                    so->addTaxi(taxi);
+                    taxi = new LuxuryCab(ColorFactory::charToColor(color),
+                                         CarManufactureFactory::charToFirm(
+                                                 manufacturer), id);
                 }
+                so->addTaxi(taxi);
                 break;
             }
             case 4: {
@@ -119,7 +123,7 @@ void MainFlow::input() {
 }
 
 /*
-3,3
+3 3
 0
 3
 0,1,H,G

@@ -29,17 +29,21 @@ public:
               availableDrivers(employees) {}
 
     TaxiCenter() {
-        employees = new list<Driver *>;
-        locations = new list<Node *>;
-        cabs = new list<Taxi *>;
-        trips = new list<TripInfo *>;
-        availableDrivers = new list<Driver *>;
-        listeners = new list<EventListener *>;
+        employees = new list<Driver *>();
+        locations = new list<Node *>();
+        cabs = new list<Taxi *>();
+        trips = new list<TripInfo *>();
+        availableDrivers = new list<Driver *>();
+        listeners = new list<EventListener *>();
     }
 
     ~TaxiCenter() {
         delete (employees);
         delete (locations);
+        while (!cabs->empty()) {
+            delete (cabs->front());
+            cabs->pop_front();
+        }
         delete (cabs);
         delete (trips);
         delete (availableDrivers);

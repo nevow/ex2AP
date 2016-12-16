@@ -31,6 +31,7 @@ public:
     ~SystemOperations() {
         delete (map);
         delete (tc);
+        //obstacles->clear();
         delete (obstacles);
     }
 

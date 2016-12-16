@@ -27,7 +27,7 @@ void TaxiCenter::setDriverToTi(TripInfo *ti) {
         Driver *d = availableDrivers->front();
         availableDrivers->pop_front();
         d->setTi(ti);
-        addListener(new TripEndListener(d, ti));
+        //addListener(new TripEndListener(d, ti));
     }
 }
 

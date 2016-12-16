@@ -33,6 +33,11 @@ public:
                                                                    location(new Node(
                                                                            new Point(0, 0))) {}
 
+    virtual ~Taxi() {
+        cout << "deleteing taxi";
+        delete (location);
+    };
+
     virtual void move(stack<CoordinatedItem *> *road) = 0;
 
     /**

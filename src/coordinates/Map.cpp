@@ -27,8 +27,8 @@ Map::Map(int c, int r) {
     for (int i = 0; i < columns; i++) {
         matrix[i] = new Node *[rows];
         for (int j = 0; j < rows; j++) {
-            Point *p = new Point(i, j);
-            Node *n = new Node(p);
+            Point p(i, j);
+            Node *n = new Node(&p);
             matrix[i][j] = n;
         }
     }

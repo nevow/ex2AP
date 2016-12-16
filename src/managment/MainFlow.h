@@ -14,7 +14,7 @@ private:
     SystemOperations *so;
 
 public:
-    MainFlow() {};
+    MainFlow();
 
     ~MainFlow() {
         delete (so);
