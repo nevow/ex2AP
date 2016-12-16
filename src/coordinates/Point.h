@@ -38,7 +38,7 @@ public:
 
     friend istream &operator>>(istream &input, Point &p);
 
-    bool operator==(const Point &rhs) const;
+    bool operator==(const Point &otherP) const;
 
     bool operator!=(const Point &rhs) const;
 

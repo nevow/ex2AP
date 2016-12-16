@@ -70,7 +70,6 @@ TEST(inputTest, pointTest) {
     ASSERT_TRUE((p1.getX() == 3) && (p1.getY() == 4));
 }
 
-
 /**
  *  check the comparing of two Points.
  */

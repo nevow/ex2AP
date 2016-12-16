@@ -15,7 +15,7 @@ private:
 public:
     Node() {};
 
-    Node(Point *p) : p(p) {
+    Node(Point *point) : p(new Point(point->getX(), point->getY())) {
         setDistance(-1);
     }
 
@@ -23,17 +23,18 @@ public:
         delete (p);
     }
 
-    int **getCoordinates();
-
     void deleteCoords(int **coords);
 
     Point *getP();
+
+    void setP(Point *p);
+
+    int **getCoordinates();
 
     bool operator==(const Node &otherNode) const;
 
     bool operator!=(const Node &rhs) const;
 
-    void setP(Point *p);
 };
 
 

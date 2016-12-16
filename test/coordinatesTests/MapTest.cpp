@@ -24,6 +24,49 @@ TEST(getValue, MapTest) {
 }
 
 /**
+* check getRoot method.
+*/
+TEST(getRoot, MapTest) {
+    Map map(2, 2);
+    Point p1(0, 0);
+    Point p2(1, 1);
+
+    // the map didn't initialize, in every node the distance is -1, (0,0) is the root
+    EXPECT_EQ(*map.getRoot()->getP(), p1);
+
+    map.setItem(map.getValue(0, 0), 2);
+    map.setItem(map.getValue(1, 0), 1);
+    map.setItem(map.getValue(0, 1), 1);
+    map.setItem(map.getValue(1, 1), 0);
+    // the map initialize, (1,1) is the root
+    EXPECT_EQ(*map.getRoot()->getP(), p2);
+}
+
+/**
+* check setAll method.
+*/
+TEST(setAll, MapTest) {
+    Map map(2, 2);
+    map.setAll(5);
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; ++j) {
+            ASSERT_TRUE(map.getValue(i, j)->getDistance() == 5);
+        }
+    }
+}
+
+/**
+* check setItem (distance) method.
+*/
+TEST(setItem, MapTest) {
+    Map map(3, 3);
+    map.setItem(map.getValue(1, 1), 3);
+    EXPECT_EQ(map.getValue(1, 1)->getDistance(), 3);
+    EXPECT_NE(map.getValue(1, 1)->getDistance(), -1);
+}
+
+/**
 * check getAllNeighbours method.
 */
 TEST(getAllNeighbours, MapTest) {
@@ -44,49 +87,4 @@ TEST(getAllNeighbours, MapTest) {
     EXPECT_EQ(*y2, 0);
     delete (p1);
     delete (p2);
-}
-
-
-/**
-* check setAll method.
-*/
-TEST(setAll, MapTest) {
-    Map map(2, 2);
-    map.setAll(5);
-
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 2; ++j) {
-            ASSERT_TRUE(map.getMatrix()[i][j]->getDistance() == 5);
-        }
-    }
-}
-
-/**
-* check setItem (distance) method.
-*/
-TEST(setItem, MapTest) {
-    Map map(3, 3);
-    map.setItem(map.getMatrix()[1][1], 3);
-    EXPECT_EQ(map.getMatrix()[1][1]->getDistance(), 3);
-    EXPECT_NE(map.getMatrix()[1][1]->getDistance(), -1);
-}
-
-
-/**
-* check getRoot method.
-*/
-TEST(getRoot, MapTest) {
-    Map map(2, 2);
-    Point p1(0, 0);
-    Point p2(1, 1);
-
-    // the map didn't initialize, in every node the distance is -1, (0,0) is the root
-    EXPECT_EQ(*map.getRoot()->getP(), p1);
-
-    map.setItem(map.getMatrix()[0][0], 2);
-    map.setItem(map.getMatrix()[1][0], 1);
-    map.setItem(map.getMatrix()[0][1], 1);
-    map.setItem(map.getMatrix()[1][1], 0);
-    // the map initialize, (1,1) is the root
-    EXPECT_EQ(*map.getRoot()->getP(), p2);
 }

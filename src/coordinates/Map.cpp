@@ -48,10 +48,15 @@ Map::~Map() {
 }
 
 /**
- * @return the matrix
+ * @param c is the column value
+ * @param r is the row value
+ * @return the node on the correct position.
  */
-Node ***Map::getMatrix() const {
-    return matrix;
+CoordinatedItem *Map::getValue(int c, int r) {
+    if (r < 0 || r >= rows || c < 0 || c > columns) {
+        return NULL;
+    }
+    return matrix[c][r];
 }
 
 /**
@@ -68,17 +73,28 @@ Node *Map::getRoot() {
     return matrix[0][0];
 }
 
+/**
+ * @param dist is the value to set all the nodes with.
+ */
+void Map::setAll(int dist) {
+    for (int i = 0; i < columns; i++) {
+        for (int j = 0; j < rows; ++j) {
+            matrix[i][j]->setDistance(dist);
+            matrix[i][j]->setParent(NULL);
+        }
+    }
+}
 
 /**
- * @param c is the column value
- * @param r is the row value
- * @return the node on the correct position.
+ * @param item to set its distance value.
+ * @param dist is the value.
  */
-CoordinatedItem *Map::getValue(int c, int r) {
-    if (r < 0 || r >= rows || c < 0 || c > columns) {
-        return NULL;
-    }
-    return matrix[c][r];
+void Map::setItem(CoordinatedItem *item, int dist) {
+    int **coords = item->getCoordinates();
+    matrix[*(coords[0])][*(coords[1])]->setDistance(dist);
+    delete (coords[0]);
+    delete (coords[1]);
+    delete[] (coords);
 }
 
 /**
@@ -114,29 +130,3 @@ CoordinatedItem **Map::getAllNeighbours(CoordinatedItem *item) {
     adj[i] = NULL;
     return adj;
 }
-
-/**
- * @param dist is the value to set all the nodes with.
- */
-void Map::setAll(int dist) {
-    for (int i = 0; i < columns; i++) {
-        for (int j = 0; j < rows; ++j) {
-            matrix[i][j]->setDistance(dist);
-            matrix[i][j]->setParent(NULL);
-        }
-    }
-}
-
-/**
- * @param item to set its distance value.
- * @param dist is the value.
- */
-void Map::setItem(CoordinatedItem *item, int dist) {
-    int **coords = item->getCoordinates();
-    matrix[*(coords[0])][*(coords[1])]->setDistance(dist);
-    delete (coords[0]);
-    delete (coords[1]);
-    delete[] (coords);
-}
-
-

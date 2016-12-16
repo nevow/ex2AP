@@ -16,7 +16,6 @@ int **Node::getCoordinates() {
 }
 
 /**
- *
  * @param coords to delete
  */
 void Node::deleteCoords(int **coords) {
@@ -31,7 +30,6 @@ Point *Node::getP() {
 }
 
 /**
- *
  * @param p to set the point.
  */
 void Node::setP(Point *p) {
@@ -39,19 +37,17 @@ void Node::setP(Point *p) {
 }
 
 /**
- *
- * @param otherNode
- * @return
+ * @param otherNode to compare with
+ * @return true if equal, false otherwise
  */
 bool Node::operator==(const Node &otherNode) const {
     return *p == *otherNode.p;
 }
 
 /**
- *
- * @param rhs
- * @return
+ * @param otherNode to compare with
+ * @return  true if not equal, false otherwise
  */
-bool Node::operator!=(const Node &rhs) const {
-    return !(rhs == *this);
+bool Node::operator!=(const Node &otherNode) const {
+    return !(otherNode == *this);
 }

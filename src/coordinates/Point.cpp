@@ -64,11 +64,19 @@ istream &operator>>(istream &input, Point &p) {
     return input;
 }
 
-bool Point::operator==(const Point &rhs) const {
-    return x == rhs.x &&
-           y == rhs.y;
+/**
+ * @param otherP to compare with
+ * @return true if equal, false otherwise
+ */
+bool Point::operator==(const Point &otherP) const {
+    return x == otherP.x &&
+           y == otherP.y;
 }
 
-bool Point::operator!=(const Point &rhs) const {
-    return !(rhs == *this);
+/**
+ * @param otherP to compare with
+ * @return true if not equal, false otherwise
+ */
+bool Point::operator!=(const Point &otherP) const {
+    return !(otherP == *this);
 }

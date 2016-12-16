@@ -24,16 +24,13 @@ public:
 
     CoordinatedItem *getValue(int r, int c);
 
-    CoordinatedItem **getAllNeighbours(CoordinatedItem *item);
-
     Node *getRoot();
-
-    void setItem(CoordinatedItem *item, int dist);
 
     void setAll(int dist);
 
-    Node ***getMatrix() const;
+    void setItem(CoordinatedItem *item, int dist);
 
+    CoordinatedItem **getAllNeighbours(CoordinatedItem *item);
 
 };
 

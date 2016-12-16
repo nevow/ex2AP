@@ -13,26 +13,24 @@ class BFSTest : public ::testing::Test {
 protected:
     Map *map;
     stack<CoordinatedItem *> *road;
-    Node* start;
-    Node* end;
-
+    Node *start;
+    Node *end;
 
     virtual void SetUp() {
         map = new Map(3, 3);
-        start = new Node(new Point(0,0));
-        end = new Node(new Point(2,2));
+        start = new Node(new Point(0, 0));
+        end = new Node(new Point(2, 2));
         road = new stack<CoordinatedItem *>;
-        road->push(new Node(new Point(2,2)));
-        road->push(new Node(new Point(2,1)));
-        road->push(new Node(new Point(2,0)));
-        road->push(new Node(new Point(1,0)));
-        road->push(new Node(new Point(0,0)));
+        road->push(new Node(new Point(2, 2)));
+        road->push(new Node(new Point(2, 1)));
+        road->push(new Node(new Point(2, 0)));
+        road->push(new Node(new Point(1, 0)));
+        road->push(new Node(new Point(0, 0)));
     }
 
-
     virtual void TearDown() {
-        delete(start);
-        delete(end);
+        delete (start);
+        delete (end);
         delete (map);
         delete (road);
     }
@@ -54,8 +52,8 @@ TEST_F(BFSTest, BFSAlgo) {
     BFS::BFSAlgo(map, start);
 
     for (int i = 0; i < 3; ++i) {
-        for (int j = 0; j < 3 ; ++j) {
-            ASSERT_TRUE(map->getMatrix()[i][j]->getDistance() == i + j );
+        for (int j = 0; j < 3; ++j) {
+            ASSERT_TRUE(map->getValue(i, j)->getDistance() == i + j);
         }
     }
 }
