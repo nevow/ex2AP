@@ -8,84 +8,84 @@
 		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\googletest-master\;CMake Files\lib\googletest-master\googlemock\;CMake Files\lib\googletest-master\googletest\;CMake Files\lib\googletest-master\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex2AP">
-				<Option output="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/ex2AP" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug"/>
+				<Option output="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/ex2AP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -96,21 +96,21 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex2AP"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex2AP"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex2AP/fast">
-				<Option output="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/ex2AP" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug"/>
+				<Option output="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/ex2AP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -121,23 +121,23 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex2AP/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex2AP/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main">
-				<Option output="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock"/>
+				<Option output="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -148,23 +148,23 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main/fast">
-				<Option output="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock"/>
+				<Option output="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -175,23 +175,23 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock">
-				<Option output="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock"/>
+				<Option output="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -202,23 +202,23 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock/fast">
-				<Option output="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock"/>
+				<Option output="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -229,21 +229,21 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
-				<Option output="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+				<Option output="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -254,21 +254,21 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
-				<Option output="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+				<Option output="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -279,21 +279,21 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest">
-				<Option output="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+				<Option output="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -304,21 +304,21 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest/fast">
-				<Option output="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+				<Option output="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -329,242 +329,248 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nevo/ClionProjects/ex2AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/maayan/ClionProjects/ex3AP/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/src/gmock-all.cc">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/src/gmock_main.cc">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/src/gmock_main.cc">
 			<Option target="gmock_main"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/src/gtest-all.cc">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/src/gtest-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
 			<Option target="gtest"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/src/gtest_main.cc">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/coordinates/CoordinatedItem.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/coordinates/CoordinatedItem.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/coordinates/Grid.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/coordinates/Grid.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/coordinates/Map.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/coordinates/Map.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/coordinates/Map.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/coordinates/Map.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/coordinates/Node.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/coordinates/Node.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/coordinates/Node.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/coordinates/Node.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/coordinates/Obstacle.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/coordinates/Obstacle.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/coordinates/Obstacle.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/coordinates/Obstacle.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/coordinates/Point.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/coordinates/Point.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/coordinates/Point.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/coordinates/Point.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/enum/CarManufacture.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/enum/CarManufacture.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/enum/CarManufactureFactory.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/enum/CarManufactureFactory.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/enum/Color.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/enum/Color.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/enum/ColorFactory.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/enum/ColorFactory.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/enum/MartialStatues.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/enum/MartialStatues.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/enum/MartialStatuesFactory.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/enum/MartialStatuesFactory.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/listeners/DriverAvailableListener.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/listeners/DriverAvailableListener.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/listeners/DriverAvailableListener.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/listeners/DriverAvailableListener.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/listeners/EventListener.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/listeners/EventListener.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/listeners/TripEndListener.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/listeners/TripEndListener.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/listeners/TripEndListener.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/listeners/TripEndListener.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/main.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/main.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/managment/BFS.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/managment/BFS.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/managment/BFS.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/managment/BFS.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/managment/MainFlow.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/managment/MainFlow.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/managment/MainFlow.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/managment/MainFlow.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/managment/SystemOperations.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/managment/ProperInput.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/managment/SystemOperations.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/managment/ProperInput.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/taxi/Cab.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/managment/SystemOperations.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/taxi/Cab.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/managment/SystemOperations.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/taxi/LuxuryCab.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/taxi/Cab.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/taxi/LuxuryCab.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/taxi/Cab.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/taxi/Taxi.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/taxi/LuxuryCab.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/tripOperations/Driver.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/taxi/LuxuryCab.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/tripOperations/Driver.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/taxi/Taxi.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/tripOperations/Passenger.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/tripOperations/Driver.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/tripOperations/Passenger.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/tripOperations/Driver.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/tripOperations/Satisfaction.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/tripOperations/Passenger.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/tripOperations/Satisfaction.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/tripOperations/Passenger.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/tripOperations/TaxiCenter.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/tripOperations/Satisfaction.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/tripOperations/TaxiCenter.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/tripOperations/Satisfaction.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/tripOperations/TripInfo.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/tripOperations/TaxiCenter.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/tripOperations/TripInfo.h">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/tripOperations/TaxiCenter.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/coordinatesTests/MapTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/tripOperations/TripInfo.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/coordinatesTests/NodeTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/src/tripOperations/TripInfo.h">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/coordinatesTests/PointTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/coordinatesTests/MapTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/listenersTest/DriverAvailableListenerTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/coordinatesTests/NodeTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/listenersTest/TripEndListenerTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/coordinatesTests/PointTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/managmentTests/BFSTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/listenersTest/DriverAvailableListenerTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/managmentTests/MainFlowTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/listenersTest/TripEndListenerTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/managmentTests/SystemOperationsTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/managmentTests/BFSTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/taxiTests/CabTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/managmentTests/MainFlowTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/taxiTests/LuxuryCabTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/managmentTests/SystemOperationsTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/DriverTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/taxiTests/CabTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/PassengerTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/taxiTests/LuxuryCabTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/SatisfactionTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/DriverTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/TaxiCenterTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/PassengerTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/TripInfoTest.cpp">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/SatisfactionTest.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/CMakeLists.txt">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/TaxiCenterTest.cpp">
+			<Option target="ex2AP"/>
+		</Unit>
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/TripInfoTest.cpp">
+			<Option target="ex2AP"/>
+		</Unit>
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/CMakeLists.txt">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/CMakeLists.txt">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/CMakeLists.txt">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/CMakeLists.txt">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/CMakeLists.txt">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/CMakeLists.txt">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/CMakeLists.txt">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/CMakeLists.txt">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/CMakeLists.txt">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
 	</Project>

@@ -462,6 +462,33 @@ src/managment/MainFlow.cpp.s:
 	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.s
 .PHONY : src/managment/MainFlow.cpp.s
 
+src/managment/ProperInput.o: src/managment/ProperInput.cpp.o
+
+.PHONY : src/managment/ProperInput.o
+
+# target to build an object file
+src/managment/ProperInput.cpp.o:
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o
+.PHONY : src/managment/ProperInput.cpp.o
+
+src/managment/ProperInput.i: src/managment/ProperInput.cpp.i
+
+.PHONY : src/managment/ProperInput.i
+
+# target to preprocess a source file
+src/managment/ProperInput.cpp.i:
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.i
+.PHONY : src/managment/ProperInput.cpp.i
+
+src/managment/ProperInput.s: src/managment/ProperInput.cpp.s
+
+.PHONY : src/managment/ProperInput.s
+
+# target to generate assembly for a file
+src/managment/ProperInput.cpp.s:
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.s
+.PHONY : src/managment/ProperInput.cpp.s
+
 src/managment/SystemOperations.o: src/managment/SystemOperations.cpp.o
 
 .PHONY : src/managment/SystemOperations.o
@@ -1127,6 +1154,9 @@ help:
 	@echo "... src/managment/MainFlow.o"
 	@echo "... src/managment/MainFlow.i"
 	@echo "... src/managment/MainFlow.s"
+	@echo "... src/managment/ProperInput.o"
+	@echo "... src/managment/ProperInput.i"
+	@echo "... src/managment/ProperInput.s"
 	@echo "... src/managment/SystemOperations.o"
 	@echo "... src/managment/SystemOperations.i"
 	@echo "... src/managment/SystemOperations.s"
