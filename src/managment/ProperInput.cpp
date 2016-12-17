@@ -12,10 +12,11 @@ using namespace std;
  */
 Point ProperInput::validPoint(int columns, int rows) {
     Point point;
-    cin >> point;
+    char trash;
+    cin >> point >> trash;
 
     // check if the point is in the map's boundary
-    if ((point.getX() <= columns) && (point.getY() <= rows) &&
+    if ((point.getX() < columns) && (point.getY() < rows) &&
         (point.getX() >= 0) && (point.getY() >= 0)) {
         return point;
     } else {
@@ -28,7 +29,8 @@ Point ProperInput::validPoint(int columns, int rows) {
  */
 int ProperInput::validInt() {
     int num;
-    cin >> num;
+    char trash;
+    cin >> num >> trash;
 
     //check if the num is
     if (num >= 0) {
@@ -43,7 +45,8 @@ int ProperInput::validInt() {
  */
 double ProperInput::validDouble() {
     double num;
-    cin >> num;
+    char trash;
+    cin >> num >> trash;
 
     //check if the num is
     if (num >= 0) {
