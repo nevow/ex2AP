@@ -104,6 +104,15 @@ CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/tripOperations/Satisfa
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/tripOperations/TaxiCenter.h
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/tripOperations/TripInfo.h
 
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../src/managment/ProperInput.cpp
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../src/managment/ProperInput.h
+
 CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o: ../src/coordinates/CoordinatedItem.h
 CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o: ../src/coordinates/Grid.h
 CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o: ../src/coordinates/Map.h

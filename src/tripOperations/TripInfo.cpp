@@ -25,11 +25,12 @@ bool TripInfo::checkEnd(Point *location) {
  * @param tariff of the trip
  */
 TripInfo::TripInfo(int rideId, Point *start, Point *destination, int amountOfPassengers,
-                   list<Passenger *> *passengers, double tariff) :
+                   double tariff) :
         rideId(rideId), start(start), destination(destination),
         amountOfPassengers(amountOfPassengers), passengers(passengers), tariff(tariff) {
     currentDistance = 0;
-    road = new stack<CoordinatedItem *>();
+    list < Passenger * > *passengers,
+            road = new stack<CoordinatedItem *>();
     road->push(new Node(destination));
 }
 
