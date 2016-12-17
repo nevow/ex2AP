@@ -58,7 +58,7 @@ protected:
 
 /**
  * checks getMap method.
- */
+
 TEST_F(MainFlowTest, input) {
 
     Map *map1 = new Map(4, 4);
@@ -66,4 +66,4 @@ TEST_F(MainFlowTest, input) {
     Map *map2 = so1->getMap();
 
     ASSERT_EQ(map1, map2);
-}
+}*/

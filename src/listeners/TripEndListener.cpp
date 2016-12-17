@@ -51,6 +51,8 @@ void TripEndListener::notify() {
         tc->getAvailableDrivers()->push_back(driver);
         delete (ti);
         driver->setTi(NULL);
+        tc->removeListener(this);
+        delete this;
     }
 }
 

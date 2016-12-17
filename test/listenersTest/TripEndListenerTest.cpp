@@ -33,7 +33,7 @@ protected:
         ti = tc->answerCall(pa);
         tc->addTaxi(cab);
         tc->addDriver(d);
-        tel = new TripEndListener(d, ti);
+        tel = new TripEndListener(d, tc);
     }
 
     virtual void TearDown() {

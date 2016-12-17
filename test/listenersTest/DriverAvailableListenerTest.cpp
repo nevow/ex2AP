@@ -23,7 +23,7 @@ protected:
         driver = new Driver(100, 40, MartialStatues::SINGLE, 10, 3);
         taxiCenter = new TaxiCenter();
         dal = new DriverAvailableListener(driver, taxiCenter);
-        tripInfo = new TripInfo(10, new Point(0, 0), new Point(1, 1), 1, NULL, 2);
+        tripInfo = new TripInfo(10, new Point(0, 0), new Point(1, 1), 1, 2);
         cab = new Cab(Color::BLUE, CarManufacture::HONDA, 3);
 
         driver->setTi(tripInfo);

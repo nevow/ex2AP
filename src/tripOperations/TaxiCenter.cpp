@@ -164,8 +164,20 @@ Driver *TaxiCenter::getClosestDriver(Point *start) {
     }
 }
 
-void removeListener(EventListener *el) {
-
+void TaxiCenter::removeListener(EventListener *el) {
+    std::list<EventListener *> temp;
+    while (!listeners->empty()) {
+        EventListener *e = listeners->front();
+        listeners->pop_front();
+        if (e == el) {
+            while (!temp.empty()) {
+                listeners->push_front((temp.front()));
+                temp.pop_front();
+            }
+        } else {
+            temp.push_front(e);
+        }
+    }
 }
 
 
