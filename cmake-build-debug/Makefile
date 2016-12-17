@@ -219,33 +219,6 @@ gtest/fast:
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 src/coordinates/Map.o: src/coordinates/Map.cpp.o
 
 .PHONY : src/coordinates/Map.o
@@ -380,6 +353,33 @@ src/listeners/TripEndListener.s: src/listeners/TripEndListener.cpp.s
 src/listeners/TripEndListener.cpp.s:
 	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.s
 .PHONY : src/listeners/TripEndListener.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 src/managment/BFS.o: src/managment/BFS.cpp.o
 
@@ -1073,9 +1073,6 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... src/coordinates/Map.o"
 	@echo "... src/coordinates/Map.i"
 	@echo "... src/coordinates/Map.s"
@@ -1091,6 +1088,9 @@ help:
 	@echo "... src/listeners/TripEndListener.o"
 	@echo "... src/listeners/TripEndListener.i"
 	@echo "... src/listeners/TripEndListener.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/managment/BFS.o"
 	@echo "... src/managment/BFS.i"
 	@echo "... src/managment/BFS.s"

@@ -57,28 +57,28 @@ include CMakeFiles/ex2AP.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ex2AP.dir/flags.make
 
-CMakeFiles/ex2AP.dir/main.cpp.o: CMakeFiles/ex2AP.dir/flags.make
-CMakeFiles/ex2AP.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex2AP.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/main.cpp.o -c /home/nevo/ClionProjects/ex2AP/main.cpp
+CMakeFiles/ex2AP.dir/src/main.cpp.o: CMakeFiles/ex2AP.dir/flags.make
+CMakeFiles/ex2AP.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex2AP.dir/src/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/main.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/main.cpp
 
-CMakeFiles/ex2AP.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/main.cpp > CMakeFiles/ex2AP.dir/main.cpp.i
+CMakeFiles/ex2AP.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/main.cpp > CMakeFiles/ex2AP.dir/src/main.cpp.i
 
-CMakeFiles/ex2AP.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/main.cpp -o CMakeFiles/ex2AP.dir/main.cpp.s
+CMakeFiles/ex2AP.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/main.cpp -o CMakeFiles/ex2AP.dir/src/main.cpp.s
 
-CMakeFiles/ex2AP.dir/main.cpp.o.requires:
+CMakeFiles/ex2AP.dir/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/ex2AP.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/ex2AP.dir/src/main.cpp.o.requires
 
-CMakeFiles/ex2AP.dir/main.cpp.o.provides: CMakeFiles/ex2AP.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/ex2AP.dir/main.cpp.o.provides
+CMakeFiles/ex2AP.dir/src/main.cpp.o.provides: CMakeFiles/ex2AP.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/ex2AP.dir/src/main.cpp.o.provides
 
-CMakeFiles/ex2AP.dir/main.cpp.o.provides.build: CMakeFiles/ex2AP.dir/main.cpp.o
+CMakeFiles/ex2AP.dir/src/main.cpp.o.provides.build: CMakeFiles/ex2AP.dir/src/main.cpp.o
 
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
@@ -803,7 +803,7 @@ CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o.provides.build: CMakeFiles/
 
 # Object files for target ex2AP
 ex2AP_OBJECTS = \
-"CMakeFiles/ex2AP.dir/main.cpp.o" \
+"CMakeFiles/ex2AP.dir/src/main.cpp.o" \
 "CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o" \
 "CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o" \
 "CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o" \
@@ -838,7 +838,7 @@ ex2AP_OBJECTS = \
 # External object files for target ex2AP
 ex2AP_EXTERNAL_OBJECTS =
 
-ex2AP: CMakeFiles/ex2AP.dir/main.cpp.o
+ex2AP: CMakeFiles/ex2AP.dir/src/main.cpp.o
 ex2AP: CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o
 ex2AP: CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o
 ex2AP: CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o
@@ -882,7 +882,7 @@ CMakeFiles/ex2AP.dir/build: ex2AP
 
 .PHONY : CMakeFiles/ex2AP.dir/build
 
-CMakeFiles/ex2AP.dir/requires: CMakeFiles/ex2AP.dir/main.cpp.o.requires
+CMakeFiles/ex2AP.dir/requires: CMakeFiles/ex2AP.dir/src/main.cpp.o.requires
 CMakeFiles/ex2AP.dir/requires: CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o.requires
 CMakeFiles/ex2AP.dir/requires: CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o.requires
 CMakeFiles/ex2AP.dir/requires: CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o.requires

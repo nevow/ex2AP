@@ -38,8 +38,6 @@ protected:
         delete (so);
         delete (obstacle1);
         delete (obstacle2);
-        delete (obstacles);
-
     }
 };
 

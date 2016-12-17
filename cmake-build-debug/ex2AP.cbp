@@ -351,9 +351,6 @@
 		<Unit filename="/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/nevo/ClionProjects/ex2AP/main.cpp">
-			<Option target="ex2AP"/>
-		</Unit>
 		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/coordinates/CoordinatedItem.h">
 			<Option target="ex2AP"/>
 		</Unit>
@@ -409,6 +406,9 @@
 			<Option target="ex2AP"/>
 		</Unit>
 		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/listeners/TripEndListener.h">
+			<Option target="ex2AP"/>
+		</Unit>
+		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/main.cpp">
 			<Option target="ex2AP"/>
 		</Unit>
 		<Unit filename="/home/nevo/ClionProjects/ex2AP/src/managment/BFS.cpp">
