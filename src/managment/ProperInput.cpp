@@ -24,7 +24,7 @@ Point ProperInput::validPoint(int columns, int rows) {
 }
 
 /**
- * @return int correct, after tests.
+ * @return int correct, after tests
  */
 int ProperInput::validInt() {
     int num;
