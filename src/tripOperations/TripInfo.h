@@ -50,6 +50,8 @@ public:
 
     list<Passenger *> *getPassengers() const;
 
+    Point *getStart() const;
+
     bool operator==(const TripInfo &ti) const;
 
     bool operator!=(const TripInfo &ti) const;

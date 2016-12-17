@@ -21,13 +21,11 @@ void TaxiCenter::addListener(EventListener *l) {
  * @return the driver after the set of the trip info.
  */
 void TaxiCenter::setDriverToTi(TripInfo *ti) {
-    // get available driver, assign him with the trip info.
-    Driver *d = availableDrivers->front();
-    availableDrivers->pop_front();
+    // get the closest available driver, assign him with the trip info.
+    Driver *d = getClosestDriver(ti->getStart());
     d->setTi(ti);
     employees->push_back(d);
     //addListener(new TripEndListener(d, ti));
-
 }
 
 /**
@@ -83,7 +81,6 @@ list<Driver *> *TaxiCenter::getEmployees() const {
  */
 void TaxiCenter::addDriver(Driver *d) {
     d->setCab(getTaxiByID(d->getId()));
-    //employees->push_back(d);
     availableDrivers->push_back(d);
     addListener(new DriverAvailableListener(d, this));
 }
@@ -145,6 +142,29 @@ Taxi *TaxiCenter::getTaxiByID(int id) {
     }
     return NULL;
 }
+
+/**
+ *
+ * @param start point of the trip
+ * @return the closest driver to that point
+ */
+Driver *TaxiCenter::getClosestDriver(Point *start) {
+    std::list<Driver *> temp;
+    while (!availableDrivers->empty()) {
+        Driver *d = availableDrivers->front();
+        availableDrivers->pop_front();
+        if (*(d->getCab()->getLocation()->getP()) == *start) {
+            while (!temp.empty()) {
+                availableDrivers->push_front((temp.front()));
+                temp.pop_front();
+            }
+            return d;
+        } else {
+            temp.push_front(d);
+        }
+    }
+}
+
 
 
 

@@ -32,6 +32,9 @@ public:
 
     CoordinatedItem **getAllNeighbours(CoordinatedItem *item);
 
+    int getRows() const;
+
+    int getColumns() const;
 };
 
 #endif //EX1_MATRIX_H

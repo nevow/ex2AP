@@ -57,6 +57,15 @@ list<Passenger *> *TripInfo::getPassengers() const {
     return passengers;
 }
 
+
+/**
+ *
+ * @return the starting point of this trip
+ */
+Point *TripInfo::getStart() const {
+    return start;
+}
+
 /**
  *
  * @param ti is a trip info to compare if ti is equal
@@ -76,4 +85,5 @@ bool TripInfo::operator==(const TripInfo &ti) const {
 bool TripInfo::operator!=(const TripInfo &ti) const {
     return !(ti == *this);
 }
+
 

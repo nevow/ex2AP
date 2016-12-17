@@ -130,3 +130,19 @@ CoordinatedItem **Map::getAllNeighbours(CoordinatedItem *item) {
     adj[i] = NULL;
     return adj;
 }
+
+/**
+ *
+ * @return the rows of the map
+ */
+int Map::getRows() const {
+    return rows;
+}
+
+/**
+ *
+ * @return the columns of the map
+ */
+int Map::getColumns() const {
+    return columns;
+}

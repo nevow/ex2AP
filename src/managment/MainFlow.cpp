@@ -123,21 +123,3 @@ void MainFlow::input() {
 
     } while (choice != 7);     // exit condition
 }
-
-/*
-3 3
-0
-3
-0,1,H,G
-1
-0,30,M,1,0
-2
-0,0,0,0,2,1,20
-6
-4
-0
-6
-4
-0
-6
- */

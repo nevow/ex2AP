@@ -105,6 +105,8 @@ public:
 
     Taxi *getTaxiByID(int id);
 
+    Driver * getClosestDriver(Point *start);
+
 };
 
 
