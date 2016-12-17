@@ -5,7 +5,7 @@
 #include "Driver.h"
 
 /**
- *
+ * constructor.
  * @param id of the driver
  * @param age of the driver
  * @param status of the driver
@@ -16,13 +16,16 @@ Driver::Driver(int id, int age, const MartialStatues &status, int experience, in
     satisfaction = new Satisfaction();
 }
 
+/**
+ * copy constructor.
+ * @param d the driver that need to ce copy
+ */
 Driver::Driver(Driver *d) : id(d->getId()), age(d->getAge()), status(d->getStatus()),
                             experience(d->getExperience()), vehicleId(d->getVehicle_id()) {
     satisfaction = new Satisfaction(d->satisfaction);
 }
 
 /**
- *
  * @return the id of the driver
  */
 int Driver::getId() const {
@@ -30,7 +33,6 @@ int Driver::getId() const {
 }
 
 /**
- *
  * @return the age of the driver
  */
 int Driver::getAge() const {
@@ -38,7 +40,6 @@ int Driver::getAge() const {
 }
 
 /**
- *
  * @return the martial status of the driver
  */
 const MartialStatues &Driver::getStatus() const {
@@ -46,7 +47,6 @@ const MartialStatues &Driver::getStatus() const {
 }
 
 /**
- *
  * @param status of the driver to set.
  */
 void Driver::setStatus(const MartialStatues &status) {
@@ -54,7 +54,6 @@ void Driver::setStatus(const MartialStatues &status) {
 }
 
 /**
- *
  * @return the experience of the driver
  */
 int Driver::getExperience() const {
@@ -62,7 +61,6 @@ int Driver::getExperience() const {
 }
 
 /**
- *
  * @param experience of the driveer to set.
  */
 void Driver::setExperience(int experience) {
@@ -74,7 +72,6 @@ int Driver::getVehicle_id() const {
 }
 
 /**
- *
  * @return the trip info of the driver
  */
 TripInfo *Driver::getTi() {
@@ -82,15 +79,14 @@ TripInfo *Driver::getTi() {
 }
 
 /**
- *
  * @param ti of the driver to set.
  */
 void Driver::setTi(TripInfo *ti) {
     Driver::ti = ti;
+    cab->setTariff(ti->getTariff());
 }
 
 /**
- *
  * @return the satisfaction of the driver
  */
 Satisfaction *Driver::getSatisfaction() const {
@@ -98,7 +94,6 @@ Satisfaction *Driver::getSatisfaction() const {
 }
 
 /**
- *
  * @return the cab of the driver
  */
 Taxi *Driver::getCab() const {
@@ -106,7 +101,6 @@ Taxi *Driver::getCab() const {
 }
 
 /**
- *
  * @param cab of the driver to set.
  */
 void Driver::setCab(Taxi *cab) {
@@ -123,7 +117,6 @@ void Driver::moveOneStep() {
 }
 
 /**
- *
  * @param grade to add for the driver satisfaction
  */
 void Driver::updateSatisfaction(int grade) {
@@ -131,7 +124,6 @@ void Driver::updateSatisfaction(int grade) {
 }
 
 /**
- *
  * @param otherDriver to compare id with this driver
  * @return true if the drivers have the same id
  */
@@ -140,7 +132,6 @@ bool Driver::operator==(const Driver &otherDriver) const {
 }
 
 /**
- *
  * @param otherDriver to compare id with this driver
  * @return false if the drivers are equal
  */
