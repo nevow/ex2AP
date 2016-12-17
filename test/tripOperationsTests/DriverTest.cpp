@@ -10,10 +10,10 @@ class DriverTest : public ::testing::Test {
 protected:
     Point *start;
     Point *destination;
-    Node* location;
-    Node* endLocation;
+    Node *location;
+    Node *endLocation;
     Passenger *pass;
-    Driver* d;
+    Driver *d;
 
     virtual void SetUp() {
         start = new Point(3, 3);
@@ -21,7 +21,7 @@ protected:
         location = new Node(start);
         endLocation = new Node(destination);
         pass = new Passenger(start, destination);
-        d = new Driver(305,40,MartialStatues::WIDOWED,7,0);
+        d = new Driver(305, 40, MartialStatues::WIDOWED, 7, 0);
     }
 
     virtual void TearDown() {
@@ -55,18 +55,63 @@ TEST_F(DriverTest, getStatus) {
 }
 
 /**
+ * check getExperience method.
+ */
+TEST_F(DriverTest, getExperience) {
+    ASSERT_TRUE(d->getExperience() == 7);
+}
+
+/**
+ * check getVehicle_id method.
+ */
+TEST_F(DriverTest, getVehicle_id) {
+    ASSERT_TRUE(d->getVehicle_id() == 0);
+}
+
+/**
+ * check getSatisfaction method.
+ */
+TEST_F(DriverTest, getSatisfaction) {
+    Satisfaction sat;
+    sat.update(5);
+    sat.update(2);
+    d->updateSatisfaction(5);
+    d->updateSatisfaction(2);
+    ASSERT_TRUE(d->getSatisfaction()->getAverage() == sat.getAverage());
+}
+
+/**
+ * check getAndSetTi method.
+ */
+TEST_F(DriverTest, getAndSetTi) {
+    Passenger p1(start, destination), p2(start, destination), p3(start, destination);
+    Passenger *pass1 = &p1;
+    Passenger *pass2 = &p2;
+    Passenger *pass3 = &p3;
+    TripInfo ti1(300, start, destination, 3, 100);
+    TripInfo ti2(300, start, destination, 3, 100);
+    ASSERT_TRUE(ti1 == ti2);
+    d->setTi(&ti1);
+    EXPECT_TRUE(*d->getTi() == ti2);
+}
+
+/**
+ * check getAndSetCab method.
+ */
+TEST_F(DriverTest, getAndSetCab) {
+    Cab cab1(Color::GREEN, CarManufacture::TESLA, 4453523);
+    Cab cab2(Color::GREEN, CarManufacture::TESLA, 4453523);
+    ASSERT_TRUE(cab1 == cab2);
+    d->setCab(&cab1);
+    EXPECT_TRUE(*d->getCab() == cab2);
+}
+
+/**
  * check setStatus method.
  */
 TEST_F(DriverTest, setStatus) {
     d->setStatus(MartialStatues::SINGLE);
     ASSERT_TRUE(d->getStatus() == MartialStatues::SINGLE);
-}
-
-/**
- * check getExperience method.
- */
-TEST_F(DriverTest, getExperience) {
-    ASSERT_TRUE(d->getExperience() == 7);
 }
 
 /**
@@ -78,68 +123,28 @@ TEST_F(DriverTest, setExperience) {
 }
 
 /**
- * check getAndSetTi method.
- */
-TEST_F(DriverTest, getAndSetTi) {
-    Passenger p1(start,destination),p2(start,destination),p3(start,destination);
-    Passenger* pass1 = &p1;
-    Passenger* pass2 = &p2;
-    Passenger* pass3 = &p3;
-    Passenger* p[3] = {pass1,pass2,pass3};
-    TripInfo ti1(300,start,destination,3,100);
-    TripInfo ti2(300,start,destination,3,100);
-    ASSERT_TRUE(ti1 == ti2);
-    d->setTi(&ti1);
-    EXPECT_TRUE(*d->getTi() == ti2);
-}
-
-
-/**
- * check getAndSetCab method.
- */
-TEST_F(DriverTest, getAndSetCab) {
-    Cab cab1(Color::GREEN,CarManufacture::TESLA,4453523 );
-    Cab cab2(Color::GREEN,CarManufacture::TESLA,4453523);
-    ASSERT_TRUE(cab1 == cab2);
-    d->setCab(&cab1);
-    EXPECT_TRUE(*d->getCab() == cab2);
-}
-
-/**
- * check getSatisfaction method.
- */
-TEST_F(DriverTest, getSatisfaction) {
-    Satisfaction sat;
-    sat.update(5);
-    sat.update(7);
-    d->updateSatisfaction(5);
-    d->updateSatisfaction(7);
-    ASSERT_TRUE(d->getSatisfaction()->getAverage() == sat.getAverage());
-}
-
-/**
- * check update method.
- */
-TEST_F(DriverTest, update) {
-    Satisfaction sat;
-    sat.update(5);
-    sat.update(7);
-    d->updateSatisfaction(5);
-    d->updateSatisfaction(7);
-    ASSERT_TRUE(d->getSatisfaction()->getAverage() == sat.getAverage());
-}
-
-/**
  * check moveOneStep method.
  * compares expected location after moveOneStep and the real location.
  */
 TEST_F(DriverTest, moveOneStep) {
-    Passenger* p[1] = {pass};
-    TripInfo ti(300,start,destination,3,100);
-    Cab cab(Color::GREEN,CarManufacture::TESLA ,4453523);
+    Passenger *p[1] = {pass};
+    TripInfo ti(300, start, destination, 3, 100);
+    Cab cab(Color::GREEN, CarManufacture::TESLA, 4453523);
     d->setCab(&cab);
     d->moveOneStep();
     ASSERT_TRUE(*(cab.getLocation()) == *endLocation);
+}
+
+/**
+ * check updateSatisfaction method.
+ */
+TEST_F(DriverTest, updateSatisfaction) {
+    Satisfaction sat;
+    sat.update(5);
+    sat.update(7);
+    d->updateSatisfaction(5);
+    d->updateSatisfaction(7);
+    ASSERT_TRUE(d->getSatisfaction()->getAverage() == sat.getAverage());
 }
 
 /**
@@ -147,8 +152,8 @@ TEST_F(DriverTest, moveOneStep) {
  * compares 2 identical drivers.
  */
 TEST_F(DriverTest, equality) {
-    Driver d1(305,40,MartialStatues::WIDOWED,7,0);
-    Driver d2(305,40,MartialStatues::WIDOWED,7,0);
+    Driver d1(305, 40, MartialStatues::WIDOWED, 7, 0);
+    Driver d2(305, 40, MartialStatues::WIDOWED, 7, 0);
     ASSERT_TRUE(d1 == d2);
 }
 
@@ -157,7 +162,7 @@ TEST_F(DriverTest, equality) {
  * compares 2 not identical drivers.
  */
 TEST_F(DriverTest, notEquality) {
-    Driver d1(305,40,MartialStatues::WIDOWED,7,0);
-    Driver d2(302,40,MartialStatues::WIDOWED,7,0);
+    Driver d1(305, 40, MartialStatues::WIDOWED, 7, 0);
+    Driver d2(302, 40, MartialStatues::WIDOWED, 7, 0);
     ASSERT_TRUE(d1 != d2);
 }

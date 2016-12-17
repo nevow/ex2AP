@@ -32,13 +32,15 @@ public:
             }
             delete (passengers);
         }
+        if (road->empty()) {
+            delete destination;
+        }
         while (!road->empty()) {
             delete (road->top());
             road->pop();
         }
         delete road;
         delete start;
-        delete destination;
     }
 
     double getTariff() const;

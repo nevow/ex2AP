@@ -64,15 +64,15 @@ TEST_F(MapTest, getValue) {
 */
 TEST_F(MapTest, getRoot) {
 
-// the map didn't initialize, in every node the distance is -1, (0,0) is the root
-    EXPECT_EQ(map->getRoot()->getP(), *p1);
+    // the map didn't initialize, in every node the distance is -1, (0,0) is the root
+    EXPECT_EQ(*(map->getRoot()->getP()), *p1);
 
     map->setItem(map->getCoordinatedItem(0, 0), 2);
     map->setItem(map->getCoordinatedItem(1, 0), 1);
     map->setItem(map->getCoordinatedItem(0, 1), 1);
     map->setItem(map->getCoordinatedItem(1, 1), 0);
-// the map initialize, (1,1) is the root
-    EXPECT_EQ(map->getRoot()->getP(), p2);
+    // the map initialize, (1,1) is the root
+    EXPECT_EQ(*(map->getRoot()->getP()), *p2);
 }
 
 /**
@@ -92,6 +92,7 @@ TEST_F(MapTest, setAll) {
 * check setItem (distance) method.
 */
 TEST_F(MapTest, setItem) {
+    map->setAll(-1);
     map->setItem(map->getCoordinatedItem(1, 1), 3);
     EXPECT_NE(map->getCoordinatedItem(1, 1)->getDistance(), -1);
     EXPECT_EQ(map->getCoordinatedItem(1, 1)->getDistance(), 3);

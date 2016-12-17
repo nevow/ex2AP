@@ -31,9 +31,12 @@ double Satisfaction::getAverage() const {
 /**
  *
  * @param grade to add to the average grade.
+ * if the grade is above 5 or below 1, dont do a thing
  */
 void Satisfaction::update(int grade) {
-    average = ((average * amount) + grade) / (amount + 1);
-    amount++;
+    if ((grade > 0) && (grade <= 5)) {
+        average = ((average * amount) + grade) / (amount + 1);
+        amount++;
+    }
 }
 

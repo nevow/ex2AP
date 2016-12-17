@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ex2AP.dir/src/main.cpp.o"
+  "CMakeFiles/ex2AP.dir/main.cpp.o"
   "CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o"
   "CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o"
   "CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o"

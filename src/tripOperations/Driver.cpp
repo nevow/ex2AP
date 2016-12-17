@@ -47,13 +47,6 @@ const MartialStatues &Driver::getStatus() const {
 }
 
 /**
- * @param status of the driver to set.
- */
-void Driver::setStatus(const MartialStatues &status) {
-    Driver::status = status;
-}
-
-/**
  * @return the experience of the driver
  */
 int Driver::getExperience() const {
@@ -61,14 +54,18 @@ int Driver::getExperience() const {
 }
 
 /**
- * @param experience of the driveer to set.
+ *
+ * @return the vehicle id
  */
-void Driver::setExperience(int experience) {
-    Driver::experience = experience;
-}
-
 int Driver::getVehicle_id() const {
     return vehicleId;
+}
+
+/**
+ * @return the satisfaction of the driver
+ */
+Satisfaction *Driver::getSatisfaction() const {
+    return satisfaction;
 }
 
 /**
@@ -76,6 +73,27 @@ int Driver::getVehicle_id() const {
  */
 TripInfo *Driver::getTi() {
     return ti;
+}
+
+/**
+ * @return the cab of the driver
+ */
+Taxi *Driver::getCab() const {
+    return cab;
+}
+
+/**
+ * @param status of the driver to set.
+ */
+void Driver::setStatus(const MartialStatues &status) {
+    Driver::status = status;
+}
+
+/**
+ * @param experience of the driveer to set.
+ */
+void Driver::setExperience(int experience) {
+    Driver::experience = experience;
 }
 
 /**
@@ -88,20 +106,6 @@ void Driver::setTi(TripInfo *tripinfo) {
     } else {
         cab->setTariff(0);
     }
-}
-
-/**
- * @return the satisfaction of the driver
- */
-Satisfaction *Driver::getSatisfaction() const {
-    return satisfaction;
-}
-
-/**
- * @return the cab of the driver
- */
-Taxi *Driver::getCab() const {
-    return cab;
 }
 
 /**

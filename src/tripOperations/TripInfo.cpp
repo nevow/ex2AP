@@ -12,7 +12,6 @@
  * @param start point of the trip
  * @param destination point of the trip
  * @param amountOfPassengers of the trip
- * @param passengers of the trip
  * @param tariff of the trip
  */
 TripInfo::TripInfo(int rideId, Point *start, Point *destination, int amountOfPassengers,
@@ -20,14 +19,15 @@ TripInfo::TripInfo(int rideId, Point *start, Point *destination, int amountOfPas
         rideId(rideId), start(start), destination(destination),
         amountOfPassengers(amountOfPassengers), passengers(passengers), tariff(tariff) {
     currentDistance = 0;
+    // creates the passengers according to the amount of passengers
     passengers = new list<Passenger *>;
     for (int i = 0; i < amountOfPassengers; i++) {
         passengers->push_front(new Passenger(start, destination));
     }
+    // create the road of this trip. only end point for now
     road = new stack<CoordinatedItem *>();
     road->push(new Node(destination));
 }
-
 
 /**
  * @return the tarrif of the ride
@@ -35,7 +35,6 @@ TripInfo::TripInfo(int rideId, Point *start, Point *destination, int amountOfPas
 double TripInfo::getTariff() const {
     return tariff;
 }
-
 
 /**
  *
@@ -83,12 +82,10 @@ Point *TripInfo::getStart() const {
 /**
  *
  * @param ti is a trip info to compare if ti is equal
- * @return true if the ride ids match and the start and end points are the same
+ * @return true if the ride ids match
  */
 bool TripInfo::operator==(const TripInfo &ti) const {
-    return rideId == ti.rideId
-           && *start == *ti.start
-           && *destination == *ti.destination;
+    return rideId == ti.rideId;
 }
 
 /**
