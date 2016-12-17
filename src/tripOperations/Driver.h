@@ -54,7 +54,7 @@ public:
 
     void setExperience(int experience);
 
-    void setTi(TripInfo *ti);
+    void setTi(TripInfo *tripinfo);
 
     void setCab(Taxi *cab);
 

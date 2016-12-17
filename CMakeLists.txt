@@ -12,13 +12,11 @@ set(SOURCE_FILES src/main.cpp test/coordinatesTests/MapTest.cpp test/coordinates
         src/taxi/LuxuryCab.h src/coordinates/Obstacle.cpp src/coordinates/Obstacle.h
         src/enum/MartialStatues.h src/enum/CarManufacture.h src/enum/Color.h
         src/tripOperations/Satisfaction.cpp src/tripOperations/Satisfaction.h
-        src/listeners/DriverAvailableListener.cpp src/listeners/DriverAvailableListener.h
         src/listeners/TripEndListener.cpp src/listeners/TripEndListener.h
         src/listeners/EventListener.h src/tripOperations/TripInfo.cpp src/tripOperations/TripInfo.h
         src/tripOperations/TaxiCenter.cpp src/tripOperations/TaxiCenter.h src/managment/MainFlow.cpp
         src/managment/MainFlow.h src/tripOperations/Passenger.cpp src/tripOperations/Passenger.h
         src/taxi/Cab.cpp src/taxi/Cab.h test/coordinatesTests/PointTest.cpp
-        test/listenersTest/DriverAvailableListenerTest.cpp
         test/listenersTest/TripEndListenerTest.cpp test/tripOperationsTests/DriverTest.cpp
         test/tripOperationsTests/PassengerTest.cpp test/tripOperationsTests/SatisfactionTest.cpp
         test/tripOperationsTests/TaxiCenterTest.cpp test/tripOperationsTests/TripInfoTest.cpp

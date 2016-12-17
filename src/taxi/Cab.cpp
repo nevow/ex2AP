@@ -27,6 +27,6 @@ void Cab::move(stack<CoordinatedItem *> *road) {
  *
  * @param t is the tariff of the taxi
  */
-void Cab::setTariff(int t) {
+void Cab::setTariff(double t) {
     Taxi::setTariff(t);
 }

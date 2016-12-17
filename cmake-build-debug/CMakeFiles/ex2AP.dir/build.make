@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/maayan/Downloads/clion/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/nevo/prog/clion/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/maayan/Downloads/clion/bin/cmake/bin/cmake -E remove -f
+RM = /home/nevo/prog/clion/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maayan/ClionProjects/ex3AP
+CMAKE_SOURCE_DIR = /home/nevo/ClionProjects/ex2AP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maayan/ClionProjects/ex3AP/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nevo/ClionProjects/ex2AP/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ex2AP.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/ex2AP.dir/flags.make
 
 CMakeFiles/ex2AP.dir/src/main.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex2AP.dir/src/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/main.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex2AP.dir/src/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/main.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/main.cpp
 
 CMakeFiles/ex2AP.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/main.cpp > CMakeFiles/ex2AP.dir/src/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/main.cpp > CMakeFiles/ex2AP.dir/src/main.cpp.i
 
 CMakeFiles/ex2AP.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/main.cpp -o CMakeFiles/ex2AP.dir/src/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/main.cpp -o CMakeFiles/ex2AP.dir/src/main.cpp.s
 
 CMakeFiles/ex2AP.dir/src/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/ex2AP.dir/src/main.cpp.o.provides.build: CMakeFiles/ex2AP.dir/src/mai
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o: ../test/coordinatesTests/MapTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/coordinatesTests/MapTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/coordinatesTests/MapTest.cpp
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/coordinatesTests/MapTest.cpp > CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/coordinatesTests/MapTest.cpp > CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/coordinatesTests/MapTest.cpp -o CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/coordinatesTests/MapTest.cpp -o CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o: ../test/coordinatesTests/NodeTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/coordinatesTests/NodeTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/coordinatesTests/NodeTest.cpp
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/coordinatesTests/NodeTest.cpp > CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/coordinatesTests/NodeTest.cpp > CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/coordinatesTests/NodeTest.cpp -o CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/coordinatesTests/NodeTest.cpp -o CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o.provides.build: CMakeF
 
 CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o: ../src/coordinates/Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/coordinates/Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/coordinates/Point.cpp
 
 CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/coordinates/Point.cpp > CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/coordinates/Point.cpp > CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.i
 
 CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/coordinates/Point.cpp -o CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/coordinates/Point.cpp -o CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.s
 
 CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o.provides.build: CMakeFiles/ex2A
 
 CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.o: ../src/coordinates/Map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/coordinates/Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/coordinates/Map.cpp
 
 CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/coordinates/Map.cpp > CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/coordinates/Map.cpp > CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.i
 
 CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/coordinates/Map.cpp -o CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/coordinates/Map.cpp -o CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.s
 
 CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.o.provides.build: CMakeFiles/ex2AP.
 
 CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.o: ../src/managment/BFS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/managment/BFS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/managment/BFS.cpp
 
 CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/managment/BFS.cpp > CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/managment/BFS.cpp > CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.i
 
 CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/managment/BFS.cpp -o CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/managment/BFS.cpp -o CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.s
 
 CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.o.provides.build: CMakeFiles/ex2AP.di
 
 CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.o: ../src/coordinates/Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/coordinates/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/coordinates/Node.cpp
 
 CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/coordinates/Node.cpp > CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/coordinates/Node.cpp > CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.i
 
 CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/coordinates/Node.cpp -o CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/coordinates/Node.cpp -o CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.s
 
 CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.o.provides.build: CMakeFiles/ex2AP
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.o: ../src/tripOperations/Driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/tripOperations/Driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/tripOperations/Driver.cpp
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/tripOperations/Driver.cpp > CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/tripOperations/Driver.cpp > CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.i
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/tripOperations/Driver.cpp -o CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/tripOperations/Driver.cpp -o CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.s
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o: ../src/managment/SystemOperations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/managment/SystemOperations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/managment/SystemOperations.cpp
 
 CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/managment/SystemOperations.cpp > CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/managment/SystemOperations.cpp > CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.i
 
 CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/managment/SystemOperations.cpp -o CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/managment/SystemOperations.cpp -o CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.s
 
 CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o.provides.build: CMakeF
 
 CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.o: ../src/taxi/LuxuryCab.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/taxi/LuxuryCab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/taxi/LuxuryCab.cpp
 
 CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/taxi/LuxuryCab.cpp > CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/taxi/LuxuryCab.cpp > CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.i
 
 CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/taxi/LuxuryCab.cpp -o CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/taxi/LuxuryCab.cpp -o CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.s
 
 CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.o.provides.build: CMakeFiles/ex2AP.d
 
 CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.o: ../src/coordinates/Obstacle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/coordinates/Obstacle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/coordinates/Obstacle.cpp
 
 CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/coordinates/Obstacle.cpp > CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/coordinates/Obstacle.cpp > CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.i
 
 CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/coordinates/Obstacle.cpp -o CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/coordinates/Obstacle.cpp -o CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.s
 
 CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.o.provides.build: CMakeFiles/e
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.o: ../src/tripOperations/Satisfaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/tripOperations/Satisfaction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/tripOperations/Satisfaction.cpp
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/tripOperations/Satisfaction.cpp > CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/tripOperations/Satisfaction.cpp > CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.i
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/tripOperations/Satisfaction.cpp -o CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/tripOperations/Satisfaction.cpp -o CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.s
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.o.provides.build: CMake
 
 CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/listeners/DriverAvailableListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/listeners/DriverAvailableListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/listeners/DriverAvailableListener.cpp
 
 CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/listeners/DriverAvailableListener.cpp > CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/listeners/DriverAvailableListener.cpp > CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.i
 
 CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/listeners/DriverAvailableListener.cpp -o CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/listeners/DriverAvailableListener.cpp -o CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.s
 
 CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o.provides.build:
 
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o: ../src/listeners/TripEndListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/listeners/TripEndListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/listeners/TripEndListener.cpp
 
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/listeners/TripEndListener.cpp > CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/listeners/TripEndListener.cpp > CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.i
 
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/listeners/TripEndListener.cpp -o CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/listeners/TripEndListener.cpp -o CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.s
 
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.o: ../src/tripOperations/TripInfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/tripOperations/TripInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/tripOperations/TripInfo.cpp
 
 CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/tripOperations/TripInfo.cpp > CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/tripOperations/TripInfo.cpp > CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.i
 
 CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/tripOperations/TripInfo.cpp -o CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/tripOperations/TripInfo.cpp -o CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.s
 
 CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/tripOperations/TaxiCenter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/tripOperations/TaxiCenter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/tripOperations/TaxiCenter.cpp
 
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/tripOperations/TaxiCenter.cpp > CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/tripOperations/TaxiCenter.cpp > CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.i
 
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/tripOperations/TaxiCenter.cpp -o CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/tripOperations/TaxiCenter.cpp -o CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.s
 
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/managment/MainFlow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/managment/MainFlow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/managment/MainFlow.cpp
 
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/managment/MainFlow.cpp > CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/managment/MainFlow.cpp > CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.i
 
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/managment/MainFlow.cpp -o CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/managment/MainFlow.cpp -o CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.s
 
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o.provides.build: CMakeFiles/ex2
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.o: ../src/tripOperations/Passenger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/tripOperations/Passenger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/tripOperations/Passenger.cpp
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/tripOperations/Passenger.cpp > CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/tripOperations/Passenger.cpp > CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.i
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/tripOperations/Passenger.cpp -o CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/tripOperations/Passenger.cpp -o CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.s
 
 CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.o: ../src/taxi/Cab.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/taxi/Cab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/taxi/Cab.cpp
 
 CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/taxi/Cab.cpp > CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/taxi/Cab.cpp > CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.i
 
 CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/taxi/Cab.cpp -o CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/taxi/Cab.cpp -o CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.s
 
 CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.o.provides.build: CMakeFiles/ex2AP.dir/src
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o: ../test/coordinatesTests/PointTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/coordinatesTests/PointTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/coordinatesTests/PointTest.cpp
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/coordinatesTests/PointTest.cpp > CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/coordinatesTests/PointTest.cpp > CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/coordinatesTests/PointTest.cpp -o CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/coordinatesTests/PointTest.cpp -o CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o.provides.build: CMake
 
 CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../test/listenersTest/DriverAvailableListenerTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/listenersTest/DriverAvailableListenerTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/listenersTest/DriverAvailableListenerTest.cpp
 
 CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/listenersTest/DriverAvailableListenerTest.cpp > CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/listenersTest/DriverAvailableListenerTest.cpp > CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/listenersTest/DriverAvailableListenerTest.cpp -o CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/listenersTest/DriverAvailableListenerTest.cpp -o CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o.requires:
 
@@ -563,16 +563,16 @@ CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o.provid
 
 CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.o: ../test/listenersTest/TripEndListenerTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/listenersTest/TripEndListenerTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/listenersTest/TripEndListenerTest.cpp
 
 CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/listenersTest/TripEndListenerTest.cpp > CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/listenersTest/TripEndListenerTest.cpp > CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/listenersTest/TripEndListenerTest.cpp -o CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/listenersTest/TripEndListenerTest.cpp -o CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.o.requires:
 
@@ -587,16 +587,16 @@ CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.o.provides.build
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.o: ../test/tripOperationsTests/DriverTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/DriverTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/DriverTest.cpp
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/DriverTest.cpp > CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/DriverTest.cpp > CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/DriverTest.cpp -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/DriverTest.cpp -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.o.requires:
 
@@ -611,16 +611,16 @@ CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.o.provides.build: C
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.o: ../test/tripOperationsTests/PassengerTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/PassengerTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/PassengerTest.cpp
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/PassengerTest.cpp > CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/PassengerTest.cpp > CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/PassengerTest.cpp -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/PassengerTest.cpp -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.o.requires:
 
@@ -635,16 +635,16 @@ CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.o.provides.build
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.o: ../test/tripOperationsTests/SatisfactionTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/SatisfactionTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/SatisfactionTest.cpp
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/SatisfactionTest.cpp > CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/SatisfactionTest.cpp > CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/SatisfactionTest.cpp -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/SatisfactionTest.cpp -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.o.requires:
 
@@ -659,16 +659,16 @@ CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.o.provides.bu
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.o: ../test/tripOperationsTests/TaxiCenterTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/TaxiCenterTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/TaxiCenterTest.cpp
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/TaxiCenterTest.cpp > CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/TaxiCenterTest.cpp > CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/TaxiCenterTest.cpp -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/TaxiCenterTest.cpp -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.o.requires:
 
@@ -683,16 +683,16 @@ CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.o.provides.buil
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.o: ../test/tripOperationsTests/TripInfoTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/TripInfoTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/TripInfoTest.cpp
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/TripInfoTest.cpp > CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/TripInfoTest.cpp > CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/tripOperationsTests/TripInfoTest.cpp -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/tripOperationsTests/TripInfoTest.cpp -o CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.o.requires:
 
@@ -707,16 +707,16 @@ CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.o.provides.build:
 
 CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.o: ../test/taxiTests/CabTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/taxiTests/CabTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/taxiTests/CabTest.cpp
 
 CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/taxiTests/CabTest.cpp > CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/taxiTests/CabTest.cpp > CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/taxiTests/CabTest.cpp -o CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/taxiTests/CabTest.cpp -o CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.o.requires:
 
@@ -731,16 +731,16 @@ CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.o.provides.build: CMakeFiles/ex2
 
 CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.o: ../test/taxiTests/LuxuryCabTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/taxiTests/LuxuryCabTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/taxiTests/LuxuryCabTest.cpp
 
 CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/taxiTests/LuxuryCabTest.cpp > CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/taxiTests/LuxuryCabTest.cpp > CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/taxiTests/LuxuryCabTest.cpp -o CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/taxiTests/LuxuryCabTest.cpp -o CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.o.requires:
 
@@ -755,16 +755,16 @@ CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o: ../test/managmentTests/SystemOperationsTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/managmentTests/SystemOperationsTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/managmentTests/SystemOperationsTest.cpp
 
 CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/managmentTests/SystemOperationsTest.cpp > CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/managmentTests/SystemOperationsTest.cpp > CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/managmentTests/SystemOperationsTest.cpp -o CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/managmentTests/SystemOperationsTest.cpp -o CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o.requires:
 
@@ -779,16 +779,16 @@ CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o.provides.bui
 
 CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.o: ../test/managmentTests/BFSTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/managmentTests/BFSTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/managmentTests/BFSTest.cpp
 
 CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/managmentTests/BFSTest.cpp > CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/managmentTests/BFSTest.cpp > CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/managmentTests/BFSTest.cpp -o CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/managmentTests/BFSTest.cpp -o CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.o.requires:
 
@@ -803,16 +803,16 @@ CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.o: ../test/managmentTests/MainFlowTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.o -c /home/maayan/ClionProjects/ex3AP/test/managmentTests/MainFlowTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.o -c /home/nevo/ClionProjects/ex2AP/test/managmentTests/MainFlowTest.cpp
 
 CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/test/managmentTests/MainFlowTest.cpp > CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/test/managmentTests/MainFlowTest.cpp > CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.i
 
 CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/test/managmentTests/MainFlowTest.cpp -o CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/test/managmentTests/MainFlowTest.cpp -o CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.s
 
 CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.o.requires:
 
@@ -827,16 +827,16 @@ CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.o.provides.build: CMak
 
 CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: CMakeFiles/ex2AP.dir/flags.make
 CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../src/managment/ProperInput.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o -c /home/maayan/ClionProjects/ex3AP/src/managment/ProperInput.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o -c /home/nevo/ClionProjects/ex2AP/src/managment/ProperInput.cpp
 
 CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maayan/ClionProjects/ex3AP/src/managment/ProperInput.cpp > CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nevo/ClionProjects/ex2AP/src/managment/ProperInput.cpp > CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.i
 
 CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maayan/ClionProjects/ex3AP/src/managment/ProperInput.cpp -o CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nevo/ClionProjects/ex2AP/src/managment/ProperInput.cpp -o CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.s
 
 CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o.requires:
 
@@ -926,7 +926,7 @@ ex2AP: lib/googletest-master/googlemock/gtest/libgtest.a
 ex2AP: lib/googletest-master/googlemock/gtest/libgtest_main.a
 ex2AP: lib/googletest-master/googlemock/gtest/libgtest.a
 ex2AP: CMakeFiles/ex2AP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable ex2AP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable ex2AP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ex2AP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -975,6 +975,6 @@ CMakeFiles/ex2AP.dir/clean:
 .PHONY : CMakeFiles/ex2AP.dir/clean
 
 CMakeFiles/ex2AP.dir/depend:
-	cd /home/maayan/ClionProjects/ex3AP/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maayan/ClionProjects/ex3AP /home/maayan/ClionProjects/ex3AP /home/maayan/ClionProjects/ex3AP/cmake-build-debug /home/maayan/ClionProjects/ex3AP/cmake-build-debug /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/ex2AP.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nevo/ClionProjects/ex2AP/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nevo/ClionProjects/ex2AP /home/nevo/ClionProjects/ex2AP /home/nevo/ClionProjects/ex2AP/cmake-build-debug /home/nevo/ClionProjects/ex2AP/cmake-build-debug /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/ex2AP.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ex2AP.dir/depend
 

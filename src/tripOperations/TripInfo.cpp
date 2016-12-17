@@ -6,23 +6,6 @@
 #include "../coordinates/Node.h"
 
 /**
- * @return the tarrif of the ride
- */
-double TripInfo::getTariff() const {
-    return tariff;
-}
-
-
-/**
- *
- * @param location to check if it is the end of this trip.
- * @return true if the location is the end of the trip.
- */
-bool TripInfo::checkEnd(Point *location) {
-    return *location == *destination;
-}
-
-/**
  * constructor.
  *
  * @param rideId for the trip
@@ -44,6 +27,25 @@ TripInfo::TripInfo(int rideId, Point *start, Point *destination, int amountOfPas
     road = new stack<CoordinatedItem *>();
     road->push(new Node(destination));
 }
+
+
+/**
+ * @return the tarrif of the ride
+ */
+double TripInfo::getTariff() const {
+    return tariff;
+}
+
+
+/**
+ *
+ * @param location to check if it is the end of this trip.
+ * @return true if the location is the end of the trip.
+ */
+bool TripInfo::checkEnd(Point *location) {
+    return *location == *destination;
+}
+
 
 /**
  *

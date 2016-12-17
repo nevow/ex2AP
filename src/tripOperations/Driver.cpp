@@ -79,11 +79,15 @@ TripInfo *Driver::getTi() {
 }
 
 /**
- * @param ti of the driver to set.
+ * @param tripinfo of the driver to set.
  */
-void Driver::setTi(TripInfo *ti) {
-    Driver::ti = ti;
-    cab->setTariff(ti->getTariff());
+void Driver::setTi(TripInfo *tripinfo) {
+    Driver::ti = tripinfo;
+    if (tripinfo) {
+        cab->setTariff(tripinfo->getTariff());
+    } else {
+        cab->setTariff(0);
+    }
 }
 
 /**
