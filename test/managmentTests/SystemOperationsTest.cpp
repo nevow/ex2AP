@@ -56,15 +56,14 @@ protected:
 
 /**
  * checks getMap method.
- */
+
 TEST_F(SystemOperationsTest, getMap) {
 
     Map *map1 = new Map(4, 4);
     SystemOperations *so1 = new SystemOperations(map1, NULL);
-    Map *map2 = so1->getMap();
 
-    ASSERT_EQ(map1, map2);
-}
+    //ASSERT_EQ(map1, map2);
+}*/
 
 /**
  * checks the addObstacle method.

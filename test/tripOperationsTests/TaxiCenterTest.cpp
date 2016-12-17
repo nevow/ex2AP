@@ -29,8 +29,7 @@ protected:
         passengers = new list<Passenger *>;
         passengers->push_front(pass);
         d = new Driver(305, 40, MartialStatues::WIDOWED, 7, 0);
-        ti = new TripInfo(100, start, destination, 1, passengers,
-                          100);          // standard first trip info
+        ti = new TripInfo(100, start, destination, 1, 100);          // standard first trip info
         cab = new Cab(Color::GREEN, CarManufacture::TESLA, 4453523);
         tc = new TaxiCenter();
     }

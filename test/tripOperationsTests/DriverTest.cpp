@@ -86,8 +86,8 @@ TEST_F(DriverTest, getAndSetTi) {
     Passenger* pass2 = &p2;
     Passenger* pass3 = &p3;
     Passenger* p[3] = {pass1,pass2,pass3};
-    TripInfo ti1(300,start,destination,3,NULL,100);
-    TripInfo ti2(300,start,destination,3,NULL,100);
+    TripInfo ti1(300,start,destination,3,100);
+    TripInfo ti2(300,start,destination,3,100);
     ASSERT_TRUE(ti1 == ti2);
     d->setTi(&ti1);
     EXPECT_TRUE(*d->getTi() == ti2);
@@ -135,7 +135,7 @@ TEST_F(DriverTest, update) {
  */
 TEST_F(DriverTest, moveOneStep) {
     Passenger* p[1] = {pass};
-    TripInfo ti(300,start,destination,3,NULL,100);
+    TripInfo ti(300,start,destination,3,100);
     Cab cab(Color::GREEN,CarManufacture::TESLA ,4453523);
     d->setCab(&cab);
     d->moveOneStep();

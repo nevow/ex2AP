@@ -19,7 +19,7 @@ protected:
         pass = new Passenger(start, destination);
         passengers = new list<Passenger *>;
         passengers->push_front(pass);
-        ti = new TripInfo(100, start, destination, 1, passengers, 100);
+        ti = new TripInfo(100, start, destination, 1, 100);
     }
 
     virtual void TearDown() {
@@ -44,7 +44,7 @@ TEST_F(TripInfoTest, checkEnd) {
  * compares 2 identical trip info.
  */
 TEST_F(TripInfoTest, equality) {
-    TripInfo *ti1 = new TripInfo(100, start, destination, 1, passengers, 100);
+    TripInfo *ti1 = new TripInfo(100, start, destination, 1, 100);
     EXPECT_TRUE(*ti1 == *ti) << "same trip info. should be equal";
     delete (ti1);
 }
@@ -54,7 +54,7 @@ TEST_F(TripInfoTest, equality) {
  * compares 2 not identical trip info.
  */
 TEST_F(TripInfoTest, notEquality) {
-    TripInfo *ti1 = new TripInfo(54, start, destination, 1, passengers, 100);
+    TripInfo *ti1 = new TripInfo(54, start, destination, 1, 100);
     EXPECT_TRUE(*ti1 != *ti) << "not the same trip info. should be not equal";
     delete (ti1);
 }

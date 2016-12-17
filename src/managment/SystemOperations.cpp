@@ -16,13 +16,6 @@ SystemOperations::SystemOperations(Map *map1, list<Node *> *obs) {
 }
 
 /**
- * @return the map of SystemOperations
- */
-Map *SystemOperations::getMap() const {
-    return map;
-}
-
-/**
  * @param obstacle to add to the obstacles List.
  */
 void SystemOperations::addObstacle(Node *obstacle) {

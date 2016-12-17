@@ -52,6 +52,7 @@ CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o: ../src/taxi/Taxi.h
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o: ../src/tripOperations/Driver.h
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o: ../src/tripOperations/Passenger.h
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o: ../src/tripOperations/Satisfaction.h
+CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o: ../src/tripOperations/TaxiCenter.h
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o: ../src/tripOperations/TripInfo.h
 
 CMakeFiles/ex2AP.dir/src/main.cpp.o: ../src/coordinates/CoordinatedItem.h
@@ -94,6 +95,7 @@ CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/enum/MartialStatuesFac
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/listeners/EventListener.h
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/managment/MainFlow.cpp
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/managment/MainFlow.h
+CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/managment/ProperInput.h
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/managment/SystemOperations.h
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/taxi/Cab.h
 CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o: ../src/taxi/LuxuryCab.h
@@ -110,6 +112,11 @@ CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../lib/googletest-master/g
 CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
 CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
 CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../src/coordinates/CoordinatedItem.h
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../src/coordinates/Grid.h
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../src/coordinates/Map.h
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../src/coordinates/Node.h
+CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../src/coordinates/Point.h
 CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../src/managment/ProperInput.cpp
 CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o: ../src/managment/ProperInput.h
 
