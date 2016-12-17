@@ -2774,13 +2774,13 @@ would generate a failure that contains the text:
 
 For the purpose of typing, you can view
 ```
-MATCHER_Pk(Foo, p1, ..., pk, description_string) { ... }
+MATCHER_Pk(Foo, start, ..., pk, description_string) { ... }
 ```
 as shorthand for
 ```
 template <typename p1_type, ..., typename pk_type>
 FooMatcherPk<p1_type, ..., pk_type>
-Foo(p1_type p1, ..., pk_type pk) { ... }
+Foo(p1_type start, ..., pk_type pk) { ... }
 ```
 
 When you write `Foo(v1, ..., vk)`, the compiler infers the types of
@@ -2791,7 +2791,7 @@ As said earlier, you don't get to (or need to) specify
 `arg_type` as that's determined by the context in which the matcher
 is used.
 
-You can assign the result of expression `Foo(p1, ..., pk)` to a
+You can assign the result of expression `Foo(start, ..., pk)` to a
 variable of type `FooMatcherPk<p1_type, ..., pk_type>`.  This can be
 useful when composing matchers.  Matchers that don't have a parameter
 or have only one parameter have special types: you can assign `Foo()`
@@ -3203,7 +3203,7 @@ The syntax:
 ```
 ACTION_TEMPLATE(ActionName,
                 HAS_m_TEMPLATE_PARAMS(kind1, name1, ..., kind_m, name_m),
-                AND_n_VALUE_PARAMS(p1, ..., p_n)) { statements; }
+                AND_n_VALUE_PARAMS(start, ..., p_n)) { statements; }
 ```
 
 defines an action template that takes _m_ explicit template parameters
@@ -3270,9 +3270,9 @@ the action and the parameter types.  The rule is relatively simple:
 | `ACTION(Foo)`        | `Foo()`        | `FooAction`  |
 | `ACTION_TEMPLATE(Foo, HAS_m_TEMPLATE_PARAMS(...), AND_0_VALUE_PARAMS())` |	`Foo<t1, ..., t_m>()` | `FooAction<t1, ..., t_m>` |
 | `ACTION_P(Bar, param)` | `Bar(int_value)` | `BarActionP<int>` |
-| `ACTION_TEMPLATE(Bar, HAS_m_TEMPLATE_PARAMS(...), AND_1_VALUE_PARAMS(p1))` | `Bar<t1, ..., t_m>(int_value)` | `FooActionP<t1, ..., t_m, int>` |
-| `ACTION_P2(Baz, p1, p2)` | `Baz(bool_value, int_value)` | `BazActionP2<bool, int>` |
-| `ACTION_TEMPLATE(Baz, HAS_m_TEMPLATE_PARAMS(...), AND_2_VALUE_PARAMS(p1, p2))` | `Baz<t1, ..., t_m>(bool_value, int_value)` | `FooActionP2<t1, ..., t_m, bool, int>` |
+| `ACTION_TEMPLATE(Bar, HAS_m_TEMPLATE_PARAMS(...), AND_1_VALUE_PARAMS(start))` | `Bar<t1, ..., t_m>(int_value)` | `FooActionP<t1, ..., t_m, int>` |
+| `ACTION_P2(Baz, start, destination)` | `Baz(bool_value, int_value)` | `BazActionP2<bool, int>` |
+| `ACTION_TEMPLATE(Baz, HAS_m_TEMPLATE_PARAMS(...), AND_2_VALUE_PARAMS(start, destination))` | `Baz<t1, ..., t_m>(bool_value, int_value)` | `FooActionP2<t1, ..., t_m, bool, int>` |
 | ...                  | ...            | ...          |
 
 Note that we have to pick different suffixes (`Action`, `ActionP`,

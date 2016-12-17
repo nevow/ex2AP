@@ -38,8 +38,8 @@ protected:
  * checks getP method.
  */
 TEST_F(NodeTest, getP) {
-    EXPECT_TRUE(node2->getP() == p1);
-    EXPECT_FALSE(node2->getP() == p2);
+    EXPECT_FALSE(*(node2->getP()) == *p1);
+    EXPECT_TRUE(*(node2->getP()) == *p2);
 }
 
 /**
@@ -47,7 +47,7 @@ TEST_F(NodeTest, getP) {
  */
 TEST_F(NodeTest, setP) {
     node2->setP(p1);
-    EXPECT_TRUE(node2->getP() == p1);
+    EXPECT_TRUE(*(node2->getP()) == *p1);
 }
 
 /**
@@ -70,14 +70,14 @@ TEST_F(NodeTest, getCoordinates) {
 TEST_F(NodeTest, equals) {
 
     // checks unequals Nodes
-    EXPECT_FALSE(node1 == node2);
+    EXPECT_FALSE(*node1 == *node2);
     // checks equals Nodes
-    EXPECT_TRUE(node2 == node3);
+    EXPECT_TRUE(*node2 == *node3);
 }
 
 /**
 *  check the comparing of two Nodes.
 */
 TEST_F(NodeTest, unequals) {
-    EXPECT_TRUE(node1 != node3);
+    EXPECT_TRUE(*node1 != *node3);
 }

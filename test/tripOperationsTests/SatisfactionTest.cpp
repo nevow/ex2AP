@@ -25,9 +25,9 @@ protected:
 TEST_F(SatisfactionTest, getAverage) {
     sat->update(4);
     sat->update(5);
-    sat->update(10);
-    sat->update(9);
-    ASSERT_TRUE(sat->getAverage() == 7) << "failed at getting the right avarage";
+    sat->update(2);
+    sat->update(3);
+    ASSERT_TRUE(sat->getAverage() == 3.5) << "failed at getting the right avarage";
 }
 
 /**
@@ -35,9 +35,10 @@ TEST_F(SatisfactionTest, getAverage) {
  * checks if the satisfaction updated properly.
  */
 TEST_F(SatisfactionTest, update) {
+    sat->update(3);
+    sat->update(-5);
     sat->update(4);
-    sat->update(5);
-    sat->update(10);
-    sat->update(9);
-    ASSERT_TRUE(sat->getAverage() == 7) << "failed at updating the right avarage";
+    sat->update(-9);
+    sat->update(0);
+    ASSERT_TRUE(sat->getAverage() == 3.5) << "failed at updating the right avarage";
 }

@@ -1,7 +1,7 @@
 //
 // tripEndListenerTest.
 // in charge to update the Passenger's Satisfaction on the Driver at the end of the trip.
-// not relevant yet. at this part of the program there is no usage at passengers.
+// moves the driver to the available list
 //
 
 #include <gtest/gtest.h>
@@ -12,36 +12,29 @@
 
 class tripEndListenerTest : public ::testing::Test {
 protected:
-    Point *p1;
-    Point *p2;
-    Node *n;
+    Point *start;
+    Point *destination;
     Driver *d;
     Taxi *cab;
     TaxiCenter *tc;
-    Passenger *pa;
     TripInfo *ti;
-    TripEndListener *tel;
 
+    /**
+     * set points for the trip info
+     * creates a taxi center, driver, cab and tripinfo
+     */
     virtual void SetUp() {
-        p1 = new Point(3, 3);
-        p2 = new Point(2, 3);
-        n = new Node(p1);
-        d = new Driver(100, 40, MartialStatues::SINGLE, 10, 0);
-        cab = new Cab(Color::RED, CarManufacture::HONDA, 1306410);
-        pa = new Passenger(p1, p2);
+        start = new Point(3, 3);
+        destination = new Point(2, 3);
         tc = new TaxiCenter();
-        ti = tc->answerCall(pa);
+        d = new Driver(100, 40, MartialStatues::SINGLE, 10, 0);
+        tc->addDriver(d);                            // adds a tripEndListener to the taxi center
+        cab = new Cab(Color::RED, CarManufacture::HONDA, 100);
         tc->addTaxi(cab);
-        tc->addDriver(d);
-        tel = new TripEndListener(d, tc);
+        ti = new TripInfo(0, start, destination, 3, 20);
     }
 
     virtual void TearDown() {
-        delete (p2);
-        delete (n);
-        delete (ti);
-        delete (pa);
-        delete (tel);
         delete (tc);
     }
 };
@@ -49,10 +42,13 @@ protected:
 /**
  * checks the notify method of the listener.
  * checks if set the driver satisfaction correctly.
+ * checks if the get closest driver returns the recently free driver
  */
 TEST_F(tripEndListenerTest, notify) {
     d->moveOneStep();
     ASSERT_TRUE(d->getSatisfaction()->getAverage() == 0);
-    tel->notify();
+    tc->moveAll();
     EXPECT_TRUE(d->getSatisfaction()->getAverage() > 0);
+    Driver *dr = tc->getClosestDriver(destination);
+    ASSERT_TRUE(dr != NULL);
 }

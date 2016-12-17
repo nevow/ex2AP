@@ -3,7 +3,6 @@
 //
 
 #include "TaxiCenter.h"
-#include "../listeners/DriverAvailableListener.h"
 #include "../listeners/TripEndListener.h"
 
 TripInfo *TaxiCenter::answerCall(Passenger *p) {
@@ -150,7 +149,7 @@ Taxi *TaxiCenter::getTaxiByID(int id) {
 /**
  *
  * @param start point of the trip
- * @return the closest driver to that point
+ * @return the closest driver to that point, exits from the list
  */
 Driver *TaxiCenter::getClosestDriver(Point *start) {
     std::list<Driver *> temp;
@@ -167,6 +166,7 @@ Driver *TaxiCenter::getClosestDriver(Point *start) {
             temp.push_front(d);
         }
     }
+    return NULL;
 }
 
 void TaxiCenter::removeListener(EventListener *el) {

@@ -73,8 +73,8 @@ TEST_F(PointTest, setY) {
  */
 TEST_F(PointTest, outputTest) {
     std::stringstream out;
-    out << p1;
-    ASSERT_TRUE(out.str() == "(1 ,2)\n");
+    out << *p1;
+    ASSERT_TRUE(out.str() == "(1,2)\n");
 }
 
 /**
@@ -91,16 +91,16 @@ TEST_F(PointTest, inputTest) {
  *  check the comparing of two Points.
  */
 TEST_F(PointTest, equalTest) {
-    EXPECT_TRUE(p3 == p4);  // check X and Y unmatched
-    EXPECT_FALSE(p1 == p3); // check only Y matched
-    EXPECT_FALSE(p2 == p4); // check only X matched
+    EXPECT_TRUE(*p3 == *p4);  // check X and Y unmatched
+    EXPECT_FALSE(*p1 == *p3); // check only Y matched
+    EXPECT_FALSE(*p2 == *p4); // check only X matched
 }
 
 /**
  * check the comparing of two Points.
  */
 TEST_F(PointTest, notEqualTest) {
-    EXPECT_TRUE(p1 != p3); // check only Y unmatched
-    EXPECT_TRUE(p2 != p4); // check only X unmatched
+    EXPECT_TRUE(*p1 != *p3); // check only Y unmatched
+    EXPECT_TRUE(*p2 != *p4); // check only X unmatched
 }
 
