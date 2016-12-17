@@ -1,4 +1,4 @@
-/home/nevo/prog/clion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nevo/ClionProjects/ex2AP
+/home/maayan/Downloads/clion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/maayan/ClionProjects/ex3AP
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/nevo/ClionProjects/ex2AP/cmake-build-debug
+-- Build files have been written to: /home/maayan/ClionProjects/ex3AP/cmake-build-debug

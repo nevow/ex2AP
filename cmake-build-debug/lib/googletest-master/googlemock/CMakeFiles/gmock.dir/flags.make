@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -g    -std=c++11 -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -f
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock/include -I/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googlemock -I/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest/include -I/home/nevo/ClionProjects/ex2AP/lib/googletest-master/googletest 
+CXX_INCLUDES = -I/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock/include -I/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googlemock -I/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest/include -I/home/maayan/ClionProjects/ex3AP/lib/googletest-master/googletest 
 
