@@ -41,6 +41,8 @@ public:
         delete destination;
     }
 
+    double getTariff() const;
+
     bool checkEnd(Point *location);
 
     stack<CoordinatedItem *> *getRoad();

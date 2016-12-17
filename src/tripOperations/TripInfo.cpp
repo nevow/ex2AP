@@ -6,6 +6,14 @@
 #include "../coordinates/Node.h"
 
 /**
+ * @return the tarrif of the ride
+ */
+double TripInfo::getTariff() const {
+    return tariff;
+}
+
+
+/**
  *
  * @param location to check if it is the end of this trip.
  * @return true if the location is the end of the trip.
