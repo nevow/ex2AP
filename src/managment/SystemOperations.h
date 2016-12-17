@@ -34,8 +34,6 @@ public:
         delete (obstacles);
     }
 
-    Map *getMap() const;
-
     int getX() const;
 
     int getY() const;
