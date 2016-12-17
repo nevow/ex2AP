@@ -30,7 +30,7 @@ int ProperInput::validInt() {
     int num;
     cin >> num;
 
-    //check if the num is
+    //check if the num is positive
     if (num >= 0) {
         return num;
     } else {
@@ -45,7 +45,7 @@ double ProperInput::validDouble() {
     double num;
     cin >> num;
 
-    //check if the num is
+    //check if the num is positive
     if (num >= 0) {
         return num;
     } else {
