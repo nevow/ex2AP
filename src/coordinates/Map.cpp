@@ -10,7 +10,6 @@ using namespace std;
 
 /**
  * constructor.
- *
  * @param c is the size of columns
  * @param r is the size of rows
  */
@@ -48,7 +47,6 @@ Map::~Map() {
 }
 
 /**
- *
  * @return the rows of the map
  */
 int Map::getRows() const {
@@ -56,7 +54,6 @@ int Map::getRows() const {
 }
 
 /**
- *
  * @return the columns of the map
  */
 int Map::getColumns() const {
@@ -68,7 +65,7 @@ int Map::getColumns() const {
  * @param r is the row value
  * @return the node on the correct position.
  */
-CoordinatedItem *Map::getValue(int c, int r) {
+CoordinatedItem *Map::getCoordinatedItem(int c, int r) {
     if (r < 0 || r >= rows || c < 0 || c > columns) {
         return NULL;
     }
@@ -79,6 +76,7 @@ CoordinatedItem *Map::getValue(int c, int r) {
  * @return the root of the matrix
  */
 Node *Map::getRoot() {
+    // in case the map was used - find the root and return it
     for (int i = 0; i < columns; i++) {
         for (int j = 0; j < rows; ++j) {
             if (matrix[i][j]->getDistance() == 0) {
@@ -86,6 +84,7 @@ Node *Map::getRoot() {
             }
         }
     }
+    // if the map wasn't use used,(all is -1) return the (0,0)
     return matrix[0][0];
 }
 
@@ -124,22 +123,22 @@ CoordinatedItem **Map::getAllNeighbours(CoordinatedItem *item) {
     int i = 0;
 
     if (c > 0) {                          // check left
-        adj[i] = getValue(c - 1, r);
+        adj[i] = getCoordinatedItem(c - 1, r);
         i++;
     }
 
     if (r < rows - 1) {                   // check up
-        adj[i] = getValue(c, r + 1);
+        adj[i] = getCoordinatedItem(c, r + 1);
         i++;
     }
 
     if (c < columns - 1) {                // check right
-        adj[i] = getValue(c + 1, r);
+        adj[i] = getCoordinatedItem(c + 1, r);
         i++;
     }
 
     if (r > 0) {                          // check down
-        adj[i] = getValue(c, r - 1);
+        adj[i] = getCoordinatedItem(c, r - 1);
         i++;
     }
     delete[] (coords);

@@ -26,7 +26,7 @@ public:
 
     int getColumns() const;
 
-    CoordinatedItem *getValue(int r, int c);
+    CoordinatedItem *getCoordinatedItem(int r, int c);
 
     Node *getRoot();
 

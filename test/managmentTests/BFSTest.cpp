@@ -56,7 +56,7 @@ TEST_F(BFSTest, BFSAlgo) {
 
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
-            ASSERT_TRUE(map->getValue(i, j)->getDistance() == i + j);
+            ASSERT_TRUE(map->getCoordinatedItem(i, j)->getDistance() == i + j);
         }
     }
 }

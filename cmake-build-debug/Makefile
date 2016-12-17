@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/nevo/prog/clion/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/maayan/Downloads/clion/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/nevo/prog/clion/bin/cmake/bin/cmake -E remove -f
+RM = /home/maayan/Downloads/clion/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nevo/ClionProjects/ex2AP
+CMAKE_SOURCE_DIR = /home/maayan/ClionProjects/ex3AP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nevo/ClionProjects/ex2AP/cmake-build-debug
+CMAKE_BINARY_DIR = /home/maayan/ClionProjects/ex3AP/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/nevo/ClionProjects/ex2AP/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -91,19 +91,19 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
@@ -114,7 +114,7 @@ install/local/fast: install/local
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/nevo/prog/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
@@ -124,9 +124,9 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -326,33 +326,6 @@ src/coordinates/Point.s: src/coordinates/Point.cpp.s
 src/coordinates/Point.cpp.s:
 	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.s
 .PHONY : src/coordinates/Point.cpp.s
-
-src/listeners/DriverAvailableListener.o: src/listeners/DriverAvailableListener.cpp.o
-
-.PHONY : src/listeners/DriverAvailableListener.o
-
-# target to build an object file
-src/listeners/DriverAvailableListener.cpp.o:
-	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o
-.PHONY : src/listeners/DriverAvailableListener.cpp.o
-
-src/listeners/DriverAvailableListener.i: src/listeners/DriverAvailableListener.cpp.i
-
-.PHONY : src/listeners/DriverAvailableListener.i
-
-# target to preprocess a source file
-src/listeners/DriverAvailableListener.cpp.i:
-	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.i
-.PHONY : src/listeners/DriverAvailableListener.cpp.i
-
-src/listeners/DriverAvailableListener.s: src/listeners/DriverAvailableListener.cpp.s
-
-.PHONY : src/listeners/DriverAvailableListener.s
-
-# target to generate assembly for a file
-src/listeners/DriverAvailableListener.cpp.s:
-	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.s
-.PHONY : src/listeners/DriverAvailableListener.cpp.s
 
 src/listeners/TripEndListener.o: src/listeners/TripEndListener.cpp.o
 
@@ -786,33 +759,6 @@ test/coordinatesTests/PointTest.cpp.s:
 	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.s
 .PHONY : test/coordinatesTests/PointTest.cpp.s
 
-test/listenersTest/DriverAvailableListenerTest.o: test/listenersTest/DriverAvailableListenerTest.cpp.o
-
-.PHONY : test/listenersTest/DriverAvailableListenerTest.o
-
-# target to build an object file
-test/listenersTest/DriverAvailableListenerTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o
-.PHONY : test/listenersTest/DriverAvailableListenerTest.cpp.o
-
-test/listenersTest/DriverAvailableListenerTest.i: test/listenersTest/DriverAvailableListenerTest.cpp.i
-
-.PHONY : test/listenersTest/DriverAvailableListenerTest.i
-
-# target to preprocess a source file
-test/listenersTest/DriverAvailableListenerTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.i
-.PHONY : test/listenersTest/DriverAvailableListenerTest.cpp.i
-
-test/listenersTest/DriverAvailableListenerTest.s: test/listenersTest/DriverAvailableListenerTest.cpp.s
-
-.PHONY : test/listenersTest/DriverAvailableListenerTest.s
-
-# target to generate assembly for a file
-test/listenersTest/DriverAvailableListenerTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.s
-.PHONY : test/listenersTest/DriverAvailableListenerTest.cpp.s
-
 test/listenersTest/TripEndListenerTest.o: test/listenersTest/TripEndListenerTest.cpp.o
 
 .PHONY : test/listenersTest/TripEndListenerTest.o
@@ -1139,9 +1085,6 @@ help:
 	@echo "... src/coordinates/Point.o"
 	@echo "... src/coordinates/Point.i"
 	@echo "... src/coordinates/Point.s"
-	@echo "... src/listeners/DriverAvailableListener.o"
-	@echo "... src/listeners/DriverAvailableListener.i"
-	@echo "... src/listeners/DriverAvailableListener.s"
 	@echo "... src/listeners/TripEndListener.o"
 	@echo "... src/listeners/TripEndListener.i"
 	@echo "... src/listeners/TripEndListener.s"
@@ -1190,9 +1133,6 @@ help:
 	@echo "... test/coordinatesTests/PointTest.o"
 	@echo "... test/coordinatesTests/PointTest.i"
 	@echo "... test/coordinatesTests/PointTest.s"
-	@echo "... test/listenersTest/DriverAvailableListenerTest.o"
-	@echo "... test/listenersTest/DriverAvailableListenerTest.i"
-	@echo "... test/listenersTest/DriverAvailableListenerTest.s"
 	@echo "... test/listenersTest/TripEndListenerTest.o"
 	@echo "... test/listenersTest/TripEndListenerTest.i"
 	@echo "... test/listenersTest/TripEndListenerTest.s"

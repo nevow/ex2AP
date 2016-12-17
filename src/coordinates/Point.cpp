@@ -34,7 +34,6 @@ void Point::setY(int yp) {
 }
 
 /**
- *
  * @param coords to delete
  */
 void Point::deleteCoords(int **coords) {

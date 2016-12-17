@@ -1,5 +1,5 @@
 //
-// Created by nevo on 01/12/16.
+// not in use yet ..
 //
 
 #include "Obstacle.h"

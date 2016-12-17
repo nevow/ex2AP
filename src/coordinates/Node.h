@@ -23,11 +23,11 @@ public:
         delete (p);
     }
 
-    void deleteCoords(int **coords);
-
     Point *getP();
 
     void setP(Point *p);
+
+    void deleteCoords(int **coords);
 
     int **getCoordinates();
 
@@ -36,6 +36,5 @@ public:
     bool operator!=(const Node &rhs) const;
 
 };
-
 
 #endif //EX1_NODE_H

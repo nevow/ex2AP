@@ -5,54 +5,69 @@
 #include <gtest/gtest.h>
 #include "../../src/coordinates/Node.h"
 
+/**
+ * setup.
+ */
+class NodeTest : public ::testing::Test {
+
+protected:
+    Point *p1;
+    Point *p2;
+    Node *node1;
+    Node *node2;
+    Node *node3;
+
+    virtual void SetUp() {
+        p1 = new Point(0, 0);
+        p2 = new Point(1, 1);
+        node1 = new Node(p1);
+        node2 = new Node(p2);
+        node3 = new Node(p2);
+    }
+
+    virtual void TearDown() {
+        delete (p1);
+        delete (p2);
+        delete (node1);
+        delete (node2);
+        delete (node3);
+    }
+};
 
 /**
  * checks getP method.
  */
-TEST(getP, NodeTest) {
-    Point p1(3, 4);
-    Point p2(4, 4);
-    Node node1(new Point(3, 4));
-
-    EXPECT_TRUE(*node1.getP() == p1);
-    EXPECT_FALSE(*node1.getP() == p2);
-
+TEST_F(NodeTest, getP) {
+    EXPECT_TRUE(node2->getP() == p1);
+    EXPECT_FALSE(node2->getP() == p2);
 }
 
 /**
  * checks setP method.
  */
-TEST(setP, NodeTest) {
-    Point *p1 = new Point(3, 4);
-    Node node1(new Point(3, 4));
-
-    node1.setP(p1);
-
-    EXPECT_TRUE(node1.getP() == p1);
+TEST_F(NodeTest, setP) {
+    node2->setP(p1);
+    EXPECT_TRUE(node2->getP() == p1);
 }
 
 /**
 * check getCoordinates method.
 */
-TEST(getCoordinates, NodeTest) {
-    Node node(new Point(3, 4));
-    int **coords = node.getCoordinates();
+TEST_F(NodeTest, getCoordinates) {
+    int **coords = node2->getCoordinates();
 
     // checks the x coordinate
-    EXPECT_EQ(*(coords[0]), 3);
+    EXPECT_EQ(*(coords[0]), 1);
     // checks the y coordinate
-    EXPECT_EQ(*(coords[1]), 4);
+    EXPECT_EQ(*(coords[1]), 1);
 
-    node.deleteCoords(coords);
+    node2->deleteCoords(coords);
 }
 
 /**
 *  check the comparing of two Nodes.
 */
-TEST(equals, NodeTest) {
-    Node node1(new Point(3, 4));
-    Node node2(new Point(4, 4));
-    Node node3(new Point(4, 4));
+TEST_F(NodeTest, equals) {
 
     // checks unequals Nodes
     EXPECT_FALSE(node1 == node2);
@@ -63,10 +78,6 @@ TEST(equals, NodeTest) {
 /**
 *  check the comparing of two Nodes.
 */
-TEST(unequals, NodeTest) {
-    Node node1(new Point(3, 3));
-    Node node2(new Point(2, 2));
-    Node node3(new Point(3, 1));
-    EXPECT_TRUE(node1 != node2);
+TEST_F(NodeTest, unequals) {
     EXPECT_TRUE(node1 != node3);
 }

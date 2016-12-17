@@ -23,22 +23,6 @@ CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o: ../src/coordinates/Coordinated
 CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o: ../src/coordinates/Point.cpp
 CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o: ../src/coordinates/Point.h
 
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/coordinates/CoordinatedItem.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/coordinates/Node.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/coordinates/Point.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/enum/CarManufacture.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/enum/Color.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/enum/MartialStatues.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/listeners/DriverAvailableListener.cpp
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/listeners/DriverAvailableListener.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/listeners/EventListener.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/taxi/Taxi.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/tripOperations/Driver.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/tripOperations/Passenger.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/tripOperations/Satisfaction.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/tripOperations/TaxiCenter.h
-CMakeFiles/ex2AP.dir/src/listeners/DriverAvailableListener.cpp.o: ../src/tripOperations/TripInfo.h
-
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o: ../src/coordinates/CoordinatedItem.h
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o: ../src/coordinates/Node.h
 CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o: ../src/coordinates/Point.h
@@ -177,7 +161,6 @@ CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/coordinates/Poi
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/enum/CarManufacture.h
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/enum/Color.h
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/enum/MartialStatues.h
-CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/listeners/DriverAvailableListener.h
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/listeners/EventListener.h
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/listeners/TripEndListener.h
 CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o: ../src/taxi/Taxi.h
@@ -276,45 +259,6 @@ CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o: ../lib/googletest-ma
 CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o: ../src/coordinates/CoordinatedItem.h
 CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o: ../src/coordinates/Point.h
 CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o: ../test/coordinatesTests/PointTest.cpp
-
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-message.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-param-test.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-printers.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-test-part.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest_prod.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-linked_ptr.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util-generated.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/coordinates/CoordinatedItem.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/coordinates/Node.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/coordinates/Point.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/enum/CarManufacture.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/enum/Color.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/enum/MartialStatues.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/listeners/DriverAvailableListener.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/listeners/EventListener.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/taxi/Cab.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/taxi/Taxi.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/tripOperations/Driver.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/tripOperations/Passenger.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/tripOperations/Satisfaction.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/tripOperations/TaxiCenter.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../src/tripOperations/TripInfo.h
-CMakeFiles/ex2AP.dir/test/listenersTest/DriverAvailableListenerTest.cpp.o: ../test/listenersTest/DriverAvailableListenerTest.cpp
 
 CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-message.h
