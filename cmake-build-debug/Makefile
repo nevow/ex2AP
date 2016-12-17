@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/maayan/Downloads/clion/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/nevo/prog/clion/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/maayan/Downloads/clion/bin/cmake/bin/cmake -E remove -f
+RM = /home/nevo/prog/clion/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maayan/ClionProjects/ex3AP
+CMAKE_SOURCE_DIR = /home/nevo/ClionProjects/ex2AP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maayan/ClionProjects/ex3AP/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nevo/ClionProjects/ex2AP/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/maayan/ClionProjects/ex3AP/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/nevo/prog/clion/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/nevo/prog/clion/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -91,19 +91,19 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/nevo/prog/clion/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/nevo/prog/clion/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/nevo/prog/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
@@ -114,7 +114,7 @@ install/local/fast: install/local
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/maayan/Downloads/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/nevo/prog/clion/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
@@ -124,9 +124,9 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maayan/ClionProjects/ex3AP/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevo/ClionProjects/ex2AP/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,17 +155,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ex3AP
+# Target rules for targets named ex2AP
 
 # Build rule for target.
-ex3AP: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ex3AP
-.PHONY : ex3AP
+ex2AP: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ex2AP
+.PHONY : ex2AP
 
 # fast build rule for target.
-ex3AP/fast:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/build
-.PHONY : ex3AP/fast
+ex2AP/fast:
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/build
+.PHONY : ex2AP/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -225,7 +225,7 @@ src/coordinates/Map.o: src/coordinates/Map.cpp.o
 
 # target to build an object file
 src/coordinates/Map.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Map.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.o
 .PHONY : src/coordinates/Map.cpp.o
 
 src/coordinates/Map.i: src/coordinates/Map.cpp.i
@@ -234,7 +234,7 @@ src/coordinates/Map.i: src/coordinates/Map.cpp.i
 
 # target to preprocess a source file
 src/coordinates/Map.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Map.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.i
 .PHONY : src/coordinates/Map.cpp.i
 
 src/coordinates/Map.s: src/coordinates/Map.cpp.s
@@ -243,7 +243,7 @@ src/coordinates/Map.s: src/coordinates/Map.cpp.s
 
 # target to generate assembly for a file
 src/coordinates/Map.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Map.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Map.cpp.s
 .PHONY : src/coordinates/Map.cpp.s
 
 src/coordinates/Node.o: src/coordinates/Node.cpp.o
@@ -252,7 +252,7 @@ src/coordinates/Node.o: src/coordinates/Node.cpp.o
 
 # target to build an object file
 src/coordinates/Node.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Node.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.o
 .PHONY : src/coordinates/Node.cpp.o
 
 src/coordinates/Node.i: src/coordinates/Node.cpp.i
@@ -261,7 +261,7 @@ src/coordinates/Node.i: src/coordinates/Node.cpp.i
 
 # target to preprocess a source file
 src/coordinates/Node.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Node.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.i
 .PHONY : src/coordinates/Node.cpp.i
 
 src/coordinates/Node.s: src/coordinates/Node.cpp.s
@@ -270,7 +270,7 @@ src/coordinates/Node.s: src/coordinates/Node.cpp.s
 
 # target to generate assembly for a file
 src/coordinates/Node.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Node.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Node.cpp.s
 .PHONY : src/coordinates/Node.cpp.s
 
 src/coordinates/Obstacle.o: src/coordinates/Obstacle.cpp.o
@@ -279,7 +279,7 @@ src/coordinates/Obstacle.o: src/coordinates/Obstacle.cpp.o
 
 # target to build an object file
 src/coordinates/Obstacle.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Obstacle.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.o
 .PHONY : src/coordinates/Obstacle.cpp.o
 
 src/coordinates/Obstacle.i: src/coordinates/Obstacle.cpp.i
@@ -288,7 +288,7 @@ src/coordinates/Obstacle.i: src/coordinates/Obstacle.cpp.i
 
 # target to preprocess a source file
 src/coordinates/Obstacle.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Obstacle.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.i
 .PHONY : src/coordinates/Obstacle.cpp.i
 
 src/coordinates/Obstacle.s: src/coordinates/Obstacle.cpp.s
@@ -297,7 +297,7 @@ src/coordinates/Obstacle.s: src/coordinates/Obstacle.cpp.s
 
 # target to generate assembly for a file
 src/coordinates/Obstacle.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Obstacle.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Obstacle.cpp.s
 .PHONY : src/coordinates/Obstacle.cpp.s
 
 src/coordinates/Point.o: src/coordinates/Point.cpp.o
@@ -306,7 +306,7 @@ src/coordinates/Point.o: src/coordinates/Point.cpp.o
 
 # target to build an object file
 src/coordinates/Point.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Point.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.o
 .PHONY : src/coordinates/Point.cpp.o
 
 src/coordinates/Point.i: src/coordinates/Point.cpp.i
@@ -315,7 +315,7 @@ src/coordinates/Point.i: src/coordinates/Point.cpp.i
 
 # target to preprocess a source file
 src/coordinates/Point.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Point.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.i
 .PHONY : src/coordinates/Point.cpp.i
 
 src/coordinates/Point.s: src/coordinates/Point.cpp.s
@@ -324,7 +324,7 @@ src/coordinates/Point.s: src/coordinates/Point.cpp.s
 
 # target to generate assembly for a file
 src/coordinates/Point.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/coordinates/Point.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/coordinates/Point.cpp.s
 .PHONY : src/coordinates/Point.cpp.s
 
 src/listeners/TripEndListener.o: src/listeners/TripEndListener.cpp.o
@@ -333,7 +333,7 @@ src/listeners/TripEndListener.o: src/listeners/TripEndListener.cpp.o
 
 # target to build an object file
 src/listeners/TripEndListener.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/listeners/TripEndListener.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.o
 .PHONY : src/listeners/TripEndListener.cpp.o
 
 src/listeners/TripEndListener.i: src/listeners/TripEndListener.cpp.i
@@ -342,7 +342,7 @@ src/listeners/TripEndListener.i: src/listeners/TripEndListener.cpp.i
 
 # target to preprocess a source file
 src/listeners/TripEndListener.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/listeners/TripEndListener.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.i
 .PHONY : src/listeners/TripEndListener.cpp.i
 
 src/listeners/TripEndListener.s: src/listeners/TripEndListener.cpp.s
@@ -351,7 +351,7 @@ src/listeners/TripEndListener.s: src/listeners/TripEndListener.cpp.s
 
 # target to generate assembly for a file
 src/listeners/TripEndListener.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/listeners/TripEndListener.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/listeners/TripEndListener.cpp.s
 .PHONY : src/listeners/TripEndListener.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -360,7 +360,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -369,7 +369,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -378,7 +378,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/managment/BFS.o: src/managment/BFS.cpp.o
@@ -387,7 +387,7 @@ src/managment/BFS.o: src/managment/BFS.cpp.o
 
 # target to build an object file
 src/managment/BFS.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/BFS.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.o
 .PHONY : src/managment/BFS.cpp.o
 
 src/managment/BFS.i: src/managment/BFS.cpp.i
@@ -396,7 +396,7 @@ src/managment/BFS.i: src/managment/BFS.cpp.i
 
 # target to preprocess a source file
 src/managment/BFS.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/BFS.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.i
 .PHONY : src/managment/BFS.cpp.i
 
 src/managment/BFS.s: src/managment/BFS.cpp.s
@@ -405,7 +405,7 @@ src/managment/BFS.s: src/managment/BFS.cpp.s
 
 # target to generate assembly for a file
 src/managment/BFS.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/BFS.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/BFS.cpp.s
 .PHONY : src/managment/BFS.cpp.s
 
 src/managment/MainFlow.o: src/managment/MainFlow.cpp.o
@@ -414,7 +414,7 @@ src/managment/MainFlow.o: src/managment/MainFlow.cpp.o
 
 # target to build an object file
 src/managment/MainFlow.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/MainFlow.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.o
 .PHONY : src/managment/MainFlow.cpp.o
 
 src/managment/MainFlow.i: src/managment/MainFlow.cpp.i
@@ -423,7 +423,7 @@ src/managment/MainFlow.i: src/managment/MainFlow.cpp.i
 
 # target to preprocess a source file
 src/managment/MainFlow.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/MainFlow.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.i
 .PHONY : src/managment/MainFlow.cpp.i
 
 src/managment/MainFlow.s: src/managment/MainFlow.cpp.s
@@ -432,7 +432,7 @@ src/managment/MainFlow.s: src/managment/MainFlow.cpp.s
 
 # target to generate assembly for a file
 src/managment/MainFlow.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/MainFlow.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/MainFlow.cpp.s
 .PHONY : src/managment/MainFlow.cpp.s
 
 src/managment/ProperInput.o: src/managment/ProperInput.cpp.o
@@ -441,7 +441,7 @@ src/managment/ProperInput.o: src/managment/ProperInput.cpp.o
 
 # target to build an object file
 src/managment/ProperInput.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/ProperInput.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o
 .PHONY : src/managment/ProperInput.cpp.o
 
 src/managment/ProperInput.i: src/managment/ProperInput.cpp.i
@@ -450,7 +450,7 @@ src/managment/ProperInput.i: src/managment/ProperInput.cpp.i
 
 # target to preprocess a source file
 src/managment/ProperInput.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/ProperInput.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.i
 .PHONY : src/managment/ProperInput.cpp.i
 
 src/managment/ProperInput.s: src/managment/ProperInput.cpp.s
@@ -459,7 +459,7 @@ src/managment/ProperInput.s: src/managment/ProperInput.cpp.s
 
 # target to generate assembly for a file
 src/managment/ProperInput.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/ProperInput.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.s
 .PHONY : src/managment/ProperInput.cpp.s
 
 src/managment/SystemOperations.o: src/managment/SystemOperations.cpp.o
@@ -468,7 +468,7 @@ src/managment/SystemOperations.o: src/managment/SystemOperations.cpp.o
 
 # target to build an object file
 src/managment/SystemOperations.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/SystemOperations.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.o
 .PHONY : src/managment/SystemOperations.cpp.o
 
 src/managment/SystemOperations.i: src/managment/SystemOperations.cpp.i
@@ -477,7 +477,7 @@ src/managment/SystemOperations.i: src/managment/SystemOperations.cpp.i
 
 # target to preprocess a source file
 src/managment/SystemOperations.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/SystemOperations.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.i
 .PHONY : src/managment/SystemOperations.cpp.i
 
 src/managment/SystemOperations.s: src/managment/SystemOperations.cpp.s
@@ -486,7 +486,7 @@ src/managment/SystemOperations.s: src/managment/SystemOperations.cpp.s
 
 # target to generate assembly for a file
 src/managment/SystemOperations.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/managment/SystemOperations.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/managment/SystemOperations.cpp.s
 .PHONY : src/managment/SystemOperations.cpp.s
 
 src/taxi/Cab.o: src/taxi/Cab.cpp.o
@@ -495,7 +495,7 @@ src/taxi/Cab.o: src/taxi/Cab.cpp.o
 
 # target to build an object file
 src/taxi/Cab.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/taxi/Cab.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.o
 .PHONY : src/taxi/Cab.cpp.o
 
 src/taxi/Cab.i: src/taxi/Cab.cpp.i
@@ -504,7 +504,7 @@ src/taxi/Cab.i: src/taxi/Cab.cpp.i
 
 # target to preprocess a source file
 src/taxi/Cab.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/taxi/Cab.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.i
 .PHONY : src/taxi/Cab.cpp.i
 
 src/taxi/Cab.s: src/taxi/Cab.cpp.s
@@ -513,7 +513,7 @@ src/taxi/Cab.s: src/taxi/Cab.cpp.s
 
 # target to generate assembly for a file
 src/taxi/Cab.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/taxi/Cab.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/taxi/Cab.cpp.s
 .PHONY : src/taxi/Cab.cpp.s
 
 src/taxi/LuxuryCab.o: src/taxi/LuxuryCab.cpp.o
@@ -522,7 +522,7 @@ src/taxi/LuxuryCab.o: src/taxi/LuxuryCab.cpp.o
 
 # target to build an object file
 src/taxi/LuxuryCab.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/taxi/LuxuryCab.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.o
 .PHONY : src/taxi/LuxuryCab.cpp.o
 
 src/taxi/LuxuryCab.i: src/taxi/LuxuryCab.cpp.i
@@ -531,7 +531,7 @@ src/taxi/LuxuryCab.i: src/taxi/LuxuryCab.cpp.i
 
 # target to preprocess a source file
 src/taxi/LuxuryCab.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/taxi/LuxuryCab.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.i
 .PHONY : src/taxi/LuxuryCab.cpp.i
 
 src/taxi/LuxuryCab.s: src/taxi/LuxuryCab.cpp.s
@@ -540,7 +540,7 @@ src/taxi/LuxuryCab.s: src/taxi/LuxuryCab.cpp.s
 
 # target to generate assembly for a file
 src/taxi/LuxuryCab.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/taxi/LuxuryCab.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/taxi/LuxuryCab.cpp.s
 .PHONY : src/taxi/LuxuryCab.cpp.s
 
 src/tripOperations/Driver.o: src/tripOperations/Driver.cpp.o
@@ -549,7 +549,7 @@ src/tripOperations/Driver.o: src/tripOperations/Driver.cpp.o
 
 # target to build an object file
 src/tripOperations/Driver.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/Driver.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.o
 .PHONY : src/tripOperations/Driver.cpp.o
 
 src/tripOperations/Driver.i: src/tripOperations/Driver.cpp.i
@@ -558,7 +558,7 @@ src/tripOperations/Driver.i: src/tripOperations/Driver.cpp.i
 
 # target to preprocess a source file
 src/tripOperations/Driver.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/Driver.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.i
 .PHONY : src/tripOperations/Driver.cpp.i
 
 src/tripOperations/Driver.s: src/tripOperations/Driver.cpp.s
@@ -567,7 +567,7 @@ src/tripOperations/Driver.s: src/tripOperations/Driver.cpp.s
 
 # target to generate assembly for a file
 src/tripOperations/Driver.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/Driver.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/Driver.cpp.s
 .PHONY : src/tripOperations/Driver.cpp.s
 
 src/tripOperations/Passenger.o: src/tripOperations/Passenger.cpp.o
@@ -576,7 +576,7 @@ src/tripOperations/Passenger.o: src/tripOperations/Passenger.cpp.o
 
 # target to build an object file
 src/tripOperations/Passenger.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/Passenger.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.o
 .PHONY : src/tripOperations/Passenger.cpp.o
 
 src/tripOperations/Passenger.i: src/tripOperations/Passenger.cpp.i
@@ -585,7 +585,7 @@ src/tripOperations/Passenger.i: src/tripOperations/Passenger.cpp.i
 
 # target to preprocess a source file
 src/tripOperations/Passenger.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/Passenger.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.i
 .PHONY : src/tripOperations/Passenger.cpp.i
 
 src/tripOperations/Passenger.s: src/tripOperations/Passenger.cpp.s
@@ -594,7 +594,7 @@ src/tripOperations/Passenger.s: src/tripOperations/Passenger.cpp.s
 
 # target to generate assembly for a file
 src/tripOperations/Passenger.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/Passenger.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/Passenger.cpp.s
 .PHONY : src/tripOperations/Passenger.cpp.s
 
 src/tripOperations/Satisfaction.o: src/tripOperations/Satisfaction.cpp.o
@@ -603,7 +603,7 @@ src/tripOperations/Satisfaction.o: src/tripOperations/Satisfaction.cpp.o
 
 # target to build an object file
 src/tripOperations/Satisfaction.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/Satisfaction.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.o
 .PHONY : src/tripOperations/Satisfaction.cpp.o
 
 src/tripOperations/Satisfaction.i: src/tripOperations/Satisfaction.cpp.i
@@ -612,7 +612,7 @@ src/tripOperations/Satisfaction.i: src/tripOperations/Satisfaction.cpp.i
 
 # target to preprocess a source file
 src/tripOperations/Satisfaction.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/Satisfaction.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.i
 .PHONY : src/tripOperations/Satisfaction.cpp.i
 
 src/tripOperations/Satisfaction.s: src/tripOperations/Satisfaction.cpp.s
@@ -621,7 +621,7 @@ src/tripOperations/Satisfaction.s: src/tripOperations/Satisfaction.cpp.s
 
 # target to generate assembly for a file
 src/tripOperations/Satisfaction.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/Satisfaction.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/Satisfaction.cpp.s
 .PHONY : src/tripOperations/Satisfaction.cpp.s
 
 src/tripOperations/TaxiCenter.o: src/tripOperations/TaxiCenter.cpp.o
@@ -630,7 +630,7 @@ src/tripOperations/TaxiCenter.o: src/tripOperations/TaxiCenter.cpp.o
 
 # target to build an object file
 src/tripOperations/TaxiCenter.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/TaxiCenter.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.o
 .PHONY : src/tripOperations/TaxiCenter.cpp.o
 
 src/tripOperations/TaxiCenter.i: src/tripOperations/TaxiCenter.cpp.i
@@ -639,7 +639,7 @@ src/tripOperations/TaxiCenter.i: src/tripOperations/TaxiCenter.cpp.i
 
 # target to preprocess a source file
 src/tripOperations/TaxiCenter.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/TaxiCenter.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.i
 .PHONY : src/tripOperations/TaxiCenter.cpp.i
 
 src/tripOperations/TaxiCenter.s: src/tripOperations/TaxiCenter.cpp.s
@@ -648,7 +648,7 @@ src/tripOperations/TaxiCenter.s: src/tripOperations/TaxiCenter.cpp.s
 
 # target to generate assembly for a file
 src/tripOperations/TaxiCenter.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/TaxiCenter.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/TaxiCenter.cpp.s
 .PHONY : src/tripOperations/TaxiCenter.cpp.s
 
 src/tripOperations/TripInfo.o: src/tripOperations/TripInfo.cpp.o
@@ -657,7 +657,7 @@ src/tripOperations/TripInfo.o: src/tripOperations/TripInfo.cpp.o
 
 # target to build an object file
 src/tripOperations/TripInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/TripInfo.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.o
 .PHONY : src/tripOperations/TripInfo.cpp.o
 
 src/tripOperations/TripInfo.i: src/tripOperations/TripInfo.cpp.i
@@ -666,7 +666,7 @@ src/tripOperations/TripInfo.i: src/tripOperations/TripInfo.cpp.i
 
 # target to preprocess a source file
 src/tripOperations/TripInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/TripInfo.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.i
 .PHONY : src/tripOperations/TripInfo.cpp.i
 
 src/tripOperations/TripInfo.s: src/tripOperations/TripInfo.cpp.s
@@ -675,7 +675,7 @@ src/tripOperations/TripInfo.s: src/tripOperations/TripInfo.cpp.s
 
 # target to generate assembly for a file
 src/tripOperations/TripInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/src/tripOperations/TripInfo.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/src/tripOperations/TripInfo.cpp.s
 .PHONY : src/tripOperations/TripInfo.cpp.s
 
 test/coordinatesTests/MapTest.o: test/coordinatesTests/MapTest.cpp.o
@@ -684,7 +684,7 @@ test/coordinatesTests/MapTest.o: test/coordinatesTests/MapTest.cpp.o
 
 # target to build an object file
 test/coordinatesTests/MapTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/coordinatesTests/MapTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.o
 .PHONY : test/coordinatesTests/MapTest.cpp.o
 
 test/coordinatesTests/MapTest.i: test/coordinatesTests/MapTest.cpp.i
@@ -693,7 +693,7 @@ test/coordinatesTests/MapTest.i: test/coordinatesTests/MapTest.cpp.i
 
 # target to preprocess a source file
 test/coordinatesTests/MapTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/coordinatesTests/MapTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.i
 .PHONY : test/coordinatesTests/MapTest.cpp.i
 
 test/coordinatesTests/MapTest.s: test/coordinatesTests/MapTest.cpp.s
@@ -702,7 +702,7 @@ test/coordinatesTests/MapTest.s: test/coordinatesTests/MapTest.cpp.s
 
 # target to generate assembly for a file
 test/coordinatesTests/MapTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/coordinatesTests/MapTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/coordinatesTests/MapTest.cpp.s
 .PHONY : test/coordinatesTests/MapTest.cpp.s
 
 test/coordinatesTests/NodeTest.o: test/coordinatesTests/NodeTest.cpp.o
@@ -711,7 +711,7 @@ test/coordinatesTests/NodeTest.o: test/coordinatesTests/NodeTest.cpp.o
 
 # target to build an object file
 test/coordinatesTests/NodeTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/coordinatesTests/NodeTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.o
 .PHONY : test/coordinatesTests/NodeTest.cpp.o
 
 test/coordinatesTests/NodeTest.i: test/coordinatesTests/NodeTest.cpp.i
@@ -720,7 +720,7 @@ test/coordinatesTests/NodeTest.i: test/coordinatesTests/NodeTest.cpp.i
 
 # target to preprocess a source file
 test/coordinatesTests/NodeTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/coordinatesTests/NodeTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.i
 .PHONY : test/coordinatesTests/NodeTest.cpp.i
 
 test/coordinatesTests/NodeTest.s: test/coordinatesTests/NodeTest.cpp.s
@@ -729,7 +729,7 @@ test/coordinatesTests/NodeTest.s: test/coordinatesTests/NodeTest.cpp.s
 
 # target to generate assembly for a file
 test/coordinatesTests/NodeTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/coordinatesTests/NodeTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/coordinatesTests/NodeTest.cpp.s
 .PHONY : test/coordinatesTests/NodeTest.cpp.s
 
 test/coordinatesTests/PointTest.o: test/coordinatesTests/PointTest.cpp.o
@@ -738,7 +738,7 @@ test/coordinatesTests/PointTest.o: test/coordinatesTests/PointTest.cpp.o
 
 # target to build an object file
 test/coordinatesTests/PointTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/coordinatesTests/PointTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.o
 .PHONY : test/coordinatesTests/PointTest.cpp.o
 
 test/coordinatesTests/PointTest.i: test/coordinatesTests/PointTest.cpp.i
@@ -747,7 +747,7 @@ test/coordinatesTests/PointTest.i: test/coordinatesTests/PointTest.cpp.i
 
 # target to preprocess a source file
 test/coordinatesTests/PointTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/coordinatesTests/PointTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.i
 .PHONY : test/coordinatesTests/PointTest.cpp.i
 
 test/coordinatesTests/PointTest.s: test/coordinatesTests/PointTest.cpp.s
@@ -756,7 +756,7 @@ test/coordinatesTests/PointTest.s: test/coordinatesTests/PointTest.cpp.s
 
 # target to generate assembly for a file
 test/coordinatesTests/PointTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/coordinatesTests/PointTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/coordinatesTests/PointTest.cpp.s
 .PHONY : test/coordinatesTests/PointTest.cpp.s
 
 test/listenersTest/TripEndListenerTest.o: test/listenersTest/TripEndListenerTest.cpp.o
@@ -765,7 +765,7 @@ test/listenersTest/TripEndListenerTest.o: test/listenersTest/TripEndListenerTest
 
 # target to build an object file
 test/listenersTest/TripEndListenerTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/listenersTest/TripEndListenerTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.o
 .PHONY : test/listenersTest/TripEndListenerTest.cpp.o
 
 test/listenersTest/TripEndListenerTest.i: test/listenersTest/TripEndListenerTest.cpp.i
@@ -774,7 +774,7 @@ test/listenersTest/TripEndListenerTest.i: test/listenersTest/TripEndListenerTest
 
 # target to preprocess a source file
 test/listenersTest/TripEndListenerTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/listenersTest/TripEndListenerTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.i
 .PHONY : test/listenersTest/TripEndListenerTest.cpp.i
 
 test/listenersTest/TripEndListenerTest.s: test/listenersTest/TripEndListenerTest.cpp.s
@@ -783,7 +783,7 @@ test/listenersTest/TripEndListenerTest.s: test/listenersTest/TripEndListenerTest
 
 # target to generate assembly for a file
 test/listenersTest/TripEndListenerTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/listenersTest/TripEndListenerTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/listenersTest/TripEndListenerTest.cpp.s
 .PHONY : test/listenersTest/TripEndListenerTest.cpp.s
 
 test/managmentTests/BFSTest.o: test/managmentTests/BFSTest.cpp.o
@@ -792,7 +792,7 @@ test/managmentTests/BFSTest.o: test/managmentTests/BFSTest.cpp.o
 
 # target to build an object file
 test/managmentTests/BFSTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/managmentTests/BFSTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.o
 .PHONY : test/managmentTests/BFSTest.cpp.o
 
 test/managmentTests/BFSTest.i: test/managmentTests/BFSTest.cpp.i
@@ -801,7 +801,7 @@ test/managmentTests/BFSTest.i: test/managmentTests/BFSTest.cpp.i
 
 # target to preprocess a source file
 test/managmentTests/BFSTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/managmentTests/BFSTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.i
 .PHONY : test/managmentTests/BFSTest.cpp.i
 
 test/managmentTests/BFSTest.s: test/managmentTests/BFSTest.cpp.s
@@ -810,7 +810,7 @@ test/managmentTests/BFSTest.s: test/managmentTests/BFSTest.cpp.s
 
 # target to generate assembly for a file
 test/managmentTests/BFSTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/managmentTests/BFSTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.s
 .PHONY : test/managmentTests/BFSTest.cpp.s
 
 test/managmentTests/MainFlowTest.o: test/managmentTests/MainFlowTest.cpp.o
@@ -819,7 +819,7 @@ test/managmentTests/MainFlowTest.o: test/managmentTests/MainFlowTest.cpp.o
 
 # target to build an object file
 test/managmentTests/MainFlowTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/managmentTests/MainFlowTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.o
 .PHONY : test/managmentTests/MainFlowTest.cpp.o
 
 test/managmentTests/MainFlowTest.i: test/managmentTests/MainFlowTest.cpp.i
@@ -828,7 +828,7 @@ test/managmentTests/MainFlowTest.i: test/managmentTests/MainFlowTest.cpp.i
 
 # target to preprocess a source file
 test/managmentTests/MainFlowTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/managmentTests/MainFlowTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.i
 .PHONY : test/managmentTests/MainFlowTest.cpp.i
 
 test/managmentTests/MainFlowTest.s: test/managmentTests/MainFlowTest.cpp.s
@@ -837,7 +837,7 @@ test/managmentTests/MainFlowTest.s: test/managmentTests/MainFlowTest.cpp.s
 
 # target to generate assembly for a file
 test/managmentTests/MainFlowTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/managmentTests/MainFlowTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.s
 .PHONY : test/managmentTests/MainFlowTest.cpp.s
 
 test/managmentTests/SystemOperationsTest.o: test/managmentTests/SystemOperationsTest.cpp.o
@@ -846,7 +846,7 @@ test/managmentTests/SystemOperationsTest.o: test/managmentTests/SystemOperations
 
 # target to build an object file
 test/managmentTests/SystemOperationsTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/managmentTests/SystemOperationsTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o
 .PHONY : test/managmentTests/SystemOperationsTest.cpp.o
 
 test/managmentTests/SystemOperationsTest.i: test/managmentTests/SystemOperationsTest.cpp.i
@@ -855,7 +855,7 @@ test/managmentTests/SystemOperationsTest.i: test/managmentTests/SystemOperations
 
 # target to preprocess a source file
 test/managmentTests/SystemOperationsTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/managmentTests/SystemOperationsTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.i
 .PHONY : test/managmentTests/SystemOperationsTest.cpp.i
 
 test/managmentTests/SystemOperationsTest.s: test/managmentTests/SystemOperationsTest.cpp.s
@@ -864,7 +864,7 @@ test/managmentTests/SystemOperationsTest.s: test/managmentTests/SystemOperations
 
 # target to generate assembly for a file
 test/managmentTests/SystemOperationsTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/managmentTests/SystemOperationsTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.s
 .PHONY : test/managmentTests/SystemOperationsTest.cpp.s
 
 test/taxiTests/CabTest.o: test/taxiTests/CabTest.cpp.o
@@ -873,7 +873,7 @@ test/taxiTests/CabTest.o: test/taxiTests/CabTest.cpp.o
 
 # target to build an object file
 test/taxiTests/CabTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/taxiTests/CabTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.o
 .PHONY : test/taxiTests/CabTest.cpp.o
 
 test/taxiTests/CabTest.i: test/taxiTests/CabTest.cpp.i
@@ -882,7 +882,7 @@ test/taxiTests/CabTest.i: test/taxiTests/CabTest.cpp.i
 
 # target to preprocess a source file
 test/taxiTests/CabTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/taxiTests/CabTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.i
 .PHONY : test/taxiTests/CabTest.cpp.i
 
 test/taxiTests/CabTest.s: test/taxiTests/CabTest.cpp.s
@@ -891,7 +891,7 @@ test/taxiTests/CabTest.s: test/taxiTests/CabTest.cpp.s
 
 # target to generate assembly for a file
 test/taxiTests/CabTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/taxiTests/CabTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/taxiTests/CabTest.cpp.s
 .PHONY : test/taxiTests/CabTest.cpp.s
 
 test/taxiTests/LuxuryCabTest.o: test/taxiTests/LuxuryCabTest.cpp.o
@@ -900,7 +900,7 @@ test/taxiTests/LuxuryCabTest.o: test/taxiTests/LuxuryCabTest.cpp.o
 
 # target to build an object file
 test/taxiTests/LuxuryCabTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/taxiTests/LuxuryCabTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.o
 .PHONY : test/taxiTests/LuxuryCabTest.cpp.o
 
 test/taxiTests/LuxuryCabTest.i: test/taxiTests/LuxuryCabTest.cpp.i
@@ -909,7 +909,7 @@ test/taxiTests/LuxuryCabTest.i: test/taxiTests/LuxuryCabTest.cpp.i
 
 # target to preprocess a source file
 test/taxiTests/LuxuryCabTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/taxiTests/LuxuryCabTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.i
 .PHONY : test/taxiTests/LuxuryCabTest.cpp.i
 
 test/taxiTests/LuxuryCabTest.s: test/taxiTests/LuxuryCabTest.cpp.s
@@ -918,7 +918,7 @@ test/taxiTests/LuxuryCabTest.s: test/taxiTests/LuxuryCabTest.cpp.s
 
 # target to generate assembly for a file
 test/taxiTests/LuxuryCabTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/taxiTests/LuxuryCabTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/taxiTests/LuxuryCabTest.cpp.s
 .PHONY : test/taxiTests/LuxuryCabTest.cpp.s
 
 test/tripOperationsTests/DriverTest.o: test/tripOperationsTests/DriverTest.cpp.o
@@ -927,7 +927,7 @@ test/tripOperationsTests/DriverTest.o: test/tripOperationsTests/DriverTest.cpp.o
 
 # target to build an object file
 test/tripOperationsTests/DriverTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/DriverTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.o
 .PHONY : test/tripOperationsTests/DriverTest.cpp.o
 
 test/tripOperationsTests/DriverTest.i: test/tripOperationsTests/DriverTest.cpp.i
@@ -936,7 +936,7 @@ test/tripOperationsTests/DriverTest.i: test/tripOperationsTests/DriverTest.cpp.i
 
 # target to preprocess a source file
 test/tripOperationsTests/DriverTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/DriverTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.i
 .PHONY : test/tripOperationsTests/DriverTest.cpp.i
 
 test/tripOperationsTests/DriverTest.s: test/tripOperationsTests/DriverTest.cpp.s
@@ -945,7 +945,7 @@ test/tripOperationsTests/DriverTest.s: test/tripOperationsTests/DriverTest.cpp.s
 
 # target to generate assembly for a file
 test/tripOperationsTests/DriverTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/DriverTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/DriverTest.cpp.s
 .PHONY : test/tripOperationsTests/DriverTest.cpp.s
 
 test/tripOperationsTests/PassengerTest.o: test/tripOperationsTests/PassengerTest.cpp.o
@@ -954,7 +954,7 @@ test/tripOperationsTests/PassengerTest.o: test/tripOperationsTests/PassengerTest
 
 # target to build an object file
 test/tripOperationsTests/PassengerTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/PassengerTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.o
 .PHONY : test/tripOperationsTests/PassengerTest.cpp.o
 
 test/tripOperationsTests/PassengerTest.i: test/tripOperationsTests/PassengerTest.cpp.i
@@ -963,7 +963,7 @@ test/tripOperationsTests/PassengerTest.i: test/tripOperationsTests/PassengerTest
 
 # target to preprocess a source file
 test/tripOperationsTests/PassengerTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/PassengerTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.i
 .PHONY : test/tripOperationsTests/PassengerTest.cpp.i
 
 test/tripOperationsTests/PassengerTest.s: test/tripOperationsTests/PassengerTest.cpp.s
@@ -972,7 +972,7 @@ test/tripOperationsTests/PassengerTest.s: test/tripOperationsTests/PassengerTest
 
 # target to generate assembly for a file
 test/tripOperationsTests/PassengerTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/PassengerTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/PassengerTest.cpp.s
 .PHONY : test/tripOperationsTests/PassengerTest.cpp.s
 
 test/tripOperationsTests/SatisfactionTest.o: test/tripOperationsTests/SatisfactionTest.cpp.o
@@ -981,7 +981,7 @@ test/tripOperationsTests/SatisfactionTest.o: test/tripOperationsTests/Satisfacti
 
 # target to build an object file
 test/tripOperationsTests/SatisfactionTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.o
 .PHONY : test/tripOperationsTests/SatisfactionTest.cpp.o
 
 test/tripOperationsTests/SatisfactionTest.i: test/tripOperationsTests/SatisfactionTest.cpp.i
@@ -990,7 +990,7 @@ test/tripOperationsTests/SatisfactionTest.i: test/tripOperationsTests/Satisfacti
 
 # target to preprocess a source file
 test/tripOperationsTests/SatisfactionTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.i
 .PHONY : test/tripOperationsTests/SatisfactionTest.cpp.i
 
 test/tripOperationsTests/SatisfactionTest.s: test/tripOperationsTests/SatisfactionTest.cpp.s
@@ -999,7 +999,7 @@ test/tripOperationsTests/SatisfactionTest.s: test/tripOperationsTests/Satisfacti
 
 # target to generate assembly for a file
 test/tripOperationsTests/SatisfactionTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/SatisfactionTest.cpp.s
 .PHONY : test/tripOperationsTests/SatisfactionTest.cpp.s
 
 test/tripOperationsTests/TaxiCenterTest.o: test/tripOperationsTests/TaxiCenterTest.cpp.o
@@ -1008,7 +1008,7 @@ test/tripOperationsTests/TaxiCenterTest.o: test/tripOperationsTests/TaxiCenterTe
 
 # target to build an object file
 test/tripOperationsTests/TaxiCenterTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.o
 .PHONY : test/tripOperationsTests/TaxiCenterTest.cpp.o
 
 test/tripOperationsTests/TaxiCenterTest.i: test/tripOperationsTests/TaxiCenterTest.cpp.i
@@ -1017,7 +1017,7 @@ test/tripOperationsTests/TaxiCenterTest.i: test/tripOperationsTests/TaxiCenterTe
 
 # target to preprocess a source file
 test/tripOperationsTests/TaxiCenterTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.i
 .PHONY : test/tripOperationsTests/TaxiCenterTest.cpp.i
 
 test/tripOperationsTests/TaxiCenterTest.s: test/tripOperationsTests/TaxiCenterTest.cpp.s
@@ -1026,7 +1026,7 @@ test/tripOperationsTests/TaxiCenterTest.s: test/tripOperationsTests/TaxiCenterTe
 
 # target to generate assembly for a file
 test/tripOperationsTests/TaxiCenterTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/TaxiCenterTest.cpp.s
 .PHONY : test/tripOperationsTests/TaxiCenterTest.cpp.s
 
 test/tripOperationsTests/TripInfoTest.o: test/tripOperationsTests/TripInfoTest.cpp.o
@@ -1035,7 +1035,7 @@ test/tripOperationsTests/TripInfoTest.o: test/tripOperationsTests/TripInfoTest.c
 
 # target to build an object file
 test/tripOperationsTests/TripInfoTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/TripInfoTest.cpp.o
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.o
 .PHONY : test/tripOperationsTests/TripInfoTest.cpp.o
 
 test/tripOperationsTests/TripInfoTest.i: test/tripOperationsTests/TripInfoTest.cpp.i
@@ -1044,7 +1044,7 @@ test/tripOperationsTests/TripInfoTest.i: test/tripOperationsTests/TripInfoTest.c
 
 # target to preprocess a source file
 test/tripOperationsTests/TripInfoTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/TripInfoTest.cpp.i
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.i
 .PHONY : test/tripOperationsTests/TripInfoTest.cpp.i
 
 test/tripOperationsTests/TripInfoTest.s: test/tripOperationsTests/TripInfoTest.cpp.s
@@ -1053,7 +1053,7 @@ test/tripOperationsTests/TripInfoTest.s: test/tripOperationsTests/TripInfoTest.c
 
 # target to generate assembly for a file
 test/tripOperationsTests/TripInfoTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3AP.dir/build.make CMakeFiles/ex3AP.dir/test/tripOperationsTests/TripInfoTest.cpp.s
+	$(MAKE) -f CMakeFiles/ex2AP.dir/build.make CMakeFiles/ex2AP.dir/test/tripOperationsTests/TripInfoTest.cpp.s
 .PHONY : test/tripOperationsTests/TripInfoTest.cpp.s
 
 # Help Target
@@ -1068,7 +1068,7 @@ help:
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
-	@echo "... ex3AP"
+	@echo "... ex2AP"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"

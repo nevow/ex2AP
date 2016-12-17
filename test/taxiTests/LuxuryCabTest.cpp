@@ -16,9 +16,6 @@ protected:
     Point *startP;
     Point *midP;
     Point *destP;
-    Node *location;
-    Node *middleLoc;
-    Node *endLocation;
     LuxuryCab *cab1;
     LuxuryCab *cab2;
     LuxuryCab *cab3;
@@ -26,28 +23,24 @@ protected:
     stack<CoordinatedItem *> *road;
 
     virtual void SetUp() {
+        road = new stack<CoordinatedItem *>;
         startP = new Point(3, 3);
         midP = new Point(3, 4);
         destP = new Point(3, 5);
-        location = new Node(startP);
-        middleLoc = new Node(midP);
-        endLocation = new Node(destP);
         cab1 = new LuxuryCab(Color::GREEN, CarManufacture::FIAT, 4453523);
         cab2 = new LuxuryCab(Color::GREEN, CarManufacture::FIAT, 4453523);
         cab3 = new LuxuryCab(Color::RED, CarManufacture::HONDA, 4355234);
         driver = new Driver(40, 50, MartialStatues::WIDOWED, 7, 0);
         driver->setCab(cab1);
-        road->push(&*location);
-        road->push(&*endLocation);
-        road->push(&*middleLoc);
+        road->push(new Node(destP));
+        road->push(new Node(midP));
+        road->push(new Node(startP));
     }
 
     virtual void TearDown() {
         delete (startP);
         delete (midP);
         delete (destP);
-        delete (location);
-        delete (endLocation);
         delete (cab1);
         delete (cab2);
         delete (cab3);
@@ -75,7 +68,8 @@ TEST_F(LuxuryCabTest, getId) {
  * checks if the LuxuryCab returns the correct location.
  */
 TEST_F(LuxuryCabTest, getLocation) {
-    ASSERT_TRUE(*(cab1->getLocation()) == *location);
+    Point p(0, 0);
+    ASSERT_TRUE(*(cab1->getLocation()->getP()) == p);
 }
 
 /**
@@ -84,8 +78,11 @@ TEST_F(LuxuryCabTest, getLocation) {
  */
 TEST_F(LuxuryCabTest, move) {
     cab1->move(road);
-    ASSERT_TRUE(*(cab1->getLocation()) == *middleLoc);
-    ASSERT_EQ(*(road->top()), *endLocation);
+    ASSERT_TRUE(*(cab1->getLocation()->getP()) == *midP);
+    int **coords = road->top()->getCoordinates();
+    Point p(*(coords[0]), *(coords[1]));
+    p.deleteCoords(coords);
+    ASSERT_TRUE(p == *destP);
 }
 
 /**
@@ -95,7 +92,7 @@ TEST_F(LuxuryCabTest, move) {
  */
 TEST_F(LuxuryCabTest, applyToPoint) {
     cab1->applyToPoint(midP);
-    ASSERT_EQ(*(cab1->getLocation()), *middleLoc);
+    ASSERT_EQ(*(cab1->getLocation()->getP()), *midP);
 }
 
 /**

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-project(ex3AP)
+project(ex2AP)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
@@ -25,7 +25,7 @@ set(SOURCE_FILES test/coordinatesTests/MapTest.cpp test/coordinatesTests/NodeTes
         src/enum/MartialStatuesFactory.h src/enum/ColorFactory.h src/enum/CarManufactureFactory.h
         test/managmentTests/MainFlowTest.cpp src/managment/ProperInput.cpp
         src/managment/ProperInput.h src/main.cpp)
-add_executable(ex3AP ${SOURCE_FILES} src/coordinates/Map.cpp src/coordinates/Map.h src/coordinates/Node.cpp src/coordinates/Node.h)
+add_executable(ex2AP ${SOURCE_FILES} src/coordinates/Map.cpp src/coordinates/Map.h src/coordinates/Node.cpp src/coordinates/Node.h)
 
 add_subdirectory(lib/googletest-master)
 
@@ -33,4 +33,4 @@ include_directories(lib/googletest-master/googletest/include)
 
 include_directories(lib/googletest-master/googlemock/include)
 
-target_link_libraries(ex3AP gtest gtest_main)
+target_link_libraries(ex2AP gtest gtest_main)
