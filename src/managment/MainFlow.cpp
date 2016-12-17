@@ -121,8 +121,9 @@ void MainFlow::input() {
                 cin.ignore();
 
                 Point *location = so->getDriverLocation(id);
-
-                cout << *location;
+                if (location) {
+                    cout << *location;
+                }
                 break;
             }
                 // start driving - getting all drivers to their end point
