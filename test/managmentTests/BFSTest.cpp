@@ -2,7 +2,6 @@
 // BFSTest.
 //
 
-
 #include <gtest/gtest.h>
 #include <stack>
 #include "../../src/tripOperations/TaxiCenter.h"

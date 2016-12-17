@@ -26,8 +26,7 @@ stack<CoordinatedItem *> *BFS::use(Grid *Graph, CoordinatedItem *root, Coordinat
  */
 void BFS::BFSAlgo(Grid *graph, CoordinatedItem *root) {
 
-    graph->setAll(
-            -1);                      // for each node in Graph set to -1, and reset his father to null
+    graph->setAll(-1);            // for each node in Graph set to -1, and reset his father to null
 
     queue<CoordinatedItem *> queue;
     graph->setItem(root, 0);                // set root distance to 0

@@ -1,14 +1,17 @@
 //
 // Cab.
-//
+// inherit Taxi.
 
 #include "Cab.h"
 
-Cab::Cab(const Color &color, const CarManufacture &firm, int id) : Taxi(color, firm, id) {
+/**
+ * @param t is the tariff of the taxi
+ */
+void Cab::setTariff(double t) {
+    Taxi::setTariff(t);
 }
 
 /**
- *
  * @param road to move the cab according to
  */
 void Cab::move(stack<CoordinatedItem *> *road) {
@@ -23,10 +26,3 @@ void Cab::move(stack<CoordinatedItem *> *road) {
     }
 }
 
-/**
- *
- * @param t is the tariff of the taxi
- */
-void Cab::setTariff(double t) {
-    Taxi::setTariff(t);
-}

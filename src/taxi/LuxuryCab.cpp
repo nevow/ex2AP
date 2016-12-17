@@ -1,20 +1,18 @@
 //
 // LuxuryCab.
-//
+// inherit Taxi.
 
 #include "LuxuryCab.h"
 
-LuxuryCab::LuxuryCab(const Color &color, const CarManufacture &firm, int id)
-        : Taxi(color, firm, id) {}
-
 /**
- *
+ * LuxuryCab move twice faster that cab.
  * @param road to move the cab according to
  */
 void LuxuryCab::move(stack<CoordinatedItem *> *road) {
     if (!road->empty()) {
         CoordinatedItem *item = road->top();
         road->pop();
+        // if we didn't got to the end of the road
         if (!road->empty()) {
             delete (item);
             item = road->top();
@@ -29,8 +27,7 @@ void LuxuryCab::move(stack<CoordinatedItem *> *road) {
 }
 
 /**
- *
- * @param t is the tariff of the taxi
+ * @param t is the tariff of the LuxuryCab
  */
 void LuxuryCab::setTariff(double t) {
     Taxi::setTariff(t * 2);
