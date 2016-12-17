@@ -13,6 +13,14 @@ Satisfaction::Satisfaction() {
 }
 
 /**
+ * copy constructor.
+ */
+Satisfaction::Satisfaction(Satisfaction *s) {
+    amount = s->amount;
+    average = s->average;
+}
+
+/**
  *
  * @return the average satisfaction.
  */

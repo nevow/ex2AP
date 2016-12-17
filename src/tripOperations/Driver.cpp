@@ -16,6 +16,11 @@ Driver::Driver(int id, int age, const MartialStatues &status, int experience, in
     satisfaction = new Satisfaction();
 }
 
+Driver::Driver(Driver *d) : id(d->getId()), age(d->getAge()), status(d->getStatus()),
+                            experience(d->getExperience()), vehicleId(d->getVehicle_id()) {
+    satisfaction = new Satisfaction(d->satisfaction);
+}
+
 /**
  *
  * @return the id of the driver

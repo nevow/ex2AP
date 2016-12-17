@@ -13,6 +13,8 @@ private:
 public:
     Satisfaction();
 
+    Satisfaction(Satisfaction *s);
+
     double getAverage() const;
 
     void update(int grade);

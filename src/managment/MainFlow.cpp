@@ -16,7 +16,7 @@ using namespace std;
  * constructor.
  * initialize the environment, get map, obstacles and create a SystemOperations.
  */
-void MainFlow::MainFlow() {
+MainFlow::MainFlow() {
 
     int rows, columns, obstacleNum;
     std::list<Node *> *obstacles = new list<Node *>;

@@ -18,7 +18,6 @@ public:
 
     ~MainFlow() {
         delete so;
-
     }
 
     void input();

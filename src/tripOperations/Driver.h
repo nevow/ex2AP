@@ -25,6 +25,8 @@ private:
 public:
     Driver(int id, int age, const MartialStatues &status, int experience, int vehicle_id);
 
+    Driver(Driver *d);
+
     ~Driver() {
         delete (satisfaction);
         if (ti) {
