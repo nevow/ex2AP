@@ -25,4 +25,3 @@ void Cab::move(stack<CoordinatedItem *> *road) {
         p.deleteCoords(coords);
     }
 }
-

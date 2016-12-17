@@ -12,7 +12,7 @@ void LuxuryCab::move(stack<CoordinatedItem *> *road) {
     if (!road->empty()) {
         CoordinatedItem *item = road->top();
         road->pop();
-        // if we didn't got to the end of the road
+        // if we didn't got to the end of the road - move to the next CoordinatedItem
         if (!road->empty()) {
             delete (item);
             item = road->top();

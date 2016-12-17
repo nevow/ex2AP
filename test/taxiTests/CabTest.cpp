@@ -7,7 +7,7 @@
 #include "../../src/taxi/Cab.h"
 
 /**
- * setup.
+ * setup
  */
 class CabTest : public ::testing::Test {
 

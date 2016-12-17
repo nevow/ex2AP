@@ -19,5 +19,4 @@ public:
     void move(stack<CoordinatedItem *> *road);
 };
 
-
 #endif //EX1_CAB_H

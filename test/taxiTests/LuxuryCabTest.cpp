@@ -7,7 +7,7 @@
 #include "../../src/taxi/LuxuryCab.h"
 
 /*
- * setup.
+ * setup
  */
 class LuxuryCabTest : public ::testing::Test {
 

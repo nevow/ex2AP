@@ -1,5 +1,5 @@
 //
-// Taxi -abstract class Taxi.
+// Taxi - abstract class.
 //
 
 #ifndef EX1_TAXI_H
