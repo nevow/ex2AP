@@ -9,71 +9,122 @@
 
 class TaxiCenterTest : public ::testing::Test {
 protected:
-    Point *start;
-    Point *destination;
-    Node *location;
-    Node *endLocation;
-    Passenger *pass;
-    list<Passenger *> *passengers;
     Driver *d;
     TripInfo *ti;
     Cab *cab;
     TaxiCenter *tc;
 
     virtual void SetUp() {
-        start = new Point(3, 3);
-        destination = new Point(4, 3);
-        location = new Node(start);
-        endLocation = new Node(destination);
-        pass = new Passenger(start, destination);
-        passengers = new list<Passenger *>;
-        passengers->push_front(pass);
         d = new Driver(305, 40, MartialStatues::WIDOWED, 7, 0);
-        ti = new TripInfo(100, start, destination, 1, 100);          // standard first trip info
-        cab = new Cab(Color::GREEN, CarManufacture::TESLA, 4453523);
+        ti = new TripInfo(100, new Point(0, 0), new Point(3, 3), 1, 100);
+        cab = new Cab(Color::GREEN, CarManufacture::TESLA, 0);
         tc = new TaxiCenter();
+        tc->addTaxi(cab);
+        tc->addDriver(d);
+        tc->addTI(ti);
     }
 
     virtual void TearDown() {
-        delete (location);
-        delete (endLocation);
-        delete (pass);
-        delete (d);
-        delete (ti);
-        delete (cab);
         delete (tc);
     }
 };
 
 /**
- * checks the answerCall method.
- * checks if the TripInfo that was created it the right one.
+ * checks the getEmployees method.
+ * checks if the employees list correct.
  */
-TEST_F(TaxiCenterTest, answerCall) {
-    ASSERT_TRUE(ti == tc->answerCall(pass))
-                                << "trip info differs in id, start point or destination";
+TEST_F(TaxiCenterTest, getEmployees) {
+    std::list<Driver *> *drivers = tc->getEmployees();
+    ASSERT_TRUE(*(drivers->front()) == *d)
+                                << "Driver is not the driver in the TaxiCenter";
 }
 
 /**
- * checks the getAvailableDriver method.
- * checks if the driver got added to the right list.
+ * checks the getAvailableDrivers method.
+ * checks if the available list correct.
  */
-TEST_F(TaxiCenterTest, getAvailableDriver) {
-    tc->addDriver(d);
-    d->setTi(ti);
-//    ASSERT_TRUE(d == tc->setDriverToTi(ti)) << "available Driver is not the driver in the TaxiCenter";
+TEST_F(TaxiCenterTest, getAvailableDrivers) {
+    std::list<Driver *> *drivers = tc->getAvailableDrivers();
+    ASSERT_TRUE(drivers->empty());
+    Driver *d1 = new Driver(305, 40, MartialStatues::WIDOWED, 7, 1);
+    Cab *cab1 = new Cab(Color::RED, CarManufacture::HONDA, 1);
+    tc->addTaxi(cab1);
+    tc->addDriver(d1);
+    ASSERT_TRUE(*(drivers->front()) == *d1)
+                                << "available Driver is not the driver in the TaxiCenter";
 }
 
 /**
- * checks the sendTaxi method.
- * checks if the connection between the driver and the cab was done properly.
+ * checks the getDriverLocation method.
+ * checks if the getDriverLocation returns the right location.
  */
-TEST_F(TaxiCenterTest, sendTaxi) {
-    tc->addTaxi(cab);
-    tc->addDriver(d);
-    ASSERT_TRUE(d->getCab() != cab) << "no cab assigned to driver yet";
-//    tc->sendTaxi(d);
-    EXPECT_TRUE(d->getCab() == cab) << "same cab, should be equal";
+TEST_F(TaxiCenterTest, getDriverLocation) {
+    Point *location = tc->getDriverLocation(305);
+    Point p(0, 0);
+    ASSERT_TRUE(*location == p) << "Driver location is not (0,0)";
+    location = tc->getDriverLocation(6);
+    ASSERT_TRUE(location == NULL) << "no ID of 6 in the taxi center";
+}
+
+/**
+ * checks the getTaxiByID method.
+ * checks if the getTaxiByID returns the right cab.
+ */
+TEST_F(TaxiCenterTest, getTaxiByID) {
+    Taxi *cab1 = tc->getTaxiByID(0);
+    ASSERT_TRUE(*cab1 == *cab) << "same taxi, should be equal";
+}
+
+/**
+ * checks the getClosestDriver method.
+ * checks if the getClosestDriver returns the right driver.
+ * the addTI uses the getclosestDriver to attach the TI into the right driver
+ */
+TEST_F(TaxiCenterTest, getClosestDriver) {
+    Cab *cab1 = new Cab(Color::RED, CarManufacture::HONDA, 1);
+    Driver *d1 = new Driver(305, 40, MartialStatues::WIDOWED, 7, 1);
+    tc->addTaxi(cab1);
+    tc->addDriver(d1);
+    TripInfo *ti1 = new TripInfo(100, new Point(3, 3), new Point(4, 3), 1, 100);
+    tc->moveAll();
+    tc->addTI(ti1);
+    tc->moveAll();
+    Point p(4, 3);
+    ASSERT_FALSE(*(cab1->getLocation()->getP()) == p) << "this taxi shouldn't have moved to (4,3)";
+    ASSERT_TRUE(*(cab->getLocation()->getP()) == p) << "this taxi should have moved to (4,3)";
+}
+
+/**
+ * checks the addDriver method.
+ * checks if the driver got added.
+ */
+TEST_F(TaxiCenterTest, addDriver) {
+    ASSERT_TRUE(*(tc->getEmployees()->front()) == *d);
+}
+
+/**
+ * checks the addTaxi method.
+ * checks if the Taxi got added.
+ */
+TEST_F(TaxiCenterTest, addTaxi) {
+    ASSERT_TRUE(*(tc->getEmployees()->front()->getCab()) == *cab);
+}
+
+/**
+ * checks the addTI method.
+ * checks if the trip info got added.
+ */
+TEST_F(TaxiCenterTest, addTI) {
+    ASSERT_TRUE(tc->getEmployees()->front()->getTi() != NULL);
+    ASSERT_TRUE(*(tc->getEmployees()->front()->getTi()) == *ti);
+}
+
+/**
+ * checks the setDriverToTi method.
+ * checks if the driver recieved the trip info.
+ */
+TEST_F(TaxiCenterTest, setDriverToTi) {
+    ASSERT_TRUE(*(tc->getEmployees()->front()->getTi()) == *ti);
 }
 
 /**
@@ -81,26 +132,8 @@ TEST_F(TaxiCenterTest, sendTaxi) {
  * checks if the location of the cab changed after the movement.
  */
 TEST_F(TaxiCenterTest, moveAll) {
-    d->setTi(ti);
-    tc->addTaxi(cab);
-    tc->addDriver(d);
-//    tc->sendTaxi(d);
+    Point p(3, 3);
+    ASSERT_TRUE(*(cab->getLocation()->getP()) != p);
     tc->moveAll();
-    ASSERT_TRUE(cab->getLocation()->getP() != start);
+    ASSERT_TRUE(*(cab->getLocation()->getP()) == p);
 }
-
-/**
- * checks the getAvailableDrivers method.
- * checks if the drivers list is being properly managed.
- */
-TEST_F(TaxiCenterTest, getAvailableDrivers) {
-    Driver *d1 = new Driver(304, 21, MartialStatues::SINGLE, 2, 0);
-    tc->addDriver(d);
-    tc->addDriver(d1);
-    std::list<Driver *> *drivers = tc->getAvailableDrivers();
-    EXPECT_TRUE(*(drivers->front()) == *d);
-    drivers->pop_front();
-    EXPECT_TRUE(*(drivers->front()) == *d1);
-    delete (d1);
-}
-

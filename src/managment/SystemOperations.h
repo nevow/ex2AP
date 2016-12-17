@@ -38,8 +38,6 @@ public:
 
     int getY() const;
 
-    void addObstacle(Node *obstacle);
-
     void addDriver(Driver *d);
 
     void addTaxi(Taxi *cab);
@@ -50,7 +48,9 @@ public:
 
     void moveAll();
 
-    void connectCall(Passenger *p);
+    //void addObstacle(Node *obstacle);
+
+    //void connectCall(Passenger *p);
 };
 
 

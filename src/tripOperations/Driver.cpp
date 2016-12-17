@@ -14,6 +14,7 @@
 Driver::Driver(int id, int age, const MartialStatues &status, int experience, int vehicle_id) :
         id(id), age(age), status(status), experience(experience), vehicleId(vehicle_id) {
     satisfaction = new Satisfaction();
+    ti = NULL;
 }
 
 /**

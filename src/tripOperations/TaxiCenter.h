@@ -81,25 +81,9 @@ public:
         delete (listeners);
     }
 
-    void addListener(EventListener *l);
-
-    TripInfo *answerCall(Passenger *p);
-
-    void setDriverToTi(TripInfo *ti);
-
-//    void sendTaxi(Driver *d);
-
-    void moveAll();
-
     list<Driver *> *getEmployees() const;
 
     list<Driver *> *getAvailableDrivers() const;
-
-    void addDriver(Driver *d);
-
-    void addTaxi(Taxi *cab);
-
-    void addTI(TripInfo *ti);
 
     Point *getDriverLocation(int id);
 
@@ -107,8 +91,21 @@ public:
 
     Driver *getClosestDriver(Point *start);
 
+    void addDriver(Driver *d);
+
+    void addTaxi(Taxi *cab);
+
+    void addTI(TripInfo *ti);
+
+    void setDriverToTi(TripInfo *ti);
+
+    void moveAll();
+
     void removeListener(EventListener *el);
 
+    //TripInfo *answerCall(Passenger *p);
+
+    //void sendTaxi(Driver *d);
 };
 
 

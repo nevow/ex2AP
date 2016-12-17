@@ -8,27 +8,18 @@
 
 class DriverTest : public ::testing::Test {
 protected:
-    Point *start;
-    Point *destination;
-    Node *location;
-    Node *endLocation;
-    Passenger *pass;
     Driver *d;
+    Taxi *cab;
 
     virtual void SetUp() {
-        start = new Point(3, 3);
-        destination = new Point(4, 3);
-        location = new Node(start);
-        endLocation = new Node(destination);
-        pass = new Passenger(start, destination);
         d = new Driver(305, 40, MartialStatues::WIDOWED, 7, 0);
+        cab = new Cab(Color::GREEN, CarManufacture::TESLA, 0);
+        d->setCab(cab);
     }
 
     virtual void TearDown() {
-        delete (location);
-        delete (endLocation);
-        delete (pass);
         delete (d);
+        delete (cab);
     }
 };
 
@@ -84,26 +75,26 @@ TEST_F(DriverTest, getSatisfaction) {
  * check getAndSetTi method.
  */
 TEST_F(DriverTest, getAndSetTi) {
-    Passenger p1(start, destination), p2(start, destination), p3(start, destination);
-    Passenger *pass1 = &p1;
-    Passenger *pass2 = &p2;
-    Passenger *pass3 = &p3;
-    TripInfo ti1(300, start, destination, 3, 100);
-    TripInfo ti2(300, start, destination, 3, 100);
-    ASSERT_TRUE(ti1 == ti2);
-    d->setTi(&ti1);
-    EXPECT_TRUE(*d->getTi() == ti2);
+    Point *start = new Point(3, 3);
+    Point *destination = new Point(4, 3);
+    Point *otherStart = new Point(start->getX(), start->getY());
+    Point *otherEnd = new Point(destination->getX(), destination->getY());
+    TripInfo *ti = new TripInfo(300, start, destination, 3, 100);
+    TripInfo ti2(300, otherStart, otherEnd, 3, 100);
+    d->setTi(ti);
+    ASSERT_TRUE(*ti == ti2);
+    EXPECT_TRUE(*(d->getTi()) == ti2);
 }
 
 /**
  * check getAndSetCab method.
  */
 TEST_F(DriverTest, getAndSetCab) {
-    Cab cab1(Color::GREEN, CarManufacture::TESLA, 4453523);
-    Cab cab2(Color::GREEN, CarManufacture::TESLA, 4453523);
+    Cab cab1(Color::GREEN, CarManufacture::TESLA, 0);
+    Cab cab2(Color::GREEN, CarManufacture::TESLA, 0);
     ASSERT_TRUE(cab1 == cab2);
     d->setCab(&cab1);
-    EXPECT_TRUE(*d->getCab() == cab2);
+    EXPECT_TRUE(*(d->getCab()) == cab2);
 }
 
 /**
@@ -127,12 +118,11 @@ TEST_F(DriverTest, setExperience) {
  * compares expected location after moveOneStep and the real location.
  */
 TEST_F(DriverTest, moveOneStep) {
-    Passenger *p[1] = {pass};
-    TripInfo ti(300, start, destination, 3, 100);
-    Cab cab(Color::GREEN, CarManufacture::TESLA, 4453523);
-    d->setCab(&cab);
+    Point *start = new Point(3, 3);
+    Point *destination = new Point(4, 3);
+    d->setTi(new TripInfo(300, start, destination, 3, 100));
     d->moveOneStep();
-    ASSERT_TRUE(*(cab.getLocation()) == *endLocation);
+    ASSERT_TRUE(*(d->getCab()->getLocation()->getP()) == *destination);
 }
 
 /**

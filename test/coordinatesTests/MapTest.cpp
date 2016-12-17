@@ -92,7 +92,6 @@ TEST_F(MapTest, setAll) {
 * check setItem (distance) method.
 */
 TEST_F(MapTest, setItem) {
-    map->setAll(-1);
     map->setItem(map->getCoordinatedItem(1, 1), 3);
     EXPECT_NE(map->getCoordinatedItem(1, 1)->getDistance(), -1);
     EXPECT_EQ(map->getCoordinatedItem(1, 1)->getDistance(), 3);

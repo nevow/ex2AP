@@ -18,10 +18,19 @@ SystemOperations::SystemOperations(Map *map1, list<Node *> *obs) {
 }
 
 /**
- * @param obstacle to add to the obstacles List.
+ *
+ * @return the x of the so
  */
-void SystemOperations::addObstacle(Node *obstacle) {
-    obstacles->push_back(obstacle);
+int SystemOperations::getX() const {
+    return x;
+}
+
+/**
+ *
+ * @return the y of the so
+ */
+int SystemOperations::getY() const {
+    return y;
 }
 
 /**
@@ -65,22 +74,13 @@ void SystemOperations::moveAll() {
  * Not implement yet.
  * @param p the Passenger that ask for taxi
  */
-void SystemOperations::connectCall(Passenger *p) {
+/*void SystemOperations::connectCall(Passenger *p) {
 
-}
-
-/**
- *
- * @return the x of the so
- */
-int SystemOperations::getX() const {
-    return x;
-}
+}*/
 
 /**
- *
- * @return the y of the so
+ * @param obstacle to add to the obstacles List.
  */
-int SystemOperations::getY() const {
-    return y;
-}
+/*void SystemOperations::addObstacle(Node *obstacle) {
+    obstacles->push_back(obstacle);
+}*/
