@@ -23,7 +23,7 @@ MainFlow::MainFlow() {
     std::list<Node *> *obstacles = new list<Node *>;
 
     // get the map's size and create it
-    cin >> rows >> columns;
+    cin >> columns >> rows;
     Map *map = new Map(columns, rows);
     cin.ignore();
 
@@ -83,7 +83,7 @@ void MainFlow::input() {
                 cin >> trash;
                 num_passengers = ProperInput::validInt();
                 cin >> trash;
-                tariff = ProperInput::validInt();
+                tariff = ProperInput::validDouble();
                 cin.ignore();
 
                 TripInfo *tripInfo = new TripInfo(id, start, end, num_passengers, tariff);

@@ -48,6 +48,22 @@ Map::~Map() {
 }
 
 /**
+ *
+ * @return the rows of the map
+ */
+int Map::getRows() const {
+    return rows;
+}
+
+/**
+ *
+ * @return the columns of the map
+ */
+int Map::getColumns() const {
+    return columns;
+}
+
+/**
  * @param c is the column value
  * @param r is the row value
  * @return the node on the correct position.

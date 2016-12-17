@@ -2,7 +2,6 @@
 // ProperInput.
 //
 
-#include <gtest/gtest-typed-test.h>
 #include "ProperInput.h"
 
 using namespace std;

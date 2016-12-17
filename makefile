@@ -1,8 +1,8 @@
 # weichsn1 305108706
 # darsham1 203393210
 
-a.out: main.o BFS.o Map.o Node.o Point.o DriverAvailableListener.o TripEndListener.o MainFlow.o SystemOperations.o Cab.o LuxuryCab.o Driver.o Passenger.o Satisfaction.o TaxiCenter.o TripInfo.o
-	g++ -std=c++0x main.o BFS.o Map.o Node.o Point.o DriverAvailableListener.o TripEndListener.o MainFlow.o SystemOperations.o Cab.o LuxuryCab.o Driver.o Passenger.o Satisfaction.o TaxiCenter.o TripInfo.o
+a.out: main.o BFS.o Map.o Node.o Point.o DriverAvailableListener.o TripEndListener.o MainFlow.o SystemOperations.o Cab.o LuxuryCab.o Driver.o Passenger.o Satisfaction.o TaxiCenter.o TripInfo.o ProperInput.o
+	g++ -std=c++0x main.o BFS.o Map.o Node.o Point.o DriverAvailableListener.o TripEndListener.o MainFlow.o SystemOperations.o Cab.o LuxuryCab.o Driver.o Passenger.o Satisfaction.o TaxiCenter.o TripInfo.o ProperInput.o
 
 main.o: src/main.cpp
 	g++ -std=c++0x -c src/main.cpp
@@ -51,6 +51,9 @@ TaxiCenter.o: src/tripOperations/TaxiCenter.cpp src/tripOperations/TaxiCenter.h 
 
 TripInfo.o: src/tripOperations/TripInfo.cpp src/tripOperations/TripInfo.h
 	g++ -std=c++0x -c src/tripOperations/TripInfo.cpp
+
+ProperInput.o:src/managment/ProperInput.cpp src/managment/ProperInput.h
+	g++ -std=c++0x -c src/managment/ProperInput.cpp
 
 clean:
 	rm -f *.o a.out

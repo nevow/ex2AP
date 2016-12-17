@@ -54,8 +54,13 @@ void TaxiCenter::moveAll() {
         (*iterator)->moveOneStep();
         //locations->push_back(d->getCab()->getLocation());
     }
+    std::list<EventListener *> temp;
     for (std::list<EventListener *>::const_iterator iterator = listeners->begin(),
                  end = listeners->end(); iterator != end; ++iterator) {
+        temp.push_back(*iterator);
+    }
+    for (std::list<EventListener *>::const_iterator iterator = temp.begin(),
+                 end = temp.end(); iterator != end; ++iterator) {
         (*iterator)->notify();
     }
 }
@@ -174,6 +179,7 @@ void TaxiCenter::removeListener(EventListener *el) {
                 listeners->push_front((temp.front()));
                 temp.pop_front();
             }
+            return;
         } else {
             temp.push_front(e);
         }

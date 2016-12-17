@@ -18,9 +18,13 @@ private:
     Node ***matrix;
 
 public:
-    Map(int r, int c);
+    Map(int c, int r);
 
     ~Map();
+
+    int getRows() const;
+
+    int getColumns() const;
 
     CoordinatedItem *getValue(int r, int c);
 
@@ -31,6 +35,7 @@ public:
     void setItem(CoordinatedItem *item, int dist);
 
     CoordinatedItem **getAllNeighbours(CoordinatedItem *item);
+
 };
 
 #endif //EX1_MATRIX_H

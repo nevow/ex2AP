@@ -13,6 +13,8 @@ SystemOperations::SystemOperations(Map *map1, list<Node *> *obs) {
     map = map1;
     obstacles = obs;
     tc = new TaxiCenter();
+    x = map->getColumns();
+    y = map->getRows();
 }
 
 /**
