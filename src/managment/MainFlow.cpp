@@ -46,8 +46,7 @@ MainFlow::MainFlow() {
  */
 void MainFlow::input() {
     int choice;
-    int id, age, experience, vehicleId, taxi_type;
-    int x_start, y_start, x_end, y_end, num_passengers;
+    int id, age, experience, vehicleId, taxi_type, num_passengers;
     double tariff;
     char trash, status, manufacturer, color;
 
@@ -137,5 +136,5 @@ void MainFlow::input() {
             }
         }
 
-    } while (choice != 7);     // exit condition
+    } while (choice != 7);      // exit condition
 }
