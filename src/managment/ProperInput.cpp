@@ -14,7 +14,7 @@ int ProperInput::validInt() {
 
 }
 
-/**
+/*
  * @return char correct, after tests.
  */
 char ProperInput::validChar() {
