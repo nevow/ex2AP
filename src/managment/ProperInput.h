@@ -12,7 +12,7 @@ class ProperInput {
 
 public:
 
-    static Point *validPoint(Map *map);
+    static Point validPoint(int columns, int rows);
 
     static int validInt();
 

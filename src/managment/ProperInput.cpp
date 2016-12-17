@@ -10,13 +10,13 @@ using namespace std;
 /**
  * @return Point correct, after tests.
  */
-Point *ProperInput::validPoint(Map *map) {
-    Point *point = new Point();
-    cin >> *point;
+Point ProperInput::validPoint(int columns, int rows) {
+    Point point;
+    cin >> point;
 
     // check if the point is in the map's boundary
-    if ((point->getX() <= map->getColumns()) && (point->getY() <= map->getRows()) &&
-        (point->getX() >= 0) && (point->getY() >= 0)) {
+    if ((point.getX() <= columns) && (point.getY() <= rows) &&
+        (point.getX() >= 0) && (point.getY() >= 0)) {
         return point;
     } else {
         throw runtime_error("the point is not on the map boundaries");

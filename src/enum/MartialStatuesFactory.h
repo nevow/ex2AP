@@ -27,7 +27,7 @@ public:
             case 'W':
                 return MartialStatues::WIDOWED;
             default:
-                return MartialStatues::UNDEFINED;
+                throw runtime_error("Wrong status");
         }
     }
 };

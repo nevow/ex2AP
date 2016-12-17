@@ -26,7 +26,7 @@ public:
             case 'F':
                 return CarManufacture::FIAT;
             default:
-                return CarManufacture::UNDEFINED;
+                throw runtime_error("Wrong Firm");
         }
     }
 };

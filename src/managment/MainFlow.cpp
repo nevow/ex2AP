@@ -9,6 +9,7 @@
 #include "../enum/ColorFactory.h"
 #include "../enum/CarManufactureFactory.h"
 #include "../taxi/LuxuryCab.h"
+#include "ProperInput.h"
 
 using namespace std;
 
@@ -26,16 +27,15 @@ MainFlow::MainFlow() {
     Map *map = new Map(columns, rows);
     cin.ignore();
 
-    cin >> obstacleNum;
+    obstacleNum = ProperInput::validInt();
     cin.ignore();
 
     // make the obstacles List from the input
     for (; obstacleNum > 0; obstacleNum--) {
-        Point obs(0, 0);
-        cin >> obs;
+        Point obs = ProperInput::validPoint(columns, rows);
         cin.ignore();
-        Node n(&obs);
-        obstacles->push_front(&n);
+        Node *n = new Node(&obs);
+        obstacles->push_front(n);
     }
 
     so = new SystemOperations(map, obstacles);
@@ -52,13 +52,18 @@ void MainFlow::input() {
     char trash, status, manufacturer, color;
 
     do {
-        cin >> choice;
+        choice = ProperInput::validInt();
         cin.ignore();
         switch (choice) {
             // create new drive
             case 1: {
-                cin >> id >> trash >> age >> trash >> status >> trash >> experience >> trash
-                    >> vehicleId;
+                id = ProperInput::validInt();
+                cin >> trash;
+                age = ProperInput::validInt();
+                cin >> trash >> status >> trash;
+                experience = ProperInput::validInt();
+                cin >> trash;
+                vehicleId = ProperInput::validInt();
                 cin.ignore();
 
                 Driver *driver = new Driver(id, age,
@@ -69,21 +74,32 @@ void MainFlow::input() {
             }
                 // create new TripInfo
             case 2: {
-                cin >> id >> trash >> x_start >> trash >> y_start >> trash >> x_end >> trash
-                    >> y_end >> trash >> num_passengers >> trash >> tariff;
+                id = ProperInput::validInt();
+                cin >> trash;
+                Point p1 = ProperInput::validPoint(so->getX(), so->getY());
+                Point *start = new Point(p1.getX(), p1.getY());
+                cin >> trash;
+                Point p2 = ProperInput::validPoint(so->getX(), so->getY());
+                Point *end = new Point(p2.getX(), p2.getY());
+                cin >> trash;
+                num_passengers = ProperInput::validInt();
+                cin >> trash;
+                tariff = ProperInput::validInt();
                 cin.ignore();
-                Point *start = new Point(x_start, y_start);
-                Point *end = new Point(x_end, y_end);
+
                 TripInfo *tripInfo = new TripInfo(id, start, end, num_passengers, tariff);
                 so->addTI(tripInfo);
                 break;
             }
                 // create new Taxi
             case 3: {
-                cin >> id >> trash >> taxi_type >> trash >> manufacturer >> trash >> color;
+                id = ProperInput::validInt();
+                cin >> trash;
+                taxi_type = ProperInput::validInt();
+                cin >> trash >> manufacturer >> trash >> color;
                 cin.ignore();
-                Taxi *taxi;
 
+                Taxi *taxi;
                 if (taxi_type == 1)                      // create regular cab
                 {
                     taxi = new Cab(ColorFactory::charToColor(color),
@@ -102,7 +118,7 @@ void MainFlow::input() {
             }
                 // request for a driver location by his id
             case 4: {
-                cin >> id;
+                id = ProperInput::validInt();
                 cin.ignore();
 
                 Point *location = so->getDriverLocation(id);

@@ -28,7 +28,7 @@ public:
             case 'W':
                 return Color::WHITE;
             default:
-                return Color::UNDEFINED;
+                throw runtime_error("Wrong Color");
         }
     }
 };
