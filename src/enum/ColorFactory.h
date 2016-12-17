@@ -10,8 +10,9 @@
 
 class ColorFactory {
 public:
+
     /**
-     *
+     * static method.
      * @param letter to create Color from
      * @return the Color of the letter
      */
@@ -32,6 +33,5 @@ public:
         }
     }
 };
-
 
 #endif //EX2AP_COLORFACTORY_H

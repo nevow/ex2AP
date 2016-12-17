@@ -11,8 +11,9 @@
 
 class MartialStatuesFactory {
 public:
+
     /**
-     *
+     * static method.
      * @param letter to decide which status to return.
      * @return the appropriate status
      */

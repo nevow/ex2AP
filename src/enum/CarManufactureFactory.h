@@ -10,8 +10,9 @@
 
 class CarManufactureFactory {
 public:
+
     /**
-     *
+     * static method.
      * @param letter to create CarManufacture from
      * @return the CarManufacture of the letter
      */
@@ -30,6 +31,5 @@ public:
         }
     }
 };
-
 
 #endif //EX2AP_CARMANUFATUREFACTORY_H

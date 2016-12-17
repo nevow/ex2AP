@@ -1,5 +1,5 @@
 //
-// Created by nevo on 01/12/16.
+// enum class to Color, has 4 Colors.
 //
 
 #ifndef EX1_COLOR_H
@@ -7,8 +7,7 @@
 
 
 enum class Color {
-    RED, BLUE, GREEN, PINK, WHITE, UNDEFINED
+    RED, BLUE, GREEN, PINK, WHITE
 };
-
 
 #endif //EX1_COLOR_H

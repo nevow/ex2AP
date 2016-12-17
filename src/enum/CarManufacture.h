@@ -1,13 +1,12 @@
 //
-// Created by nevo on 01/12/16.
+// enum class to CarManufacture, has 4 firms.
 //
 
 #ifndef EX1_CARMANUFACTURE_H
 #define EX1_CARMANUFACTURE_H
 
-
 enum class CarManufacture {
-    HONDA, SUBARO, TESLA, FIAT, UNDEFINED
+    HONDA, SUBARO, TESLA, FIAT
 };
 
 
