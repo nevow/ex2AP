@@ -105,7 +105,9 @@ public:
 
     Taxi *getTaxiByID(int id);
 
-    Driver * getClosestDriver(Point *start);
+    Driver *getClosestDriver(Point *start);
+
+    void removeListener(EventListener *el);
 
 };
 

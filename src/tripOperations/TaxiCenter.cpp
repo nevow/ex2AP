@@ -25,7 +25,6 @@ void TaxiCenter::setDriverToTi(TripInfo *ti) {
     Driver *d = getClosestDriver(ti->getStart());
     d->setTi(ti);
     employees->push_back(d);
-    //addListener(new TripEndListener(d, ti));
 }
 
 /**
@@ -82,7 +81,7 @@ list<Driver *> *TaxiCenter::getEmployees() const {
 void TaxiCenter::addDriver(Driver *d) {
     d->setCab(getTaxiByID(d->getId()));
     availableDrivers->push_back(d);
-    addListener(new DriverAvailableListener(d, this));
+    addListener(new TripEndListener(d, this));
 }
 
 /**
@@ -163,6 +162,10 @@ Driver *TaxiCenter::getClosestDriver(Point *start) {
             temp.push_front(d);
         }
     }
+}
+
+void removeListener(EventListener *el) {
+
 }
 
 

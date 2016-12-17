@@ -73,3 +73,19 @@ void SystemOperations::moveAll() {
 void SystemOperations::connectCall(Passenger *p) {
 
 }
+
+/**
+ *
+ * @return the x of the so
+ */
+int SystemOperations::getX() const {
+    return x;
+}
+
+/**
+ *
+ * @return the y of the so
+ */
+int SystemOperations::getY() const {
+    return y;
+}

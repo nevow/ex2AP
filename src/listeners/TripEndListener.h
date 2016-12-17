@@ -9,6 +9,7 @@
 #include "EventListener.h"
 #include "../tripOperations/Driver.h"
 #include "../tripOperations/TripInfo.h"
+#include "../tripOperations/TaxiCenter.h"
 #include <list>
 
 using namespace std;
@@ -16,9 +17,9 @@ using namespace std;
 class TripEndListener : public EventListener {
 private:
     Driver *driver;
-    TripInfo *ti;
+    TaxiCenter *tc;
 public:
-    TripEndListener(Driver *driver, TripInfo *ti);
+    TripEndListener(Driver *driver, TaxiCenter *tc);
 
     void notify();
 

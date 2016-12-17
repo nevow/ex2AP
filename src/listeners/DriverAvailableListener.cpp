@@ -22,6 +22,11 @@ void DriverAvailableListener::notify() {
         return;
     }
     if (ti->checkEnd(driver->getCab()->getLocation()->getP())) {
+        std::list<Passenger *> *passengers = ti->getPassengers();
+        for (std::list<Passenger *>::const_iterator iterator = passengers->begin(),
+                     end = passengers->end(); iterator != end; ++iterator) {
+            driver->getSatisfaction()->update((*iterator)->generateSatisfaction());
+        }
         std::list<Driver *> *drivers = tc->getEmployees();
         std::list<Driver *> tempDrivers;
         Driver *d;

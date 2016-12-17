@@ -36,6 +36,10 @@ public:
 
     Map *getMap() const;
 
+    int getX() const;
+
+    int getY() const;
+
     void addObstacle(Node *obstacle);
 
     void addDriver(Driver *d);

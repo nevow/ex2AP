@@ -29,8 +29,11 @@ TripInfo::TripInfo(int rideId, Point *start, Point *destination, int amountOfPas
         rideId(rideId), start(start), destination(destination),
         amountOfPassengers(amountOfPassengers), passengers(passengers), tariff(tariff) {
     currentDistance = 0;
-    list < Passenger * > *passengers,
-            road = new stack<CoordinatedItem *>();
+    passengers = new list<Passenger *>;
+    for (int i = 0; i < amountOfPassengers; i++) {
+        passengers->push_front(new Passenger(start, destination));
+    }
+    road = new stack<CoordinatedItem *>();
     road->push(new Node(destination));
 }
 
