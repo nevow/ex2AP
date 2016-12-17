@@ -13,7 +13,7 @@
 
 class Taxi {
 private:
-    int tariff;
+    double tariff;
     Color color;
     CarManufacture firm;
     int kmPassed;
@@ -56,7 +56,7 @@ public:
         return id;
     }
 
-    virtual void setTariff(int t) {
+    virtual void setTariff(double t) {
         tariff = t;
     };
 
