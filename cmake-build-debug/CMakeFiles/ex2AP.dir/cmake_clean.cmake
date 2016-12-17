@@ -31,6 +31,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ex2AP.dir/test/managmentTests/SystemOperationsTest.cpp.o"
   "CMakeFiles/ex2AP.dir/test/managmentTests/BFSTest.cpp.o"
   "CMakeFiles/ex2AP.dir/test/managmentTests/MainFlowTest.cpp.o"
+  "CMakeFiles/ex2AP.dir/src/managment/ProperInput.cpp.o"
   "ex2AP.pdb"
   "ex2AP"
 )
