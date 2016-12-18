@@ -141,7 +141,7 @@ CoordinatedItem **Map::getAllNeighbours(CoordinatedItem *item) {
         adj[i] = getCoordinatedItem(c, r - 1);
         i++;
     }
-    delete[] (coords);
+    item->deleteCoords(coords);
     adj[i] = NULL;
     return adj;
 }

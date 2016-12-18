@@ -50,13 +50,11 @@ TEST_F(MapTest, getValue) {
     int **coords = item->getCoordinates();
     int x = *(coords[0]);
     int y = *(coords[1]);
-
+    item->deleteCoords(coords);
     // checks the x coordinate
     EXPECT_EQ(x, 1);
     // checks the y coordinate
     EXPECT_EQ(y, 1);
-    item->deleteCoords(coords);
-
 }
 
 /**
@@ -116,4 +114,5 @@ TEST_F(MapTest, getAllNeighbours) {
     EXPECT_EQ(y2, 0);
     (*adj)->deleteCoords(p1);
     (*adj)->deleteCoords(p2);
+    delete[] (adj);
 }
