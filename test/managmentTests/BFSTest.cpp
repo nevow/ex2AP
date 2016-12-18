@@ -20,8 +20,10 @@ protected:
 
     virtual void SetUp() {
         map = new Map(3, 3);
-        start = new Node(new Point(0, 0));
-        end = new Node(new Point(2, 2));
+        Point point1(0, 0);
+        Point point2(2, 2);
+        start = new Node(&point1);
+        end = new Node(&point2);
         road = new stack<CoordinatedItem *>;
         Point p(2, 2);
         Point p1(2, 1);
@@ -64,6 +66,8 @@ TEST_F(BFSTest, use) {
             int y2 = *(coords2[1]);
             item->deleteCoords(coords1);
             item->deleteCoords(coords2);
+            delete (item);
+            delete (r.top());
             ASSERT_TRUE(x1 == x2);
             ASSERT_TRUE(y1 == y2);
             road->pop();

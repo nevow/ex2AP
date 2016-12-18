@@ -33,8 +33,9 @@ public:
             delete (passengers);
         }
         while (!road->empty()) {
-            delete (road->top());
+            CoordinatedItem *c = road->top();
             road->pop();
+            delete (c);
         }
         delete road;
         delete start;

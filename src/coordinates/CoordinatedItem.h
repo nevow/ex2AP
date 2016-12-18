@@ -17,7 +17,9 @@ public:
     /**
      * distructor
      */
-    virtual ~CoordinatedItem() {};
+    virtual ~CoordinatedItem() {
+        parent = NULL;
+    };
 
     /**
      * @return the CoordinatedItem's parent
