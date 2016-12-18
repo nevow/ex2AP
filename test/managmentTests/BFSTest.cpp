@@ -39,6 +39,10 @@ protected:
         delete (start);
         delete (end);
         delete (map);
+        while (!road->empty()) {
+            delete (road->top());
+            road->pop();
+        }
         delete (road);
     }
 };
@@ -91,12 +95,12 @@ TEST_F(BFSTest, BFSAlgo) {
 TEST_F(BFSTest, getTrip) {
 
     BFS::BFSAlgo(map, start);
-    stack<CoordinatedItem *> r = *BFS::getTrip(end);
-    while (!r.empty() || !road->empty()) {
-        if (!r.empty() && !road->empty()) {
+    stack<CoordinatedItem *> *r = BFS::getTrip(end);
+    while (!r->empty() || !road->empty()) {
+        if (!r->empty() && !road->empty()) {
             CoordinatedItem *item = road->top();
             int **coords1 = item->getCoordinates();
-            int **coords2 = r.top()->getCoordinates();
+            int **coords2 = r->top()->getCoordinates();
             int x1 = *(coords1[0]);
             int y1 = *(coords1[1]);
             int x2 = *(coords2[0]);
@@ -106,11 +110,17 @@ TEST_F(BFSTest, getTrip) {
             ASSERT_TRUE(x1 == x2);
             ASSERT_TRUE(y1 == y2);
             road->pop();
-            r.pop();
+            r->pop();
         } else {
-            return;
+            break;
         }
     }
+    while (!r->empty()) {
+        delete (r->top());
+        r->pop();
+    }
+    delete (r);
 }
+
 
 
