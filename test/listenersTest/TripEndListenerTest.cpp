@@ -8,7 +8,6 @@
 #include "../../src/taxi/Cab.h"
 #include "../../src/tripOperations/Driver.h"
 #include "../../src/tripOperations/TaxiCenter.h"
-#include "../../src/listeners/TripEndListener.h"
 
 class tripEndListenerTest : public ::testing::Test {
 protected:
@@ -46,11 +45,11 @@ protected:
  * checks if the get closest driver returns the recently free driver
  */
 TEST_F(tripEndListenerTest, notify) {
-    d->moveOneStep();
     ASSERT_TRUE(d->getSatisfaction()->getAverage() == 0);
     tc->moveAll();
     EXPECT_TRUE(d->getSatisfaction()->getAverage() > 0);
     Point p(2, 3);
     Driver *dr = tc->getClosestDriver(&p);
     ASSERT_TRUE(dr != NULL);
+    delete (dr);
 }

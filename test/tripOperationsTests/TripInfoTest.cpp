@@ -1,5 +1,5 @@
 //
-// Created by nevo on 04/12/16.
+// TripInfoTest.
 //
 
 #include <gtest/gtest.h>
@@ -48,6 +48,7 @@ TEST_F(TripInfoTest, getRoad) {
     int **coords = item->getCoordinates();
     Point p(*(coords[0]), *(coords[1]));
     p.deleteCoords(coords);
+    delete (item);
     ASSERT_TRUE(p == *destination) << "can't get the right end point";
 }
 
@@ -68,6 +69,7 @@ TEST_F(TripInfoTest, getPassengers) {
     std::list<Passenger *> *passengers = ti->getPassengers();
     while (!passengers->empty()) {
         i++;
+        delete (passengers->front());
         passengers->pop_front();
     }
     ASSERT_TRUE(ti->getAmountOfPassengers() == i) << "amount of passengers not synced with list";

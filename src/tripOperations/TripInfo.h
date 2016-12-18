@@ -1,5 +1,5 @@
 //
-// Created by nevo on 01/12/16.
+// TripInfo.
 //
 
 #ifndef EX1_TRIPINFO_H
@@ -12,6 +12,7 @@
 #include "Passenger.h"
 
 class TripInfo {
+
 private:
     int rideId;
     int currentDistance;
@@ -21,6 +22,7 @@ private:
     list<Passenger *> *passengers;
     stack<CoordinatedItem *> *road;
     double tariff;
+
 public:
     TripInfo(int rideId, Point *start, Point *destination, int amountOfPassengers, double tariff);
 
@@ -33,9 +35,8 @@ public:
             delete (passengers);
         }
         while (!road->empty()) {
-            CoordinatedItem *c = road->top();
+            delete (road->top());
             road->pop();
-            delete (c);
         }
         delete road;
         delete start;
