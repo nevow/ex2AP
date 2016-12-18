@@ -46,6 +46,7 @@ TEST_F(NodeTest, getP) {
  * checks setP method.
  */
 TEST_F(NodeTest, setP) {
+    delete (node2->getP());
     node2->setP(p1);
     EXPECT_TRUE(*(node2->getP()) == *p1);
 }
