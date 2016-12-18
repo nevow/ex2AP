@@ -36,8 +36,6 @@ protected:
 
     virtual void TearDown() {
         delete (so);
-        delete (obstacle1);
-        delete (obstacle2);
     }
 };
 

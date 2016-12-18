@@ -23,11 +23,16 @@ protected:
         start = new Node(new Point(0, 0));
         end = new Node(new Point(2, 2));
         road = new stack<CoordinatedItem *>;
-        road->push(new Node(new Point(2, 2)));
-        road->push(new Node(new Point(2, 1)));
-        road->push(new Node(new Point(2, 0)));
-        road->push(new Node(new Point(1, 0)));
-        road->push(new Node(new Point(0, 0)));
+        Point p(2, 2);
+        Point p1(2, 1);
+        Point p2(2, 0);
+        Point p3(1, 0);
+        Point p4(0, 0);
+        road->push(new Node(&p));
+        road->push(new Node(&p1));
+        road->push(new Node(&p2));
+        road->push(new Node(&p3));
+        road->push(new Node(&p4));
     }
 
     virtual void TearDown() {
@@ -43,7 +48,26 @@ protected:
  * checks if expected road is returned.
  */
 TEST_F(BFSTest, use) {
-    ASSERT_TRUE(*road == *(BFS::use(map, start, end)));
+    stack<CoordinatedItem *> r = *(BFS::use(map, start, end));
+    while (!r.empty() || !road->empty()) {
+        if (!r.empty() && !road->empty()) {
+            CoordinatedItem *item = road->top();
+            int **coords1 = item->getCoordinates();
+            int **coords2 = r.top()->getCoordinates();
+            int x1 = *(coords1[0]);
+            int y1 = *(coords1[1]);
+            int x2 = *(coords2[0]);
+            int y2 = *(coords2[1]);
+            item->deleteCoords(coords1);
+            item->deleteCoords(coords2);
+            ASSERT_TRUE(x1 == x2);
+            ASSERT_TRUE(y1 == y2);
+            road->pop();
+            r.pop();
+        } else {
+            return;
+        }
+    }
 }
 
 /**
@@ -66,9 +90,27 @@ TEST_F(BFSTest, BFSAlgo) {
  */
 TEST_F(BFSTest, getTrip) {
 
-    BFS::BFSAlgo(map, end);
-    ASSERT_TRUE(*BFS::getTrip(end) == *road);
-
+    BFS::BFSAlgo(map, start);
+    stack<CoordinatedItem *> r = *BFS::getTrip(end);
+    while (!r.empty() || !road->empty()) {
+        if (!r.empty() && !road->empty()) {
+            CoordinatedItem *item = road->top();
+            int **coords1 = item->getCoordinates();
+            int **coords2 = r.top()->getCoordinates();
+            int x1 = *(coords1[0]);
+            int y1 = *(coords1[1]);
+            int x2 = *(coords2[0]);
+            int y2 = *(coords2[1]);
+            item->deleteCoords(coords1);
+            item->deleteCoords(coords2);
+            ASSERT_TRUE(x1 == x2);
+            ASSERT_TRUE(y1 == y2);
+            road->pop();
+            r.pop();
+        } else {
+            return;
+        }
+    }
 }
 
 

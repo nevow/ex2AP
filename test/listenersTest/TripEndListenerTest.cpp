@@ -24,14 +24,15 @@ protected:
      * creates a taxi center, driver, cab and tripinfo
      */
     virtual void SetUp() {
-        start = new Point(3, 3);
+        start = new Point(0, 0);
         destination = new Point(2, 3);
         tc = new TaxiCenter();
+        cab = new Cab(Color::RED, CarManufacture::HONDA, 0);
+        tc->addTaxi(cab);
         d = new Driver(100, 40, MartialStatues::SINGLE, 10, 0);
         tc->addDriver(d);                            // adds a tripEndListener to the taxi center
-        cab = new Cab(Color::RED, CarManufacture::HONDA, 100);
-        tc->addTaxi(cab);
         ti = new TripInfo(0, start, destination, 3, 20);
+        tc->addTI(ti);
     }
 
     virtual void TearDown() {
@@ -49,6 +50,7 @@ TEST_F(tripEndListenerTest, notify) {
     ASSERT_TRUE(d->getSatisfaction()->getAverage() == 0);
     tc->moveAll();
     EXPECT_TRUE(d->getSatisfaction()->getAverage() > 0);
-    Driver *dr = tc->getClosestDriver(destination);
+    Point p(2, 3);
+    Driver *dr = tc->getClosestDriver(&p);
     ASSERT_TRUE(dr != NULL);
 }
