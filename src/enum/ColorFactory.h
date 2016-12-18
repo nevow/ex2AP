@@ -7,6 +7,7 @@
 #define EX2AP_COLORFACTORY_H
 
 #include "Color.h"
+#include <stdexcept>
 
 class ColorFactory {
 public:

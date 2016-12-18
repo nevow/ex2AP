@@ -8,6 +8,7 @@
 
 
 #include "MartialStatues.h"
+#include <stdexcept>
 
 class MartialStatuesFactory {
 public:

@@ -7,6 +7,7 @@
 #define EX2AP_CARMANUFATUREFACTORY_H
 
 #include "CarManufacture.h"
+#include <stdexcept>
 
 class CarManufactureFactory {
 public:
